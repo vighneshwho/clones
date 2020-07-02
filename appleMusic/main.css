@@ -1,0 +1,675 @@
+/*---------------------------------------------------------------------------*
+ * SF UI Display
+ *---------------------------------------------------------------------------*/
+
+/** Black */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 900;
+  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
+}
+
+/** Thin */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Ultralight */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF UI Text
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
+}
+
+/** Ultrathin */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
+}
+
+/** Ultrathin Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF Mono
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SFMono-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SFMono-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SFMono-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SFMono-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SFMono-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "SF Display", sans-serif;
+  color: #1d1d1f;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  background-image: url("./assets/backdrop.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  min-width: 1300px;
+}
+
+.foreground {
+  display: flex;
+  height: 100vh;
+  min-width: 1300px;
+  overflow-x: scroll;
+}
+
+.player-container {
+  min-width: 1260px;
+}
+
+.side-nav {
+  flex-basis: 180px;
+  align-items: stretch;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
+
+.side-nav > div {
+  margin-bottom: 2em;
+}
+
+.pc-buttons {
+  display: flex;
+  margin-left: 0.6em;
+}
+
+.pc-button {
+  width: 10px;
+  height: 10px;
+  margin: 0.1em;
+  border-radius: 50%;
+  border: 2px solid rgba(43, 16, 16, 0.596);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.red-btn:hover {
+  background-color: #ff3d42;
+  border-color: #ff3d42;
+  box-shadow: 2px 0px 10px #ff3d42;
+}
+
+.yellow-btn:hover {
+  background-color: #eeb600;
+  border-color: #eeb600;
+  box-shadow: 2px 0px 10px #eeb600;
+}
+
+.green-btn:hover {
+  background-color: #01a31a;
+  border-color: #01a31a;
+  box-shadow: 2px 0px 10px #01a31a;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav-main-container > ul {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.nav-container li {
+  padding: 5px 0.6em;
+  margin: 2px 0;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 7px;
+}
+
+.nav-container li:hover {
+  background-color: rgba(71, 71, 71, 0.103);
+}
+
+.nav-sub-container {
+  font-weight: 200;
+}
+
+.nav-sub-container > .section {
+  font-size: 0.7em;
+  padding: 1em 0.6em;
+}
+
+.nav-sub-container li {
+  margin: 10px 0;
+}
+
+.nav-sub-container li > i {
+  margin-right: 1em;
+}
+
+.main {
+  flex: 1;
+  align-items: stretch;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
+
+  padding: 2em 2em 0 2em;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  margin-left: 1.4em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.search-box {
+  font-size: 1em;
+  font-weight: 500;
+  align-self: stretch;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search > i {
+  margin-right: 0.8em;
+  font-size: 0.8em;
+}
+
+.profile {
+  margin-left: auto;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-image: url("./assets/portrait.jpg");
+  background-size: cover;
+}
+
+.heading-main {
+  font-weight: 700;
+  font-size: 3.9em;
+  padding: 0.5em 0;
+  margin: 0 0.4em;
+}
+
+.songs-container {
+  overflow-y: scroll;
+  padding: 0 1.7em;
+}
+
+.songs {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+}
+
+.scrolling-space {
+  background-color: none;
+  width: 100%;
+  height: 150px;
+}
+
+.song {
+  height: 400px;
+  background-color: white;
+  background-image: url("./assets/portrait.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  border-radius: 20px;
+  overflow: hidden;
+
+  transition: box-shadow 0.3s ease-out;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
+
+  cursor: pointer;
+}
+
+.song:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
+}
+
+.song:nth-child(1) {
+  background-image: url("./assets/album\ arts/1.jpg");
+}
+
+.song:nth-child(2) {
+  background-image: url("./assets/album\ arts/2.jpg");
+}
+
+.song:nth-child(3) {
+  background-image: url("./assets/album\ arts/3.jpg");
+}
+
+.song:nth-child(4) {
+  background-image: url("./assets/album\ arts/4.jpg");
+}
+.song:nth-child(5) {
+  background-image: url("./assets/album\ arts/5.jpg");
+}
+.song:nth-child(6) {
+  background-image: url("./assets/album\ arts/6.jpg");
+}
+.details {
+  padding: 1em;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details > .heading {
+  font-weight: 700;
+}
+
+.details > .subheading {
+  font-weight: 300;
+  font-size: small;
+  padding-top: 0.2em;
+}
+
+/* PLAYER */
+
+.player-container {
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 20px 20px;
+
+  background-color: rgba(255, 255, 255, 0.616);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 0.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #454545;
+
+  transition: box-shadow 0.3s ease-out;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.521);
+}
+
+.player-container:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.521);
+}
+
+.player-container i {
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  color: black;
+}
+
+.song-data {
+  display: flex;
+  align-items: center;
+}
+
+.song-image {
+  background-image: url("./assets/floatingPoints.jpg");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 0 0.8em;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.521);
+}
+
+.song-heading {
+  font-weight: 500;
+}
+
+.song-sub-heading {
+  font-weight: 200;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-controls > i {
+  margin: 0 1em;
+}
+
+.player-status {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.player-progress-bar {
+  width: 30em;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.089);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.time {
+  font-weight: 200;
+  font-size: 0.7em;
+  margin: 0 20px;
+}
+
+.player-settings {
+  margin: 0 0.8em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.player-progress {
+  height: 100%;
+  width: 45%;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #017cff, #03b1ff);
+}
+
+.player-settings > i {
+  margin: 0 1em;
+}
+
+.volume {
+  width: 8em;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.123);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.current-volume {
+  height: 100%;
+  width: 25%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+@media only screen and (max-width: 1500px) {
+  .songs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
