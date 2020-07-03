@@ -92,9 +92,9 @@ body {
 
 .search {
   background-color: #2f3438;
-  width: 190px;
+  min-width: 190px;
   margin-right: auto;
-  padding: 1.5em 1.5em;
+  padding: 1.3em 1.5em;
   border-radius: 2em;
   font-weight: 600;
 
@@ -106,6 +106,28 @@ body {
 .search > i {
   color: #828588;
   font-size: 16px;
+}
+
+.search > input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+
+  font-size: 16px;
+  width: 200px;
+  transition: width 0.3s ease-out;
+}
+
+.search > input::placeholder {
+  color: white;
+}
+
+.search > input:focus {
+  width: 300px;
 }
 
 .top-bar > ul {
@@ -211,16 +233,11 @@ body {
   cursor: pointer;
 }
 
-.news-title > .news-arrow {
-  display: inline;
-  font-size: 10px;
-}
-
 .news-wrapper > .news:hover {
   background-color: #25292e;
 }
 
-.top-news .main {
+.top-news .main-news {
   background-image: url("./assets/main-news.jpg");
   background-size: cover;
 }
@@ -234,6 +251,22 @@ body {
 .news-title {
   font-weight: 500;
   font-size: 16px;
+  line-height: 19px;
+  vertical-align: middle;
+}
+
+.news-title i {
+  color: #01a4f6;
+  line-height: 19px;
+  font-size: 10px;
+  vertical-align: middle;
+
+  padding-left: 5px;
+  transition: padding-left 0.3s ease-out;
+}
+
+.main-news i {
+  color: white;
 }
 
 .news-wrapper > .btn-blue {
@@ -243,6 +276,10 @@ body {
   cursor: pointer;
   font-size: 12px;
   margin: 15px 30px 30px 30px;
+}
+
+.news:hover i {
+  padding-left: 10px;
 }
 
 /* details */
