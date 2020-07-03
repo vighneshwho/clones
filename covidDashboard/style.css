@@ -175,7 +175,7 @@ body {
   padding: 0em 2em 2em 2em;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: minmax(0, 2fr) 1fr;
+  grid-template-rows: 450px 1fr;
   gap: 20px;
 
   /* min-height: 0; */
