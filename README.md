@@ -1,6 +1,22 @@
-# clones-monoRepo
+# Clones
 
-| #   |      dribble-link      |  Implementation | Additional Notes |
-|:----------:|:-------------:|:------:|:--------------:|
-| 2 |    [Covid-19 Dashboard](https://dribbble.com/shots/12335745-COVID-Information-Dashboard/attachments/3951285?mode=media)  |[Covid-19 Dashboard](http://covid-v1.surge.sh/) | [Alternate implementation which scrolls overflowing grid items](http://covid-dashboard-v-0-2.surge.sh) |
-| 1 |  [Apple Music](https://dribbble.com/shots/12389560-Apple-Music-Light-Theme) | [Apple Music](http://applemusicclone-v2.surge.sh/) | - |
+Exercise to learn UI layouting using Dribbble shots.
+
+## Goal
+
+- Implement two UIs from Dribbble everyday
+- Refine based on feedback
+
+## Progress
+
+Date      | Reference              | Attempt                    | Score
+---       | ---                    | ---                        | ---
+02 Jul 20 | [Apple Music][1-d]     | [v1][1-i-v1], [v2][1-i-v2] | 8
+03 Jul 20 | [Covid Dashboard][2-d] | [v2][2-i-v1]               | 7
+
+[1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
+[1-i-v1]: http://applemusicclone.surge.sh/
+[1-i-v2]: http://applemusicclone-v2.surge.sh/
+
+[2-d]: https://dribbble.com/shots/12335745-COVID-Information-Dashboard/attachments/3951285?mode=media
+[2-i-v1]: http://covid-v1.surge.sh/
