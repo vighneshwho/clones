@@ -211,6 +211,11 @@ body {
   cursor: pointer;
 }
 
+.news-title > .news-arrow {
+  display: inline;
+  font-size: 10px;
+}
+
 .news-wrapper > .news:hover {
   background-color: #25292e;
 }
