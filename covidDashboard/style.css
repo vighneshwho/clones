@@ -222,8 +222,91 @@ body {
   grid-column: span 2;
   background-image: url("./assets/map.jpg");
   background-size: cover;
+
+  position: relative;
 }
 
+.map-details {
+  min-width: 130px;
+  min-height: 90px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: #8b8d90;
+  font-weight: 700;
+
+  position: relative;
+  top: -125px;
+
+  transition: all 0.3s ease-out;
+  display: none;
+}
+
+.map-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 5px;
+
+  border-radius: 5px;
+}
+
+.circle-big:hover .map-details {
+  display: block;
+}
+
+.map-detail:hover {
+  background-color: #8b8d9021;
+}
+
+.vector-down {
+  margin-top: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: -17px;
+
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+
+  border-top: 10px solid white;
+}
+
+.map-detail-title {
+  font-size: 13px;
+}
+
+.map-detail-data {
+  color: #444a50;
+}
+
+.circle-big {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.red-circle {
+  background-color: #ff3e58;
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  left: 30%;
+}
+
+.blue-circle {
+  background-color: #01a4f6;
+}
 .grid-wrapper {
   height: 100%;
   overflow-y: auto;
@@ -287,7 +370,7 @@ body {
   font-weight: 900;
   width: fit-content;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   margin: 15px 30px 30px 30px;
 }
 
@@ -451,9 +534,8 @@ body {
 .tip-text {
   flex: 1;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   padding: 8px 15px;
-  /* margin-right: 10%; */
 }
 
 /* GRAPHS */
