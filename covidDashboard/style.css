@@ -16,7 +16,13 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  scrollbar-width: none;
 }
 
 .wrapper {
@@ -87,7 +93,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1em 2em;
+  padding: 15px 30px;
 }
 
 .search {
@@ -95,7 +101,7 @@ body {
   min-width: 190px;
   margin-right: auto;
   padding: 1.3em 1.5em;
-  border-radius: 2em;
+  border-radius: 30px;
   font-weight: 600;
 
   display: flex;
@@ -169,21 +175,23 @@ body {
   justify-content: flex-start;
   align-items: baseline;
 
-  padding: 2em 2em;
+  padding: 30px;
 }
 
 .main-heading {
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 900;
   padding-right: 50px;
 }
 
 .filter {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 15px;
   margin: 0 1em;
   display: flex;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .filter > i {
@@ -194,7 +202,7 @@ body {
 
 .grid {
   flex: 1;
-  padding: 0em 2em 2em 2em;
+  padding: 0em 30px 30px 30px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: 450px 1fr;
@@ -227,8 +235,13 @@ body {
 
 /* NEWS */
 
-.news-wrapper > .news {
-  padding: 1em 30px;
+.news:first-child {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.news {
+  padding: 15px 30px;
   transition: background-color 0.3s ease-out;
   cursor: pointer;
 }
@@ -271,7 +284,7 @@ body {
 
 .news-wrapper > .btn-blue {
   color: #01a4f6;
-  font-weight: 700;
+  font-weight: 900;
   width: fit-content;
   cursor: pointer;
   font-size: 12px;
@@ -400,7 +413,7 @@ body {
 
 .donate-btn {
   background-color: #ff3e58;
-  padding: 10px 80px;
+  padding: 10px 30%;
   border-radius: 50px;
 
   margin-top: auto;
@@ -452,15 +465,58 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  align-items: stretch;
 }
 
 .graph-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100px;
-  justify-content: space-between;
-
+  flex: 1;
   margin-bottom: 10px;
+  min-height: 100px;
+
+  background-size: fit;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.graph-container:nth-child(1) {
+  background-image: url("./assets/graph1.svg");
+}
+
+.graph-container:nth-child(2) {
+  background-image: url("./assets/graph2.svg");
+}
+
+.graph-container:nth-child(3) {
+  background-image: url("./assets/graph3.svg");
+}
+
+.graph-meta {
+  font-weight: bold;
+}
+
+.graph-meta-heading {
+  font-size: 16px;
+  color: #8b8d90;
+  vertical-align: middle;
+
+  margin-bottom: 5px;
+}
+
+.graph-meta-heading > i {
+  padding: 0 5px;
+}
+
+.graph-down {
+  color: #d13a4e;
+}
+
+.graph-up {
+  color: #01a4f6;
+}
+
+.graph-meta-number {
+  font-size: 25px;
 }
 
 .graph-container:last-child {
