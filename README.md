@@ -20,4 +20,4 @@ Exercise to learn UI layouting using Dribbble shots.
 
 [2-d]: https://dribbble.com/shots/12335745-COVID-Information-Dashboard/attachments/3951285?mode=media
 [2-i-v1]: http://covid-v1.surge.sh/
-[2-i-v2]: http://covid-v3-1.surge.sh/
+[2-i-v2]: http://covid-v2-1.surge.sh
