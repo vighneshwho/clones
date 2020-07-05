@@ -13,6 +13,7 @@
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 /* BASIC LAYOUT */
@@ -28,8 +29,10 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
+
+  overflow-y: scroll;
 }
 
 .side-bar-right {
@@ -77,9 +80,6 @@
 .nav-menu > div:first-child {
   opacity: 0.3;
 }
-
-/* for debugging */
-
 .nav-menu:hover {
   background-color: var(--sky-blue-light);
 }
@@ -91,9 +91,108 @@
 
 .nav-menu > .nav-menu-logo-right {
   margin-left: auto;
+  border-radius: 10px;
+
+  transition: background-color 0.3s ease-out;
 }
 
-.nav-ite .send-money-card {
-  height: 250px;
-  background-color: var(--light-orange);
+.nav-menu > .nav-menu-logo-right:hover {
+  background-color: #72b4d3;
+}
+
+.send-money-card {
+  min-height: 250px;
+
+  padding: 20px 20px 30px 20px;
+  background-color: #ffe8e25d;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.send-money-card > div {
+  margin: 10px 0;
+}
+
+.send-money-card-title {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--dark-blue);
+}
+
+.send-money-card-input {
+  background-color: white;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.send-money-card-input > input {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.send-money-card-users {
+  display: flex;
+}
+
+.send-money-card-user {
+  background-color: var(--dark-blue);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+.send-money-card-user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-money-card-user-details .send-money-card-user-name {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.send-money-card-user-details .send-money-card-user-email {
+  color: var(--sky-blue);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.send-money-card-button {
+  background-color: var(--dark-blue);
+  width: 170px;
+  padding: 0;
+  height: 50px;
+  border-radius: 19px;
+  align-self: stretch;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  position: absolute;
+  bottom: -38px;
+}
+
+.log-out-button {
+  background-color: #72b4d3;
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
 }
