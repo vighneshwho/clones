@@ -1,0 +1,77 @@
+:root {
+  --sky-blue: #189ad6;
+  --sky-blue-light: #9ed4f0;
+  --dark-blue: #323c79;
+  --dark-orange: #bc4527;
+  --light-orange: #ffe8e2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+}
+
+.side-bar-left {
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.side-bar-left > .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.side-bar-left > div {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.side-bar-right {
+  background-color: rgba(255, 0, 0, 0.233);
+}
+
+.main {
+  background-color: rgba(0, 195, 255, 0.192);
+}
+
+/* Side Nav */
+
+.nav-menus {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+/* for debugging */
+
+.nav-menu:first-child {
+  background-color: var(--sky-blue-light);
+}
+
+.nav-menu > div:last-child {
+  margin-left: auto;
+}
+
+.nav-ite .send-money-card {
+  height: 250px;
+  background-color: var(--light-orange);
+}
