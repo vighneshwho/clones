@@ -27,8 +27,9 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 /* BASIC LAYOUT */
@@ -56,10 +57,6 @@
 
 .side-bar-right {
   background-color: rgba(255, 0, 0, 0.233);
-}
-
-.main {
-  background-color: rgba(0, 195, 255, 0.192);
 }
 
 /* Side Nav */
@@ -266,4 +263,280 @@
 .side-bar-left > .log-out-button:hover > .log-out-logo {
   color: var(--dark-blue);
   opacity: 1;
+}
+
+/* Main */
+
+.main {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main > div {
+  padding: 20px 0;
+}
+
+.greetings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.greetings > .greeting-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.greetings-logo {
+  padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greetings-logo > img {
+  width: 20px;
+}
+
+.payment-methods-header {
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 200px 140px;
+  gap: 20px;
+}
+
+.payment-methods-grid > div {
+  border-radius: 25px;
+
+  transition: box-shadow 0.3s ease-out;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.payment-methods-grid > div:hover {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.158);
+}
+
+.payment-methods-grid > .link-credit-card {
+  grid-row: span 2;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.link-credit-card-image {
+  flex: 1;
+  background-image: url("./assets/creditCard.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+.link-credit-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0 30px 0;
+}
+
+.link-credit-card-text > div:nth-child(1) {
+  font-weight: 700;
+}
+
+.link-credit-card-text > div:nth-child(2) {
+  font-weight: 200;
+  font-size: 15px;
+  color: #828387;
+}
+
+.paypal-balance {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  background-image: url("./assets/paypalBalance.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.paypal-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal-balance-data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.paypal-balance-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.paypal-balance-details > div:nth-child(1) {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--sky-blue-light);
+}
+
+.paypal-balance-details > div:nth-child(2) {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.paypal-balance-details > div:nth-child(3) {
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.paypal-balance-logo {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+
+  margin-right: 20px;
+}
+
+.paypal-balance-logo > img {
+  width: 32px;
+}
+
+.paypal-balance-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 5px;
+}
+
+.paypal-balance-buttons > div {
+  height: 50px;
+  border-radius: 18px;
+
+  font-weight: 700;
+  font-size: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal-balance-buttons > div:first-child {
+  background-color: white;
+  color: black;
+}
+
+.paypal-balance-buttons > div:last-child {
+  background-color: var(--sky-blue);
+  color: white;
+}
+
+.asia-comercial-bank {
+  background-color: var(--light-orange);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asia-comercial-bank-logo {
+  background-color: var(--dark-orange);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17px;
+}
+
+.asia-comercial-bank-logo > img {
+  width: 29px;
+}
+
+.asia-comercial-bank-data > div:first-child {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.asia-comercial-bank-data > div:last-child {
+  color: var(--dark-orange);
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.other-details > .heading-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+
+  border-bottom: 1px rgb(231, 231, 231) solid;
+}
+
+.heading-bar-button {
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px rgb(231, 231, 231) solid;
+  transition: border-color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.heading-bar-button:hover {
+  border-color: rgb(168, 168, 168);
+}
+
+.heading-bar-title > div {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.heading-bar-title > div:last-child {
+  color: var(--dark-blue);
+}
+
+.other-details-content-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-details .main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-content > .details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
