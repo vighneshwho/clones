@@ -1,3 +1,18 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #9ed5f063;
+}
+
 /* General */
 
 :root {
@@ -25,7 +40,7 @@
 }
 
 .side-bar-left {
-  padding: 40px 20px;
+  padding: 20px 20px;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +48,10 @@
   align-items: stretch;
 
   overflow-y: scroll;
+}
+
+.side-bar-left > div {
+  margin: 20px 0;
 }
 
 .side-bar-right {
@@ -101,7 +120,7 @@
 }
 
 .send-money-card {
-  min-height: 250px;
+  min-height: 300px;
 
   padding: 20px 20px 30px 20px;
   background-color: #ffe8e25d;
@@ -172,27 +191,79 @@
   font-weight: 500;
 }
 
+.send-money-card-container {
+  position: absolute;
+  bottom: -38px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .send-money-card-button {
   background-color: var(--dark-blue);
-  width: 170px;
-  padding: 0;
   height: 50px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
   border-radius: 19px;
-  align-self: stretch;
+  align-self: center;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin: 0;
-  position: absolute;
-  bottom: -38px;
+  cursor: pointer;
 }
 
-.log-out-button {
-  background-color: #72b4d3;
-  padding: 20px;
+.send-money-card-button > i {
+  padding-left: 10px;
+}
+
+.side-bar-left > .log-out-button {
+  padding: 10px 20px;
   border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 60px;
 
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-out;
+}
+
+.side-bar-left > .log-out-button:hover {
+  background-color: var(--sky-blue-light);
+}
+
+.log-out-button > div {
+  padding: 10px;
+}
+
+.log-out-button > .profile {
+  background-color: var(--dark-blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+
+  background-image: url("./assets/profile.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.log-out-button > .log-out-logo {
+  margin-left: auto;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
+}
+
+.side-bar-left > .log-out-button:hover > .log-out-logo {
+  color: var(--dark-blue);
+  opacity: 1;
 }
