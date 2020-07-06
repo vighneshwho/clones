@@ -165,21 +165,21 @@
           <div class="payment-methods-grid">
             <div class="paypal-balance">
               <div class="paypal-wrapper">
-                <div class="paypal-balance-data">
+                <div class="paypal-balance-logo-wrapper">
                   <div class="paypal-balance-logo">
                     <img src="./assets/pp.png" />
                   </div>
-                  <div class="paypal-balance-details">
-                    <div>
-                      Paypal Balance
-                    </div>
-                    <div>
-                      8,345.91
-                    </div>
+                </div>
+                <div class="paypal-balance-details">
+                  <div>
+                    Paypal Balance
+                  </div>
+                  <div>
+                    8,345.91
+                  </div>
 
-                    <div>
-                      Available
-                    </div>
+                  <div>
+                    Available
                   </div>
                 </div>
               </div>
@@ -247,7 +247,10 @@
                 </div>
                 <div class="details-list">
                   <div class="detail">
-                    <div class="detail-logo"></div>
+                    <div
+                      class="detail-logo"
+                      style="background-image: url('./assets/us.png');"
+                    ></div>
 
                     <div class="detail-currency">
                       USD
@@ -263,7 +266,10 @@
                   </div>
 
                   <div class="detail">
-                    <div class="detail-logo"></div>
+                    <div
+                      class="detail-logo"
+                      style="background-image: url('./assets/vnd.png');"
+                    ></div>
 
                     <div class="detail-currency">
                       VND
@@ -279,7 +285,7 @@
               <div class="graphs-wrapper">
                 <div class="graphs">
                   <div class="graph-img">
-                    GRAPH
+                    <img src="./assets/graph.jpg" alt="" width="275px" />
                   </div>
                   <div class="graph-labels">
                     <div class="graph-label">
@@ -309,8 +315,14 @@
         </div>
       </div>
       <div class="side-bar-right">
-        <div class="heading-bar">
-          Heading Bar
+        <div class="side-bar-heading-bar">
+          <i class="fas fa-sliders-h"></i>
+
+          <i class="fas fa-poo-storm"></i>
+
+          <div class="side-bar-heading-button">
+            $ 8,345.91
+          </div>
         </div>
 
         <div class="side-bar-content-area">
@@ -334,10 +346,11 @@
               Don't see all your banks or cards?
             </div>
             <div class="side-bar-button">
-              Next Step
+              Next Step <i class="fas fa-chevron-right"></i>
             </div>
           </div>
         </div>
+        <div class="side-bar-image"></div>
       </div>
     </div>
   </body>

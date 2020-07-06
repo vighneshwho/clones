@@ -212,6 +212,12 @@
   align-items: center;
 
   cursor: pointer;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+.send-money-card-button:hover {
+  box-shadow: 20px 20px 50px #323c7948;
 }
 
 .send-money-card-button > i {
@@ -326,6 +332,11 @@
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.158);
 }
 
+.payment-methods-grid > div:nth-child(1),
+.payment-methods-grid > div:nth-child(3) {
+  z-index: 5;
+}
+
 .payment-methods-grid > .link-credit-card {
   grid-row: span 2;
   background-color: white;
@@ -376,34 +387,14 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: stretch;
+}
+
+.paypal-balance-logo-wrapper {
+  flex: 1;
+  display: flex;
   align-items: center;
-}
-
-.paypal-balance-data {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.paypal-balance-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.paypal-balance-details > div:nth-child(1) {
-  font-weight: 600;
-  font-size: 10px;
-  color: var(--sky-blue-light);
-}
-
-.paypal-balance-details > div:nth-child(2) {
-  font-weight: 600;
-  font-size: 25px;
-}
-
-.paypal-balance-details > div:nth-child(3) {
-  font-weight: 500;
-  font-size: 10px;
+  justify-content: flex-end;
 }
 
 .paypal-balance-logo {
@@ -418,6 +409,32 @@
   border-radius: 50px;
 
   margin-right: 20px;
+}
+
+.paypal-balance-details {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paypal-balance-details > div:nth-child(1) {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--sky-blue-light);
+}
+
+.paypal-balance-details > div:nth-child(2) {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.paypal-balance-details > div:nth-child(3) {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .paypal-balance-logo > img {
@@ -537,9 +554,10 @@
 }
 
 .main-content .tip {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 13px;
   color: rgb(116, 115, 115);
+  margin: 10px 0;
 }
 .main-content > .details-list {
   display: flex;
@@ -557,9 +575,11 @@
 }
 
 .detail-logo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: var(--sky-blue-light);
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
 }
 
@@ -567,6 +587,10 @@
   font-weight: 600;
   font-size: 12px;
   padding: 0 18px;
+}
+
+.detail-amount {
+  font-weight: 600;
 }
 
 .detail-primary {
@@ -603,18 +627,25 @@
 
 .graphs > .graph-img {
   flex: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .graphs .graph-labels {
-  flex: 1;
+  width: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .graph-label {
+  width: 70px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin: 10px 0;
 }
@@ -623,8 +654,6 @@
   width: 15px;
   height: 15px;
   border-radius: 20px;
-
-  margin-right: 30px;
 }
 
 .label-text {
@@ -633,11 +662,58 @@
 }
 
 .side-bar-right {
-  margin: 20px;
+  background-color: #fcfbf7;
+  display: flex;
+  flex-direction: column;
 }
 
 .side-bar-right > div {
-  padding: 20px;
+  padding: 20px 40px;
+}
+
+.side-bar-right > div:first-child {
+  padding: 40px 40px 20px 40px;
+}
+
+.side-bar-right > div:last-child {
+  padding: 0;
+}
+
+.side-bar-heading-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.side-bar-heading-bar > i {
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.side-bar-heading-bar > i:first-child {
+  padding: 0;
+}
+
+.side-bar-heading-button {
+  margin-left: auto;
+
+  background-color: var(--dark-blue);
+  color: white;
+  font-weight: 600;
+  height: 50px;
+  border-radius: 17px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  transition: box-shadow 0.3s ease-out;
+  cursor: pointer;
+}
+
+.side-bar-heading-button:hover {
+  box-shadow: 20px 20px 50px #323c7948;
 }
 
 .side-bar-title .main-title,
@@ -689,8 +765,20 @@
   cursor: pointer;
 
   transition: box-shadow 0.3s ease-out;
+  z-index: 5;
 }
 
 .side-bar-button-area .side-bar-button:hover {
   box-shadow: 20px 20px 50px var(--sky-blue-light);
+}
+
+.side-bar-button > i {
+  padding-left: 10px;
+}
+
+.side-bar-image {
+  margin-top: auto;
+  background-image: url("./assets/image.jpg");
+  background-size: cover;
+  height: 300px;
 }
