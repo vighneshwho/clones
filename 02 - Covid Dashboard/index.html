@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f72c7b9698.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="side-nav">
+        <div class="logo"></div>
+        <div class="nav-item">
+          <i class="fas fa-home"></i>
+        </div>
+
+        <div class="nav-item">
+          <i class="fas fa-globe"></i>
+        </div>
+
+        <div class="nav-item">
+          <i class="fas fa-info-circle"></i>
+        </div>
+
+        <div class="nav-item">
+          <i class="far fa-clipboard"></i>
+          <!-- <i class="fas fa-clipboard"></i> -->
+        </div>
+
+        <div class="nav-item">
+          <i class="fas fa-truck"></i>
+        </div>
+
+        <div class="nav-item">
+          <i class="fas fa-expand"></i>
+        </div>
+
+        <div class="nav-item push-to-bottom item-end">
+          <i class="fas fa-cog"></i>
+        </div>
+
+        <div class="nav-item active item-end">
+          <i class="fas fa-sign-out-alt"></i>
+        </div>
+      </div>
+      <div class="main">
+        <div class="top-bar">
+          <div class="search">
+            <!-- <span class="search-text">Search</span> -->
+            <input
+              type="text"
+              name="Search-input"
+              class="search-input"
+              placeholder="Search"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+
+          <ul class="top-bar-nav">
+            <li class="active">Test for Covid</li>
+            <li>Safety measures</li>
+            <li>News</li>
+            <li>Affected Areas</li>
+            <li>First Aid</li>
+            <li>Services</li>
+            <li>About Us</li>
+          </ul>
+
+          <div class="profile"></div>
+        </div>
+        <div class="header">
+          <div class="main-heading">
+            Affected Areas
+          </div>
+
+          <div class="filter">
+            <span class="text">
+              Richmond
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <div class="filter">
+            <span class="text">
+              Last Week
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="grid-wrapper">
+          <div class="grid">
+            <div class="map">
+              <div class="circle-big red-circle">
+                <div class="map-details">
+                  <div class="map-detail">
+                    <div class="map-detail-title">
+                      Tested
+                    </div>
+                    <div class="map-detail-data">
+                      1562
+                    </div>
+                  </div>
+
+                  <div class="map-detail">
+                    <div class="map-detail-title">
+                      Confirmed
+                    </div>
+                    <div class="map-detail-data">
+                      198
+                    </div>
+                  </div>
+
+                  <div class="map-detail">
+                    <div class="map-detail-title">
+                      Recovered
+                    </div>
+                    <div class="map-detail-data">
+                      122
+                    </div>
+                  </div>
+
+                  <div class="vector-down"></div>
+                </div>
+              </div>
+            </div>
+            <div class="graphs">
+              <div class="graphs-wrapper grid-wrapper">
+                <div class="graph-container">
+                  <div class="graph-meta">
+                    <div class="graph-meta-heading">
+                      Tested
+                      <i class="fas fa-caret-up graph-up"></i>
+                    </div>
+
+                    <div class="graph-meta-number">
+                      9,471
+                    </div>
+                  </div>
+                  <div class="graph"></div>
+                </div>
+
+                <div class="graph-container">
+                  <div class="graph-meta">
+                    <div class="graph-meta-heading">
+                      Confirmed
+                      <i class="fas fa-caret-down graph-down"></i>
+                    </div>
+
+                    <div class="graph-meta-number">
+                      1,201
+                    </div>
+                  </div>
+                  <div class="graph"></div>
+                </div>
+
+                <div class="graph-container">
+                  <div class="graph-meta">
+                    <div class="graph-meta-heading">
+                      Recovery
+                      <i class="fas fa-caret-up graph-up"></i>
+                    </div>
+
+                    <div class="graph-meta-number">
+                      4,854
+                    </div>
+                  </div>
+                  <div class="graph"></div>
+                </div>
+              </div>
+            </div>
+            <div class="top-news">
+              <div class="news-wrapper grid-wrapper">
+                <div class="news main-news">
+                  <div class="date">
+                    June 10
+                  </div>
+                  <div class="news-title">
+                    Will Covid-19 mutate into a more dangerous virus ?
+
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+
+                <div class="news">
+                  <div class="date">
+                    June 12
+                  </div>
+                  <div class="news-title">
+                    More than 5.7 million cases ov Covid-19 have been reported
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+
+                <div class="news">
+                  <div class="date">
+                    June 11
+                  </div>
+                  <div class="news-title">
+                    How to Make a non-medical Covid-19 mask
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+
+                <div class="news">
+                  <div class="date">
+                    June 14
+                  </div>
+                  <div class="news-title">
+                    can plasma from Covid-19 survivors help save others ?
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+
+                <div class="news">
+                  <div class="date">
+                    June 14
+                  </div>
+                  <div class="news-title">
+                    can plasma from Covid-19 survivors help save others ?
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+
+                <div class="btn-blue">
+                  All news
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="details-wrapper grid-wrapper">
+                <div class="area">
+                  West New Brighton
+                </div>
+
+                <div class="state">
+                  New York, USA
+                </div>
+
+                <div class="progress-data">
+                  <div class="progress-bar-meta">
+                    <div class="title">
+                      Hostpital occupancy
+                    </div>
+
+                    <div class="progress">
+                      78%
+                    </div>
+                  </div>
+
+                  <div class="progress-bar red-pb">
+                    <div class="progress-bar-state red"></div>
+                  </div>
+                </div>
+
+                <div class="progress-data">
+                  <div class="progress-bar-meta">
+                    <div class="title">
+                      Hostpital occupancy
+                    </div>
+
+                    <div class="progress">
+                      3,8
+                    </div>
+                  </div>
+
+                  <div class="progress-bar blue-pb">
+                    <div class="progress-bar-state blue"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tips">
+              <div class="tips-wrapper grid-wrapper">
+                <div class="tip">
+                  <div class="tip-logo">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="tip-text">
+                    Stay Home. Especially if you feel unwell
+                  </div>
+                </div>
+
+                <div class="tip">
+                  <div class="tip-logo">
+                    <i class="fas fa-hands-wash"></i>
+                  </div>
+                  <div class="tip-text">
+                    Clean your hands. Use Soap and water
+                  </div>
+                </div>
+
+                <div class="tip">
+                  <div class="tip-logo">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <div class="tip-text">
+                    Don't touch your eyes, nose or mouth
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-article">
+              <div class="article-wrapper">
+                <div class="article-meta">
+                  <div class="article-heading">
+                    Thousands of doctors lack protective equipment
+                  </div>
+                  <div class="article-description">
+                    All the money collected will be spent to support doctors
+                  </div>
+
+                  <div class="donate-btn">
+                    Donate
+                  </div>
+                </div>
+                <div class="article-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#0099ff"
+      fill-opacity="1"
+      d="M0,128L8,117.3C16,107,32,85,48,101.3C64,117,80,171,96,170.7C112,171,128,117,144,85.3C160,53,176,43,192,42.7C208,43,224,53,240,85.3C256,117,272,171,288,176C304,181,320,139,336,117.3C352,96,368,96,384,117.3C400,139,416,181,432,176C448,171,464,117,480,101.3C496,85,512,107,528,96C544,85,560,43,576,37.3C592,32,608,64,624,85.3C640,107,656,117,672,122.7C688,128,704,128,720,133.3C736,139,752,149,768,138.7C784,128,800,96,816,74.7C832,53,848,43,864,42.7C880,43,896,53,912,53.3C928,53,944,43,960,64C976,85,992,139,1008,176C1024,213,1040,235,1056,218.7C1072,203,1088,149,1104,117.3C1120,85,1136,75,1152,90.7C1168,107,1184,149,1200,176C1216,203,1232,213,1248,186.7C1264,160,1280,96,1296,80C1312,64,1328,96,1344,117.3C1360,139,1376,149,1392,170.7C1408,192,1424,224,1432,240L1440,256L1440,320L1432,320C1424,320,1408,320,1392,320C1376,320,1360,320,1344,320C1328,320,1312,320,1296,320C1280,320,1264,320,1248,320C1232,320,1216,320,1200,320C1184,320,1168,320,1152,320C1136,320,1120,320,1104,320C1088,320,1072,320,1056,320C1040,320,1024,320,1008,320C992,320,976,320,960,320C944,320,928,320,912,320C896,320,880,320,864,320C848,320,832,320,816,320C800,320,784,320,768,320C752,320,736,320,720,320C704,320,688,320,672,320C656,320,640,320,624,320C608,320,592,320,576,320C560,320,544,320,528,320C512,320,496,320,480,320C464,320,448,320,432,320C416,320,400,320,384,320C368,320,352,320,336,320C320,320,304,320,288,320C272,320,256,320,240,320C224,320,208,320,192,320C176,320,160,320,144,320C128,320,112,320,96,320C80,320,64,320,48,320C32,320,16,320,8,320L0,320Z"
+    ></path>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#0099ff"
+      fill-opacity="1"
+      d="M0,0L8,21.3C16,43,32,85,48,112C64,139,80,149,96,133.3C112,117,128,75,144,48C160,21,176,11,192,21.3C208,32,224,64,240,90.7C256,117,272,139,288,149.3C304,160,320,160,336,160C352,160,368,160,384,170.7C400,181,416,203,432,181.3C448,160,464,96,480,101.3C496,107,512,181,528,192C544,203,560,149,576,133.3C592,117,608,139,624,122.7C640,107,656,53,672,37.3C688,21,704,43,720,85.3C736,128,752,192,768,186.7C784,181,800,107,816,85.3C832,64,848,96,864,117.3C880,139,896,149,912,138.7C928,128,944,96,960,96C976,96,992,128,1008,133.3C1024,139,1040,117,1056,90.7C1072,64,1088,32,1104,42.7C1120,53,1136,107,1152,117.3C1168,128,1184,96,1200,69.3C1216,43,1232,21,1248,48C1264,75,1280,149,1296,149.3C1312,149,1328,75,1344,74.7C1360,75,1376,149,1392,181.3C1408,213,1424,203,1432,197.3L1440,192L1440,320L1432,320C1424,320,1408,320,1392,320C1376,320,1360,320,1344,320C1328,320,1312,320,1296,320C1280,320,1264,320,1248,320C1232,320,1216,320,1200,320C1184,320,1168,320,1152,320C1136,320,1120,320,1104,320C1088,320,1072,320,1056,320C1040,320,1024,320,1008,320C992,320,976,320,960,320C944,320,928,320,912,320C896,320,880,320,864,320C848,320,832,320,816,320C800,320,784,320,768,320C752,320,736,320,720,320C704,320,688,320,672,320C656,320,640,320,624,320C608,320,592,320,576,320C560,320,544,320,528,320C512,320,496,320,480,320C464,320,448,320,432,320C416,320,400,320,384,320C368,320,352,320,336,320C320,320,304,320,288,320C272,320,256,320,240,320C224,320,208,320,192,320C176,320,160,320,144,320C128,320,112,320,96,320C80,320,64,320,48,320C32,320,16,320,8,320L0,320Z"
+    ></path>
+  </svg> -->
