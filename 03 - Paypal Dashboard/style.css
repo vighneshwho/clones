@@ -31,7 +31,6 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  font-weight: 300;
 }
 
 /* BASIC LAYOUT */
@@ -155,8 +154,40 @@
   text-align: center;
 }
 
+.send-money-card-input > input:focus::placeholder {
+  opacity: 0;
+}
+
 .send-money-card-users {
   display: flex;
+}
+
+.send-money-card-users > div {
+  margin-left: -5px;
+  transition: box-shadow 0.3s ease-out;
+  cursor: pointer;
+}
+
+.send-money-card-users > div:hover {
+  z-index: 5;
+  box-shadow: 0px 5px 10px #323c7948;
+}
+
+.send-money-card-users > div:nth-child(1) {
+  background-color: var(--dark-orange);
+  margin-left: 0;
+}
+
+.send-money-card-users > div:nth-child(2) {
+  background-color: var(--dark-blue);
+}
+
+.send-money-card-users > div:nth-child(3) {
+  background-color: var(--sky-blue-light);
+}
+
+.send-money-card-users > div:nth-child(4) {
+  background-color: #2bb987;
 }
 
 .send-money-card-user {
@@ -229,9 +260,10 @@
 .side-bar-left > .log-out-button {
   padding: 10px 20px;
   border-radius: 20px;
-  font-weight: 600;
-  font-size: 13px;
   margin-top: 60px;
+
+  font-size: 13px;
+  font-weight: 600;
 
   display: flex;
   justify-content: flex-start;
@@ -239,6 +271,10 @@
   cursor: pointer;
 
   transition: background-color 0.3s ease-out;
+}
+
+.log-out-button > div {
+  padding: 10px 10px;
 }
 
 .side-bar-left > .log-out-button:hover {
@@ -254,6 +290,8 @@
   width: 30px;
   height: 30px;
   border-radius: 40px;
+
+  margin-right: 6px;
 
   background-image: url("./assets/profile.png");
   background-size: contain;
@@ -865,6 +903,8 @@
   background-color: var(--sky-blue);
   border-radius: 50%;
   transform: scale(0);
+
+  transition: transform 0.1s ease-out;
 }
 
 .radio__input:checked + .radio__div::after {
@@ -872,5 +912,5 @@
 }
 
 .radio__input:checked + .radio__div {
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.158);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.158);
 }
