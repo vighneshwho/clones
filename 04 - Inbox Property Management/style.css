@@ -387,8 +387,11 @@ body {
 }
 
 .main-address-details {
-  background-color: var(--orange-light);
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-y: auto;
 }
 
 /* main content heading bar */
@@ -467,7 +470,7 @@ body {
 .main-content-message-text {
   color: var(--grey-1);
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 5px;
   padding-bottom: 30px;
 }
@@ -548,4 +551,99 @@ body {
 
 .attachment-button:hover {
   border: 1px rgb(158, 158, 158) solid;
+}
+
+.main-address-container {
+  background-color: white;
+  padding: 25px 15px;
+  color: var(--grey-2);
+  border: 1px rgb(206, 206, 206) solid;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 2px #cdcecf;
+}
+
+.main-address-container .area {
+  font-weight: 400;
+  padding: 0 5px;
+  margin-bottom: 13px;
+}
+
+.main-address-container .building-image {
+  align-self: stretch;
+  height: 120px;
+  border-radius: 5px;
+
+  background-image: url("./assets/building.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.address-owner-meta {
+  margin: 12px 0;
+  padding: 0 10px;
+}
+
+.address-owner-meta div:nth-child(1) {
+  color: var(--grey-1);
+}
+
+.address-owner-meta div:nth-child(2) {
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.address-owner-meta div:nth-child(3) {
+  font-size: 12px;
+  color: var(--grey-1);
+  font-weight: 400;
+}
+
+.address-detail-button {
+  background-color: var(--bg-main);
+  color: var(--grey-2);
+  margin: 5px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+
+  padding: 10px 0;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  border: 1px rgba(226, 226, 226, 0) solid;
+  transition: border 0.3s ease-out;
+}
+
+.address-detail-button:hover {
+  border: 1px rgb(182, 182, 182) solid;
+}
+
+.main-address-detail-table {
+  margin: 10px 10px;
+}
+
+.address-table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px rgb(218, 218, 218) solid;
+}
+
+.address-table-row > div:nth-child(1) {
+  color: var(--grey-2);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.address-table-row > div:nth-child(2) {
+  color: var(--grey-1);
+  font-weight: 500;
+  font-size: 12px;
 }
