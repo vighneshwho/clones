@@ -242,3 +242,98 @@ body {
   margin-left: auto;
   color: #c5c5c5;
 }
+
+/* user-card */
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-main-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.user-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #dce7ff;
+
+  background-image: url("./assets/man.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-details > div:first-child {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.user-details > div:last-child {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #c5c5c5;
+}
+
+.user-card-button {
+  background-color: var(--red);
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+.user-card-button:hover {
+  box-shadow: 2px 2px 20px #faa1a4;
+}
+
+.user-datas {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  border-top: 1px #f0f0f0 solid;
+  margin-top: auto;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-data div:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #c5c5c5;
+}
+
+.user-data div:last-child {
+  font-weight: 600;
+  font-size: 25px;
+}
