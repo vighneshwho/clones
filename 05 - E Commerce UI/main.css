@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dadadb;
+}
+
 :root {
   --bg-main: #f3f3f3;
   --red: #f66165;
@@ -336,4 +349,125 @@ body {
 .user-data div:last-child {
   font-weight: 600;
   font-size: 25px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  overflow: hidden;
+}
+
+.cart-heading {
+  font-size: 26px;
+  font-weight: 600;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-products {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  overflow: auto;
+}
+
+.cart-product {
+  border-top: 1px #f0f0f0 solid;
+  height: 80px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: box-shadow 0.3s ease-out;
+  cursor: pointer;
+}
+
+.product-image {
+  height: 80px;
+  width: 80px;
+  background-color: #c5c5c5;
+
+  background-size: cover;
+  background-position: center;
+
+  margin-left: 20px;
+
+  transition: margin-left 0.3s ease-out;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.product-price {
+  display: flex;
+  font-weight: 700;
+  margin-left: 0px;
+  transition: margin-left 0.3s ease-out;
+}
+
+.product-price-container {
+  margin-left: auto;
+  width: 80px;
+  overflow: hidden;
+}
+
+.cart-product:hover {
+  box-shadow: 2px 2px 20px rgb(223, 223, 223);
+  z-index: 10;
+}
+
+.cart-product:hover .product-price {
+  margin-left: -80px;
+}
+
+.cart-product:hover .product-image {
+  margin-left: 25px;
+}
+
+.product-price > div {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-price > .delete-btn-div {
+  color: white;
+  background-color: var(--red);
+}
+
+.cart-product:nth-child(1) .product-image {
+  background-image: url("./assets/product1.jpg");
+}
+
+.cart-product:nth-child(2) .product-image {
+  background-image: url("./assets/product2.jpg");
+}
+
+.cart-product:nth-child(3) .product-image {
+  background-image: url("./assets/product3.jpg");
+}
+
+.cart-product:nth-child(4) .product-image {
+  background-image: url("./assets/product4.jpg");
+}
+
+.cart-product:nth-child(5) .product-image {
+  background-image: url("./assets/product5.jpg");
+}
+
+.cart-product:nth-child(6) .product-image {
+  background-image: url("./assets/product6.jpg");
 }
