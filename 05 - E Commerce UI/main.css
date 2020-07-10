@@ -471,3 +471,81 @@ body {
 .cart-product:nth-child(6) .product-image {
   background-image: url("./assets/product6.jpg");
 }
+
+/* brand */
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-heading {
+  font-size: 26px;
+  font-weight: 600;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands {
+  flex: 1;
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  padding: 0 25px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-out;
+}
+
+.brand:hover {
+  background-color: #e7e7e7;
+}
+
+.brand-logo {
+  margin: 5px 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #f2f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-name {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.brands .brand:nth-child(1) > .brand-logo {
+  background-image: url("./assets/nike.jpg");
+}
+
+.brands .brand:nth-child(2) > .brand-logo {
+  background-image: url("./assets/jordan.jpg");
+}
+
+.brands .brand:nth-child(3) > .brand-logo {
+  background-image: url("./assets/converse.jpg");
+}
+
+.brands .brand:nth-child(4) > .brand-logo {
+  background-image: url("./assets/rebook.jpg");
+}
