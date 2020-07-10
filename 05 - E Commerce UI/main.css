@@ -135,6 +135,22 @@ body {
   height: 15px;
   border-radius: 20px;
   background-color: #ecf2fa;
+
+  cursor: pointer;
+}
+
+.graph .graph-violet {
+  height: 100%;
+  background-color: var(--violet);
+  border-radius: 20px;
+
+  width: 0%;
+  transition: width 2s ease-out;
+
+  box-shadow: 2px 2px 50px #94b4fd;
+}
+.graph:hover .graph-violet {
+  width: 100%;
 }
 
 .month-data:nth-child(1) .graph {
@@ -159,4 +175,39 @@ body {
 
 .month-data:nth-child(6) .graph {
   width: 20%;
+}
+
+/* payment-methods */
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.payment-heading {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.payment-options {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment-option > .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #e8edf8;
 }
