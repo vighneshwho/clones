@@ -1,0 +1,162 @@
+:root {
+  --bg-main: #f3f3f3;
+  --red: #f66165;
+  --violet: #004afb;
+  --green: #46f400;
+  --yellow: #ffcc00;
+  --ochre: #dc9f59;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.components-wrapper {
+  display: grid;
+  gap: 40px;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 650px 375px 270px;
+  grid-template-rows: 375px;
+  gap: 40px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 340px 270px 270px 375px;
+  grid-template-rows: 400px 75px;
+  gap: 40px;
+}
+
+.grid-1 > div,
+.grid-2 > div {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgb(224, 224, 224);
+}
+
+.grid-2 > .cart {
+  grid-row: span 2;
+}
+
+.grid-2 > .search {
+  grid-column: span 2;
+}
+
+.grid-2 > .shoe {
+  grid-row: span 2;
+}
+
+.sales-report {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 30px 0;
+
+  overflow: hidden;
+}
+
+.sales-report > .meta {
+  padding: 0 30px;
+  border-right: 1px #f0f0f0 solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-report > .meta > div:nth-child(1) {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  border-bottom: 1px #f0f0f0 solid;
+}
+
+.meta .figures {
+  font-size: 40px;
+  font-weight: 700;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.figure .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.figure .number i {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.figure .sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: #c5c5c5;
+}
+
+/* analitycs */
+
+.analytics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.month-data {
+  display: flex;
+  align-items: center;
+  margin: 13px 0;
+}
+
+.month-data .month {
+  width: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  color: #4e4d4d;
+}
+
+.month-data .graph {
+  height: 15px;
+  border-radius: 20px;
+  background-color: #ecf2fa;
+}
+
+.month-data:nth-child(1) .graph {
+  width: 60%;
+}
+
+.month-data:nth-child(2) .graph {
+  width: 35%;
+}
+
+.month-data:nth-child(3) .graph {
+  width: 80%;
+}
+
+.month-data:nth-child(4) .graph {
+  width: 67%;
+}
+
+.month-data:nth-child(5) .graph {
+  width: 55%;
+}
+
+.month-data:nth-child(6) .graph {
+  width: 20%;
+}
