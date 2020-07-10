@@ -183,12 +183,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 .payment-heading {
   font-size: 26px;
   font-weight: 600;
+
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .payment-options {
@@ -200,14 +207,38 @@ body {
 }
 
 .payment-option {
+  padding: 5px;
+  border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.payment-option:hover {
+  background-color: #f8faff;
 }
 
 .payment-option > .logo {
+  margin: 5px 10px;
   width: 60px;
   height: 60px;
   border-radius: 20px;
-  background-color: #e8edf8;
+  background-color: #f2f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option > .name {
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.payment-option > i {
+  padding: 10px;
+  margin-left: auto;
+  color: #c5c5c5;
 }
