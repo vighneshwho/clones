@@ -55,6 +55,11 @@ body {
 .grid-2 > div {
   background-color: white;
   border-radius: 20px;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.grid-1 > div:hover,
+.grid-2 > div:hover {
   box-shadow: 0px 5px 20px rgb(224, 224, 224);
 }
 
@@ -765,4 +770,49 @@ body {
 
 .ochre:hover {
   box-shadow: 2px 2px 20px var(--ochre);
+}
+
+.grid-2 > .search {
+  background-color: rgba(194, 146, 146, 0);
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-2 > .search:hover {
+  box-shadow: none;
+}
+
+.search-bar {
+  margin-top: auto;
+  background-color: white;
+  display: flex;
+  align-items: stretch;
+  height: 70px;
+  border-radius: 20px;
+
+  overflow: hidden;
+  padding: 0 20px;
+  color: #c5c5c5;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+.search-bar:hover {
+  box-shadow: 0px 5px 20px rgb(224, 224, 224);
+}
+
+.search-bar > input {
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  color: #7a7a7a;
+}
+
+.search-bar i {
+  align-self: center;
+  font-size: 20px;
+  color: #a5a5a5;
 }
