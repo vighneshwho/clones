@@ -16,6 +16,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 04 Jul 20 | [PayPal Dashboard][3-d]           | [v1][3-i-v1], [v2][3-i-v2], [v3][3-i-v3], [v4][3-i-v4], [v5][3-i-v5] |       |
 | 07 Jul 20 | [Inbox Property Management ][4-d] | [v1][4-i-v1], [v2][4-i-v2], [v3][4-i-v3], [v4][4-i-v4]               |       |
 | 10 Jul 20 | [E Commerce UI ][5-d]             | [v1][5-i-v1], [v2][5-i-v2], [v3][5-i-v3], [v4][5-i-v4], [v5][5-i-v5] |       |
+| 11 Jul 20 | [Banking app][6-d]                |                                                                      |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -40,3 +41,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [5-i-v3]: http://ecommerce-v3-correction.surge.sh/
 [5-i-v4]: http://ecommerce-v4.surge.sh/
 [5-i-v5]: http://ecommerce-v5-correction.surge.sh/
+[6-d]: https://dribbble.com/shots/13071637-Online-Banking-Web-app
