@@ -475,7 +475,6 @@ body {
   margin-top: 35px;
   position: relative;
 
-  border-left: 1px rgb(241, 106, 106) solid;
   border-right: 1px rgb(238, 238, 238) solid;
 
   display: flex;
@@ -499,12 +498,62 @@ body {
 
   margin-left: 24px;
   padding: 0 40px;
-  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+.send-money-details {
+  flex: 1;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  overflow-y: auto;
 }
 
 .send-money-detail {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.send-money-detail {
+  margin-top: 50px;
+}
+
+.send-money-detail:first-child {
+  margin-top: 20px;
+}
+
+.detail-card {
+  transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+  background-color: rgb(246, 247, 248);
+}
+
+.detail-card:first-child {
+  z-index: 1;
+}
+
+.detail-card:nth-child(2) {
+  z-index: 2;
+}
+
+.send-money-detail:hover .detail-card {
+  box-shadow: 0px 10px 40px rgb(207, 207, 207);
+  background-color: rgb(255, 255, 255);
+}
+
+.money-card-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  padding-left: 24px;
+}
+
+.money-card-main {
+  flex: 1;
+  margin: 0 20px;
 }
 
 .flag-avatar {
@@ -513,29 +562,17 @@ body {
   border-radius: 24px;
   background-color: var(--blue);
   z-index: 8;
-}
 
-.send-money-detail-cards {
-  flex: 1;
-  margin: 0 40px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.detail-card {
-  transition: box-shadow 0.3s ease-out;
-}
-
-.send-money-detail-cards:hover > .detail-card {
-  box-shadow: 2px 2px 20px rgb(214, 214, 214);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
 }
 
 .from-to-detail {
   padding: 10px 20px;
   border-radius: 15px;
-  background-color: white;
+  /* background-color: white; */
 
   display: flex;
   align-items: center;
@@ -568,7 +605,7 @@ body {
   padding: 20px 20px;
   min-height: 80px;
   border-radius: 15px;
-  background-color: white;
+  /* background-color: white; */
 
   display: flex;
   flex-direction: column;
@@ -597,7 +634,7 @@ body {
 }
 
 .rate {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   align-items: baseline;
   font-size: 13px;
@@ -606,4 +643,27 @@ body {
 .rate > div:last-child {
   padding-left: 5px;
   font-weight: 300;
+}
+
+.money-card-icon {
+  margin: 10px 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transfer-icon {
+  background-color: red;
+  height: 35px;
+  width: 35px;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transfer-icon img {
+  width: 12px;
 }
