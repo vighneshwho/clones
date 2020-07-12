@@ -348,15 +348,6 @@ body {
   font-size: 10px;
 }
 
-.send-money-section {
-  flex: 1;
-
-  margin-top: 35px;
-
-  border-left: 1px rgb(238, 238, 238) solid;
-  border-right: 1px rgb(238, 238, 238) solid;
-}
-
 .all-transactions-section {
   flex: 1;
 
@@ -474,4 +465,145 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Send money section */
+
+.send-money-section {
+  flex: 1;
+
+  margin-top: 35px;
+  position: relative;
+
+  border-left: 1px rgb(241, 106, 106) solid;
+  border-right: 1px rgb(238, 238, 238) solid;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.send-money-section::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: rgb(238, 238, 238);
+  top: 0;
+  bottom: 35px;
+  left: 12px;
+}
+
+.send-money-title {
+  font-size: 20px;
+  font-weight: 500;
+
+  margin-left: 24px;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.send-money-detail {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flag-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: var(--blue);
+  z-index: 8;
+}
+
+.send-money-detail-cards {
+  flex: 1;
+  margin: 0 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.detail-card {
+  transition: box-shadow 0.3s ease-out;
+}
+
+.send-money-detail-cards:hover > .detail-card {
+  box-shadow: 2px 2px 20px rgb(214, 214, 214);
+}
+
+.from-to-detail {
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.from-to-detail > div:first-child {
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(68, 68, 68);
+}
+
+.from-to-detail > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.from-to-detail > div:last-child > div {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.from-to-detail > div:last-child > i {
+  margin-left: 9px;
+  font-size: 10px;
+}
+
+.sender-reciever-detail {
+  margin-top: 14px;
+  padding: 20px 20px;
+  min-height: 80px;
+  border-radius: 15px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sender-reciever-detail > div:first-child {
+  font-size: 12px;
+  color: rgb(68, 68, 68);
+}
+
+.sent-recieved-amount {
+  display: flex;
+  align-items: baseline;
+}
+
+.sent-recieved-amount > div:first-child {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sent-recieved-amount > div:first-child {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.rate {
+  margin-top: 5px;
+  display: flex;
+  align-items: baseline;
+  font-size: 13px;
+}
+
+.rate > div:last-child {
+  padding-left: 5px;
+  font-weight: 300;
 }
