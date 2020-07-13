@@ -231,7 +231,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-top: 35px;
+  margin-top: 40px;
   padding-right: 30px;
   padding-left: 15px;
 
@@ -351,7 +351,7 @@ body {
 .all-transactions-section {
   flex: 1;
 
-  margin: 45px 35px 0px 35px;
+  margin: 35px 35px 0px 35px;
 
   display: flex;
   flex-direction: column;
@@ -371,7 +371,7 @@ body {
   display: flex;
   align-items: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .all-transactions-heading-bar .transaction-button {
@@ -397,6 +397,11 @@ body {
 .all-transactions-heading-bar .transaction-button:last-child {
   margin-left: auto;
   margin-right: 0px;
+}
+
+.all-transactions-content-area {
+  padding-top: 30px;
+  overflow-y: auto;
 }
 
 .transaction {
@@ -454,6 +459,8 @@ body {
   justify-content: center;
 
   flex: 1;
+
+  padding: 40px 0;
 }
 
 .creditscore > img {
@@ -492,6 +499,18 @@ body {
   left: 12px;
 }
 
+.send-money-section::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  background-color: rgb(255, 255, 255);
+  height: 35px;
+  bottom: 0px;
+  left: 0px;
+
+  z-index: 5;
+}
+
 .send-money-title {
   font-size: 20px;
   font-weight: 500;
@@ -502,6 +521,7 @@ body {
 }
 
 .send-money-details {
+  padding-top: 20px;
   flex: 1;
   padding-bottom: 40px;
   display: flex;
@@ -541,6 +561,8 @@ body {
 .send-money-detail:hover .detail-card {
   box-shadow: 0px 10px 40px rgb(207, 207, 207);
   background-color: rgb(255, 255, 255);
+
+  z-index: 20;
 }
 
 .money-card-container {
@@ -561,7 +583,7 @@ body {
   height: 24px;
   border-radius: 24px;
   background-color: var(--blue);
-  z-index: 8;
+  z-index: 4;
 
   position: absolute;
   left: 0;
@@ -570,7 +592,7 @@ body {
 }
 
 .from-to-detail {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   /* background-color: white; */
 
@@ -666,4 +688,21 @@ body {
 
 .transfer-icon img {
   width: 12px;
+}
+
+.flag-avatar {
+  background-position: center;
+  background-size: cover;
+}
+
+.canada {
+  background-image: url("./assets/canada.jpg");
+}
+
+.france {
+  background-image: url("./assets/france.jpg");
+}
+
+.germany {
+  background-image: url("./assets/germany.jpg");
 }
