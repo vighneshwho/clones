@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mukta", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  background-image: url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper > .chat-main {
+  flex: 1;
+  min-width: 600px;
+  background-color: aqua;
+}
+
+.side-nav {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.89);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.profile-info {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.profile-img {
+  background-color: rgb(223, 223, 223);
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 4px white solid;
+
+  background-image: url("./assets/profile-img.jpg");
+  background-size: cover;
+  background-position: center;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+.profile-info:hover .profile-img {
+  box-shadow: 0px 10px 10px rgb(199, 199, 199);
+}
+
+.profile-name {
+  margin-top: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-name i {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.nav-menu {
+  margin-top: 40px;
+}
+
+.all-chats {
+  width: 400px;
+  margin-left: 80px;
+}
+
+.nav-menu-item {
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: rgb(153, 153, 153);
+
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: rgba(255, 255, 255, 0.11);
+  cursor: pointer;
+  transition: color 0.3s ease-out;
+}
+
+.nav-menu-item > span {
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+/* Home svg debugging hack */
+.nav-menu-item:first-child svg {
+  margin-top: -3px;
+}
+
+.nav-menu-item svg {
+  width: 13px;
+  height: auto;
+  fill: rgb(153, 153, 153);
+  transition: fill 0.3s ease-out;
+}
+
+.nav-menu > .active-menu-item {
+  border-left-color: blue;
+  color: blue;
+}
+
+.nav-menu > .active-menu-item > svg {
+  fill: blue;
+}
+.nav-menu-item:hover {
+  color: blue;
+}
+
+.nav-menu-item:hover > svg {
+  fill: blue;
+}
