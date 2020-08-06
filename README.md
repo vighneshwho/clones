@@ -18,6 +18,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 10 Jul 20 | [E Commerce UI ][5-d]             | [v1][5-i-v1], [v2][5-i-v2], [v3][5-i-v3], [v4][5-i-v4], [v5][5-i-v5] |       |
 | 11 Jul 20 | [Banking app][6-d]                | [v1][6-i-v1], [v2][6-i-v2], [v3][6-i-v3], [v4][6-i-v4], [v5][6-i-v5] |       |
 | 17 Jul 20 | [Chat][7-d]                       | [v1][7-i-v1], [v2][7-i-v2], [v3][7-i-v3]                             |       |
+| 6 Aug 20  | [Music Player][8-d]               |                                                                      |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -52,3 +53,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [7-i-v1]: http://chat-clone-v1.surge.sh/
 [7-i-v2]: http://chat-clone-v2.surge.sh/
 [7-i-v3]: http://chat-clone-v3.surge.sh/
+[8-d]: https://dribbble.com/shots/9517002--Light-Mode-Simple-Music-Player/attachments/1542953?mode=media
