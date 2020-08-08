@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: none;
+  }
+
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -12,6 +25,7 @@ body{
     background-color: #D3E1F7;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -28,6 +42,8 @@ body{
     flex-direction: column;
     align-items: stretch;
     color: #8E9FBC;
+
+    overflow: hidden;
 }
 
 .player-1-top-bar{
@@ -46,14 +62,14 @@ body{
     justify-content: center;
     align-items: center;
 
-    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset -0px -0px 0px #BAC8DE,inset 0px 0px 0px #EFFAFF;
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px rgba(255, 255, 255, 0.61), inset -0px -0px 0px #BAC8DE,inset 0px 0px 0px #EFFAFF;
 
     cursor: pointer;
     transition: box-shadow 0.3s ease-out;
 }
 
 .player-1-top-bar-button:hover{
-    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset 2px 2px 5px #BAC8DE,inset -2px -2px 5px #EFFAFF;
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset 2px 2px 10px rgba(0, 0, 0, 0.219);
 }
 
 .player-1-top-bar-button svg{
@@ -123,7 +139,7 @@ body{
 .player-1-player-progress-bar{
     margin: 6px 0;
 
-    height: 4px;
+    height: 6px;
     border-radius: 10px;
 
     box-shadow: inset 0px 1px 1px rgba(197, 208, 224, 0.966);
@@ -144,19 +160,26 @@ body{
     align-items: center;
 }
 
-.player-1-player-progress div {
+.player-1-player-progress > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px #E7F3FF solid;
+
+    box-shadow: 5px 5px 10px #c4d5ff;
+    cursor: pointer;
+}
+
+.player-1-player-progress > div > div {
     width: 14px;
     height: 14px;
     border-radius: 20px;
     background-color: #85A7FF;
-    border: 4px white solid;
+    border: 4px #DEEAFC solid;
 
-    transition: box-shadow 0.3s ease-out;
-    cursor: pointer;
-}
-
-.player-1-player-progress div:hover{
     box-shadow: 5px 5px 10px #c4d5ff;
+    cursor: pointer;
 }
 
 .player-1-controls{
@@ -204,3 +227,165 @@ body{
     fill : white;
 }
 
+
+.player-2{
+    padding: 0;
+    position: relative;
+}
+
+.player-2 svg{
+    width: 20px;
+    height: auto;
+}
+
+.player-2-top-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.player-2-top-bar div:nth-child(2){
+    width: 1px;
+    height: 1px;
+    margin: 0 2px;
+    border-radius: 1px;
+    background-color: #8E9FBC;
+}
+
+.player-2-now-playing-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 25px;
+}
+
+.player-2-now-playing-button{
+    border: 1px #d8e2f0 solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px rgba(255, 255, 255, 0.61), inset -0px -0px 0px #BAC8DE,inset 0px 0px 0px #EFFAFF;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.player-2-now-playing-button:hover{
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset 2px 2px 10px rgba(0, 0, 0, 0.219);
+}
+
+.player-2-now-playing-button svg{
+    width: 10px;
+    height: auto;
+    fill: #8E9FBC;
+}
+
+.player-2-now-playing{
+    background-color: rgb(176, 202, 212);
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    border: 3px solid #DBE5F6;
+    box-shadow: 10px 10px 20px #BAC8DE, -10px -10px 20px #EFFAFF;
+
+    background-image: url(./assets/looseIt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.player-2-songs{
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    overflow-y: scroll;
+    position: relative;
+}
+
+.player-2::after{
+    display: block;
+    content: "";
+
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #E8F0FC);
+
+    position: absolute;
+    bottom: 0;
+
+    pointer-events:none;
+
+}
+.player-2-song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 10px;
+    margin: 2px 20px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.player-2-song-active{
+    background-image: linear-gradient(#CCDAF0, #D7E4F9);
+}
+
+.player-2-song-active > .player-2-song-button{
+    background-color: #759CFF;
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset 2px 2px 10px rgba(0, 0, 0, 0.219);
+}
+
+.player-2-song-active > .player-2-song-button svg{
+    fill: white
+}
+
+.player-2-song-meta div:first-child{
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.player-2-song-meta div:last-child{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+
+
+.player-2-song-button{
+    border: 1px #d8e2f0 solid;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px rgba(255, 255, 255, 0.61), inset -0px -0px 0px #BAC8DE,inset 0px 0px 0px #EFFAFF;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.player-2-song-button:hover, .player-2-song:hover .player-2-song-button{
+    box-shadow: 5px 5px 10px #BAC8DE, -5px -5px 10px #EFFAFF, inset 2px 2px 10px rgba(0, 0, 0, 0.219);
+}
+
+.player-2-song-button svg{
+    width: 5px;
+    height: auto;
+    fill: #8E9FBC;
+}
