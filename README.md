@@ -19,7 +19,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 11 Jul 20 | [Banking app][6-d]                | [v1][6-i-v1], [v2][6-i-v2], [v3][6-i-v3], [v4][6-i-v4], [v5][6-i-v5] |       |
 | 17 Jul 20 | [Chat][7-d]                       | [v1][7-i-v1], [v2][7-i-v2], [v3][7-i-v3]                             |       |
 | 6 Aug 20  | [Music Player][8-d]               | [v1][8-i-v1], [v2][8-i-v2], [v3][8-i-v3]                             |       |
-| 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2]                                           |       |
+| 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2], [v3][9-i-v3]                             |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -61,3 +61,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [9-d]: https://dribbble.com/shots/7115996-Music-Player-Web-App-UI/attachments/118748?mode=media
 [9-i-v1]: http://web-player-v1.surge.sh/
 [9-i-v2]: http://web-player-v2.surge.sh/
+[9-i-v3]: http://web-player-v3.surge.sh/
