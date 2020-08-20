@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: none;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -36,37 +49,50 @@ svg{
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+
+    cursor: pointer;
 }
 
 .profile-details .avatar{
-    width: 95px;
-    height: 95px;
+    width: 80px;
+    height: 80px;
     border-radius: 95px;
+    margin-bottom: 13px;
 
     background-image: url(./assets/Profile.png);
     background-position: center;
     background-size: cover;
 
     position: relative;
+
+    transition: box-shadow 0.3s ease-out;
+}
+
+.profile-details:hover .avatar{
+    box-shadow: 0px 8px 20px #ccd0da;
 }
 
 .pro-badge{
     background: linear-gradient(104.11deg, #FF7D86 5.78%, #FF001D 86.48%);
 
-    height: 14px;
-    width: 33px;
+    height: 13px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     color: white;
-    font-size: 8px;
+    font-size: 7px;
     letter-spacing: 1.5px;
     border-radius: 20px;
 
     position: absolute;
     top: 10px;
-    right: -8px;
+    right: -10px;
+}
+
+.pro-badge span{
+    padding-left: 1.5px;
 }
 
 .profile-meta{
@@ -217,6 +243,7 @@ svg{
 .main-content{
     flex: 1;
     background-color: #FDFDFE;
+    overflow: hidden;
 }
 
 .heading-bar{
@@ -311,4 +338,129 @@ svg{
 
 .upgrade-plan:hover{
     box-shadow: 3px 3px 10px #ff001e60;
+}
+
+.billboards-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.billboard-title-bar{
+    display: flex;
+    align-items: center;
+
+    margin: 0px 30px;
+}
+
+.billboard-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.billboard-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.billboard-btn:hover{
+    background-color: #E8ECF7;
+}
+
+.billboard-btn svg{
+    width: 12px;
+    height: auto;
+    fill: #8C92A6;
+}
+
+.billboard-title-bar div:nth-child(2){
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+.billboards{
+    display: flex;
+    padding: 0 30px;
+
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.billboard{
+    cursor: pointer;
+}
+
+.billboards .active-music .album-art{
+    height: 200px;
+    width: 226px;
+}
+
+.billboard .album-art{
+    height: 200px;
+    width: 165px;
+    margin-right: 20px;
+    background-color: #b5bbc8;
+
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+
+    transition: box-shadow 0.3s ease-out;
+}
+
+.billboard:hover .album-art{
+    box-shadow: 5px 5px 20px #adadad;
+}
+
+.billboard-title{
+    font-size: 15px;
+    height: 15px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.billboard-subtitle{
+    font-size: 10px;
+    margin-top: 7px;
+    color: #b5bbc8;
+}
+
+.billboards .billboard:nth-child(1) .album-art{
+    background-image: url(./assets/coloring-book.jpg);
+}
+
+.billboards .billboard:nth-child(2) .album-art{
+    background-image: url(./assets/blue-neighborhood.jpg);
+}
+
+.billboards .billboard:nth-child(3) .album-art{
+    background-image: url(./assets/starboy.jpg);
+}
+
+.billboards .billboard:nth-child(4) .album-art{
+    background-image: url(./assets/mirage.png);
+}
+
+.billboards .billboard:nth-child(5) .album-art{
+    background-image: url(./assets/panda.jpg);
+}
+
+.billboards .billboard:nth-child(6) .album-art{
+    background-image: url(./assets/paris.jpg);
+}
+
+.billboards .billboard:nth-child(7) .album-art{
+    background-image: url(./assets/animals.jpg);
+}
+
+.billboards .billboard:nth-child(8) .album-art{
+    background-image: url(./assets/shapeOfYou.jpeg);
 }
