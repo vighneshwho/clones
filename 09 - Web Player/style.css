@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    color: #0E1C47;
+}
+
+/* SIDE-NAV */
+
+.side-nav{
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    border-right: 1px rgb(226, 226, 226) solid;
+
+    padding: 0 30px;
+}
+
+.side-nav .profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile-details .avatar{
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+
+    background-image: url(./assets/Profile.png);
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.pro-badge{
+    background: linear-gradient(104.11deg, #FF7D86 5.78%, #FF001D 86.48%);
+
+    height: 14px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 10px;
+    right: -8px;
+}
+
+.profile-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-meta div:nth-child(1){
+    font-weight: 700;
+    font-size: 18px;
+    height: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.profile-meta div:nth-child(2){
+    font-weight: 300;
+    font-size: 12px;
+    color: #8C92A6;
+}
+
+/* MAIN _ NAV */
+
+.main-nav{
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 15px 0;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    fill: #8C92A6;
+    stroke: #8C92A6;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+    margin: 8px 0;
+}
+
+.nav-item div:nth-child(1){
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item div:nth-child(2){
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-item svg{
+    width: 15px;
+    height: auto;
+}
+
+.nav-item:hover, .main-nav .nav-item-active{
+    fill: blue;
+    color: blue;
+    stroke: blue;
+}
+
+.main-nav-heading{
+    color: #8C92A6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.connected-device{
+    display: flex;
+    margin-top: auto;
+    margin-bottom:20px;
+
+    background-color: #E8ECF7;
+    border-radius: 10px;
+    padding: 6px 10px;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.connected-device:hover{
+    box-shadow: 5px 5px 10px #ccd0da;
+}
+
+.device-image{
+    height: 60px;
+    width: 60px;
+    background-image: url(./assets/iphoneX.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.device-meta{
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.device-meta div:nth-child(1){
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.device-meta div:nth-child(2){
+    font-weight: 300;
+    font-size: 10px;
+    color: #8C92A6;
+}
+
+.eject{
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eject:hover svg{
+    fill: rgb(58, 58, 58);
+}
+
+.eject svg{
+    width: 10px;
+    height: auto;
+    fill: #8C92A6;
+    transition: fill 0.3s ease-out;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    flex: 1;
+    background-color: #FDFDFE;
+}
