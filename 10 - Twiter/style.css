@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: none;
+  }
+
+
 *{
     padding: 0;
     margin: 0;
@@ -15,6 +29,7 @@
 
 svg{
     width: 20px;
+    height: auto;
 }
 
 .wrapper{
@@ -30,6 +45,9 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    box-shadow: 2px 2px 20px #6969691e;
+    z-index: 10;
 }
 
 .logo svg{
@@ -106,23 +124,582 @@ svg{
     cursor: pointer;
 }
 
-
 /* MAIN CONTENT */
 
 .main-content{
     flex: 1;
-
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+
+    overflow-y: auto;
 }
 
 .heading-bar{
-    height: 40px;
+    min-height: 70px;
     background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 2vw;
 }
 
-.content-area{
+.heading-menu{
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+    font-weight: 300;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.heading-menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-menu div:first-child{
+    margin-right: 40px;
+}
+
+.heading-search{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    background-color: #F7F8FA;
+    width: 480px;
+
+    border-radius: 8px;
+}
+
+.heading-search input{
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+    margin: 0 6px;
+
     flex: 1;
 }
 
+.heading-search svg{
+    width: 15px;
+    margin: 0 16px;
+}
+
+.header-profile{
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.header-profile span{
+    font-weight: 500;
+}
+
+.header-profile div:last-child{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: var(--light-grey);
+    margin-left: 10px;
+
+    background-image: url(./assets/profile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.content-area{
+    flex: 1;
+    background-color: #F3F7FA;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.cover-image{
+    background-color: var(--light-grey);
+    border-radius: 0px 0px 31px 0px;
+
+    background-image: url(./assets/cover.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content{
+    z-index: 20;
+    flex: 1;
+    margin-top: 160px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-details{
+    width: 280px;
+}
+
+.promotions{
+    width: 200px;
+}
+
+.profile-card{
+    min-height: 220px;
+    background-color: white;
+    border-radius: 8px;
+
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.profile-card-avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: var(--light-grey);
+
+    background-image: url(./assets/profile.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.user-id{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-id div:first-child{
+    font-weight: 500;
+}
+
+.user-id div:last-child{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+.location-details{
+    align-self: stretch;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    border-right: 1px #F1F8FE solid;
+}
+
+.location span{
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 13px;
+}
+
+.location-details svg{
+    width: 13px;
+}
+
+.globe{
+    margin-left: 10px;
+}
+
+.bio{
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 15px;
+
+    margin-bottom: 20px;
+}
+
+.profile-card-statistics{
+    align-self: stretch;
+
+    display: flex;
+    margin-top: 7px;
+}
+
+.profile-card-statistics-item{
+    flex: 1;
+
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.profile-card-statistics-item:nth-child(2){
+    border-left: 1px #F1F8FE solid;
+    border-right: 1px #F1F8FE solid;
+}
+
+.profile-card-statistics-item div:first-child{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--light-grey);
+}
+
+.profile-card-statistics-item div:last-child{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.verified{
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+}
+
+.verified svg{
+    fill: var(--twitter-blue);
+    width: 17px;
+    height: auto;
+}
+
+
+.activity{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(90px, 1fr) minmax(90px, 1fr);
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.activity > div{
+    border: 1px var(--light-grey) solid;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 300;
+
+    position: relative;
+    transition: color 0.3s ease-out;
+}
+
+.activity svg{
+    width: 25px;
+    fill: var(--light-grey);
+    position: relative;
+    bottom: 8px;
+
+    transition: fill 0.3s ease-out;
+}
+
+.activity span{
+    position: absolute;
+    bottom: 13px;
+}
+
+.activity > .active-activity{
+    background-color: white;
+    color: var(--twitter-blue);
+    border: 0px;
+    box-shadow: 0px 1px 2px rgb(226, 226, 226);
+}
+
+.active-activity > svg, .activity > div:hover > svg {
+    fill: var(--twitter-blue);
+}
+
+.activity div:hover{
+    color: var(--twitter-blue);
+}
+
+.tweets{
+    background-color: white;
+    flex: 1;
+    margin: 0 20px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tweets-top-bar{
+    height: 60px;
+    border-bottom: 1px #D5DADE solid;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.tweets-top-bar-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1px 0px;
+    padding: 0 10px;
+    font-size: 12px;
+
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.tweets-top-bar-item:hover{
+    color: var(--twitter-blue);
+}
+
+.active-tweet-item{
+    color: var(--twitter-blue);
+    border-bottom: 1px var(--twitter-blue) solid;
+}
+
+.tweets-top-bar-more{
+    margin-left: auto;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.tweets-top-bar-more:hover{
+    background-color: #F1F8FE;
+}
+
+.tweets-top-bar-more svg{
+    fill: var(--light-grey);
+    width: 13px;
+}
+
+.tweets-list{
+    flex: 1;
+    overflow: auto;
+
+    max-height: 80vh;
+}
+
+.tweet{
+    display: flex;
+    padding: 20px;
+}
+
+.tweet-avatar{
+    align-self: flex-start;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    background-color: var(--light-grey);
+    margin-right: 10px;
+
+    background-image: url(./assets/profile.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tweet-content, .retweet{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #D5DADE solid;
+}
+
+.retweet-heading{
+    display: flex;
+    align-items: center;
+    color: #C5C5C7;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.retweet-heading svg{
+    margin-right: 6px;
+    width: 15px;
+    fill: #C5C5C7;
+}
+
+.tweet-meta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tweet-meta-name{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tweet-meta-verified{
+    margin: 0 10px;
+    fill: var(--twitter-blue);
+    width: 15px;
+}
+
+.tweet-meta-id{
+    font-weight: 300;
+    color: #C5C5C7;
+    font-size: 11px;
+}
+
+.tweet-meta-time{
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-meta-time svg{
+    width: 15px;
+}
+
+.tweet-meta-time span{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.tweet-tweet-text-container{
+    margin-bottom: 20px;
+}
+
+.tweet-text{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.retweet-meta{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.retweet-avatar{
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+
+    background-color: var(--light-grey);
+    background-image: url(./assets/retweet-profile.png);
+    background-position: center;
+    background-size: cover;
+
+    margin-right: 10px;
+}
+
+.retweet-profile-details{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.retweet-name{
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.retweet-id{
+    font-weight: 300;
+    color: #C5C5C7;
+    font-size: 11px;
+}
+
+.retweet-text{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.tweet-statistics{
+    margin-top: 20px;
+
+    height: 30px;
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+.tweet-statistics-item{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-right: 0.5px #f0f0f3 solid;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.tweet-statistics-item > div{
+    display: flex;
+    align-items: center;
+}
+
+.tweet-statistics-item > div > .active-heart{
+    fill: red;
+}
+
+.tweet-statistics-item svg{
+    fill: var(--light-grey);
+    width: 15px;
+
+    transition: fill 0.3s ease-out;
+}
+/* 
+.tweet-statistics-item:hover svg{
+    fill: #C5C5C7;
+} */
+
+
+.tweet-statistics-item span{
+    margin-left: 10px;
+}
