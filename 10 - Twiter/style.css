@@ -261,7 +261,7 @@ svg{
 }
 
 .promotions{
-    width: 200px;
+    width: 280px;
 }
 
 .profile-card{
@@ -518,7 +518,7 @@ svg{
     flex: 1;
     overflow: auto;
 
-    max-height: 80vh;
+    /* max-height: 80vh; */
 }
 
 .tweet{
@@ -542,9 +542,14 @@ svg{
 }
 
 .tweet-content, .retweet{
+    flex: 1;
     padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    border: 1px #dde1e6 solid;
+}
+
+.retweet{
     border-radius: 10px;
-    border: 1px #D5DADE solid;
 }
 
 .retweet-heading{
@@ -703,3 +708,219 @@ svg{
 .tweet-statistics-item span{
     margin-left: 10px;
 }
+
+.tweet-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    gap: 10px;
+}
+
+.tweet-image{
+    border-radius: 8px;
+    background-color: var(--light-grey);
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.tweet-image:nth-child(1){
+    background-image: url(./assets/ti-1.jpg);
+}
+
+.tweet-image:nth-child(2){
+    background-image: url(./assets/ti-2.jpg);
+}
+
+.tweet-image:nth-child(3){
+    background-image: url(./assets/ti-3.jpg);
+}
+
+.tweet-image .more{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.472);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trends, .you-should-follow{
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.trends-heading, .you-should-follow-header{
+    padding: 10px;
+    height: 60px;
+    border-bottom: 1px #D5DADE solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+.trends-heading svg, .you-should-follow-header svg{
+    fill: var(--light-grey);
+    width: 16px;
+
+    cursor: pointer;
+}
+
+.trends-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.trends-list-item{
+    margin: 0px 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px #e9edf0 solid;
+}
+
+.trends-list .trends-list-item:nth-child(4){
+    border-bottom: 0px #e9edf0 solid;
+}
+
+
+.trends-meta{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.trends-meta div:first-child{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.trends-meta div:last-child{
+    margin-top: 3px;
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
+.trends-list-item svg{
+    width: 8px;
+    cursor: pointer;
+}
+
+
+.trends-see-more{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #C5C5C7;
+}
+
+.should-follow-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.should-follow-list-item{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.should-follow-avatar{
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    background-color: var(--light-grey);
+    background-position: center;
+    background-size: cover;
+}
+
+.should-follow-list-item:nth-child(1) .should-follow-avatar{
+    background-image: url(./assets/kate.png);
+}
+
+.should-follow-list-item:nth-child(2) .should-follow-avatar{
+    background-image: url(./assets/snowman.png);
+}
+
+.should-follow-list-item:nth-child(3) .should-follow-avatar{
+    background-image: url(./assets/sharapo.png);
+}
+
+.should-follow-meta{
+    align-self: stretch;
+    margin: 5px 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.should-follow-name{
+    font-weight: 500;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.should-follow-name svg{
+    fill: var(--twitter-blue);
+    width: 15px;
+    margin-top: -3px;
+    margin-left: 5px;
+
+}
+
+.should-follow-id{
+    font-size: 12px;
+    font-weight: 300;
+    color: #aaaaaa;
+}
+
+.should-follow-btn{
+    margin-left: auto;
+    font-size: 14px;
+    background-color: var(--twitter-blue-lght);
+    align-self: stretch;
+    padding: 0 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+
+    color: var(--twitter-blue);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1500px) {
+    .content{
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .heading-bar{
+        padding: 14px 4vw;
+    }
+  }
