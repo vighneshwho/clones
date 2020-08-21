@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --twitter-blue: #1DA1F3;
+    --twitter-blue-lght: #F1F8FE;
+    --light-grey: #D5DADE;
+}
+
+svg{
+    width: 20px;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.side-nav{
+    width: 220px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.logo svg{
+    fill: var(--twitter-blue);
+    width: 30px;
+}
+
+.menu{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow-y: auto;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height: 20px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: content-box;
+
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+}
+
+.menu-item:hover{
+    color: var(--twitter-blue);
+}
+
+.active-menu-item{
+    border-right: 1px var(--twitter-blue) solid;
+    color: var(--twitter-blue);
+}
+
+.menu .active-menu-item svg{
+    fill: var(--twitter-blue);
+}
+
+.menu-item svg{
+    fill: var(--light-grey);
+    width: 18px;
+    transition: fill 0.3s ease-out;
+}
+
+.menu-item:hover svg{
+    fill: var(--twitter-blue);
+}
+
+.menu-item div:last-child{
+    margin: 0 13px;
+}
+
+.tweet-btn{
+    background-color: var(--twitter-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+
+    height: 47px;
+    margin-right: 20px;
+    border-radius: 40px;
+    margin-bottom: 80px;
+
+    cursor: pointer;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.heading-bar{
+    height: 40px;
+    background-color: white;
+}
+
+.content-area{
+    flex: 1;
+}
+
