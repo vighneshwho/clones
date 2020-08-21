@@ -20,6 +20,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 17 Jul 20 | [Chat][7-d]                       | [v1][7-i-v1], [v2][7-i-v2], [v3][7-i-v3]                             |       |
 | 6 Aug 20  | [Music Player][8-d]               | [v1][8-i-v1], [v2][8-i-v2], [v3][8-i-v3]                             |       |
 | 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2], [v3][9-i-v3]                             |       |
+| 21 Aug 20 | [Twitter Redesign][10-d]          |                                                                      |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -62,3 +63,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [9-i-v1]: http://web-player-v1.surge.sh/
 [9-i-v2]: http://web-player-v2.surge.sh/
 [9-i-v3]: http://web-player-v3.surge.sh/
+[10-d]: https://dribbble.com/shots/9354004-Twitter-Redesign/attachments/1382740?mode=media
