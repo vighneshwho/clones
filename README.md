@@ -21,6 +21,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 6 Aug 20  | [Music Player][8-d]               | [v1][8-i-v1], [v2][8-i-v2], [v3][8-i-v3]                             |       |
 | 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2], [v3][9-i-v3]                             |       |
 | 21 Aug 20 | [Twitter Redesign][10-d]          | [v1][10-i-v1], [v2][10-i-v2], [v3][10-i-v3]                          |       |
+| 26 Aug 20 | [Clinical Dashboard][11-d]        |                                                                      |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -66,4 +67,5 @@ Exercise to learn UI layouting using Dribbble shots.
 [10-d]: https://dribbble.com/shots/9354004-Twitter-Redesign/attachments/1382740?mode=media
 [10-i-v1]: http://twitter-v1.surge.sh/
 [10-i-v2]: http://twitter-v2.surge.sh/
-[10-I-V3]: http://twitter-v3-2.surge.sh/
+[10-i-V3]: http://twitter-v3-2.surge.sh/
+[11-d]: https://dribbble.com/shots/11458355-Clinical-Dashboard-Manage-Appointments-Dark-Mode/attachments/3074909?mode=media
