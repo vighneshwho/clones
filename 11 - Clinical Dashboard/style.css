@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 svg{
@@ -87,3 +88,130 @@ svg{
     margin-top: auto;
 }
 
+.main-area{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.heading-bar{
+    height: 50px;
+    border-bottom: 1px #423C55 solid;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.heading-bar-meta{
+    display: flex;
+    align-items: center;
+
+    margin-right: 20px;
+    font-size: 11px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.heading-bar-meta svg{
+    width: 12px;
+    margin-right: 10px;
+}
+
+.heading-bar-meta div{
+    margin-top: 2px;
+}
+
+.heading-bar-profile{
+    align-self: stretch;
+    height: 50px;
+    width: 50px;
+    border-left: 1px #423C55 solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.heading-bar-profile svg{
+    width: 18px;
+}
+
+
+.search-bar{
+    margin-right: auto;
+
+    display: flex;
+    align-items: stretch;
+
+    margin-left: 20px;
+}
+
+.search-bar svg{
+    align-self: center;
+    width: 12px;
+}
+
+.search-bar input{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+
+    margin-left: 10px;
+
+    width: 600px;
+    color: white;
+}
+
+.search-bar input::placeholder{
+    color: #9A97A5;
+    font-weight: 500;
+}
+
+
+.main-content{
+    flex: 1;
+
+    display: flex;
+}
+
+.calendars{
+    background-color: #1D182B;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.calendars-heading{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px #423C55 solid;
+}
+
+.calendars-heading div:first-child{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.calendars-heading div:last-child{
+    background-color: #423C55;
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+}
