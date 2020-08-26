@@ -6,6 +6,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+svg{
+    width: 16px;
+    fill: white;
+    height: auto;
+}
+
 
 .wrapper{
     height: 100vh;
@@ -14,9 +20,70 @@
     color: white;
 }
 
-.side-nav{
-    width: 60px;
+.side-bar{
+    width: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
+.logo{
+    width: 50px;
+    height: 50px;
 
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px #423C55 solid;
+    border-bottom: 1px #423C55 solid;
+}
+
+.side-nav{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+
+    border-right: 1px #423C55 solid;
+}
+
+.side-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3px 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.side-nav-item:hover, .side-nav > .active-nav-item{
+    background-color: #07C7E0;
+}
+
+.side-nav-item:hover svg, .side-nav > .active-nav-item svg{
+    fill: black;
+    stroke: black;
+}
+
+.side-nav-item svg{
+    fill: #9A97A5;
+    stroke: #9A97A5;
+
+    transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+}
+
+.side-nav .side-nav-item:last-child{
+    margin-top: auto;
+}
 
