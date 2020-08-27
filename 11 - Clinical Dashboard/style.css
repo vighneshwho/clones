@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: none;
+  }
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -16,9 +31,12 @@ svg{
 
 .wrapper{
     height: 100vh;
+    max-height: 100vh;
     display: flex;
     background-color: #272237;
     color: white;
+
+    
 }
 
 .side-bar{
@@ -178,12 +196,15 @@ svg{
     flex: 1;
 
     display: flex;
+    overflow-y: hidden;
 }
 
 .calendars{
+    align-self: stretch;
+
+
     background-color: #1D182B;
     width: 350px;
-
     display: flex;
     flex-direction: column;
 }
@@ -214,4 +235,181 @@ svg{
     border-radius: 5px;
     font-weight: 300;
     font-size: 12px;
+}
+
+.calendars-list{
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    padding: 0px 10px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px #9a97a532 solid;
+}
+
+.calendar:last-child{
+    border-bottom: 0px;
+}
+
+.calendar-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+}
+
+.calendar-heading > div:first-child{
+    font-weight: 500;
+}
+
+.calendar-heading > div:last-child{
+    font-size: 12px;
+    font-weight: 300;
+    color: #9A97A5;
+}
+
+
+.calendar-days{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holiday-day{
+    color: #9A97A5;
+}
+
+.calendar-day > div{
+    font-size: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    /* background-color: #575757; */
+}
+
+.calendar-days-separation{
+    height: 1px;
+    background-color: #9a97a532;
+
+    margin: 0 17px;
+    margin-top: 10px;
+}
+
+.calendar-dates-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-date{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9A97A5;
+}
+
+.invalid-date{
+    color: #9a97a532;
+}
+
+.active-date > div{
+    background-color: #07C7E0;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+.calendar-date > div{
+    font-size: 13px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.calendar-date > div:hover{
+    background-color: #9a97a532;
+    color: white;
+}
+
+.invalid-date > div:hover{
+    color: #9a97a532;
+}
+
+
+.date-notification{
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+
+    background-color: red;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.calendars-pagination{
+    display: flex;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 600;
+
+    border-top: 1px #9a97a532 solid;
+}
+
+.calendars-pagination svg{
+    width: 7px;
+    margin: 10px;
+}
+
+.calendars-pagination > div{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.calendars-pagination span{
+    transition: margin 0.3s ease-out;
+}
+
+.calendars-pagination > div:hover span{
+    margin: 10px;
+}
+
+.calendars-pagination > div:first-child{
+    border-right: 1px #423C55 solid;
 }
