@@ -235,6 +235,8 @@ svg{
     border-radius: 5px;
     font-weight: 300;
     font-size: 12px;
+
+    cursor: pointer;
 }
 
 .calendars-list{
@@ -366,6 +368,11 @@ svg{
     color: #9a97a532;
 }
 
+.active-date > div:hover{
+    background-color: #07C7E0;
+    color: black;
+}
+
 
 .date-notification{
     width: 3px;
@@ -412,4 +419,123 @@ svg{
 
 .calendars-pagination > div:first-child{
     border-right: 1px #423C55 solid;
+}
+
+.schedule-breakdown{
+    padding: 25px;
+    flex: 1;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-heading-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-date{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.schedule-overview{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+    border-bottom: 1px #423C55 solid;
+}
+
+.schedule-overview-avatars{
+    display: flex;
+    align-items: center;
+}
+
+.schedule-overview-avatar{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+
+    background-color: orange;
+
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+}
+
+.schedule-overview-avatar:nth-child(1){
+    background-color: #D6E1E3;
+
+    background-image: url('./assets/profile-1.jpg');
+}
+
+.schedule-overview-avatar:nth-child(2){
+    background-color: #FDB40F;
+}
+
+.schedule-overview-avatar:nth-child(3){
+    background-color: #6352E9;
+}
+
+.schedule-overview-avatar:nth-child(4){
+    background-color: #FF5BF5;
+}
+
+.schedule-overview-avatar:nth-child(5){
+    background-color: #5F9BE7;
+    background-image: url('./assets/profile-2.png');
+}
+
+.appointments-number{
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #9A97A5;
+
+    margin-right: auto;
+}
+
+.schedule-view-type{
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease-out;
+    opacity: 0.5;
+
+}
+
+.schedule-view-type > svg{
+    width: 10px;
+    margin-right: 10px;
+}
+
+.schedule-view-type > span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.schedule-view-type:hover{
+    opacity: 1;
+}
+
+.active-schedule-view{
+    opacity: 1;
 }
