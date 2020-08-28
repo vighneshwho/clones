@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+}
+
+body{
+    padding: 10px;
+    height: 100vh;
+    background-color: #F3F4F5;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    border: 1px #e7e9eb solid;
+}
+
+.main-contents{
+    flex: 1;
+
+    overflow: hidden;
+}
+
+.main-header{
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 70px;
+    padding: 0 80px;
+
+    box-shadow: 0 1px 5px #c4c6ce85;
+}
+
+.back-btn{
+    background-color: #F3F4F5;
+    border: 0.5px #F3F4F5 solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: border 0.3s ease-out;
+    cursor: pointer;
+}
+
+.back-btn:hover{
+    border: 0.5px #8d909c solid;
+}
+.back-btn svg{
+    width: 12px;
+}
+
+.main-header-back-btn-message{
+    margin-right: auto;
+    font-size: 12px;
+    color: #8D909C;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+
+.main-header-btn{
+    font-size: 12px;
+    font-weight: 500;
+    height: 35px;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: 0.5px #8d909c55 solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+
+    transition: border 0.3s ease-out;
+    cursor: pointer;
+}
+
+.main-header-btn:hover{
+    border: 0.5px #8d909c solid;
+}
+
+.main-header-btn svg{
+    width: 12px;
+    margin-right: 10px;
+}
+
+.main-section{
+    overflow-y: auto;
+
+    padding: 50px 80px;
+}
+
+
+
+
+.chat-contents{
+    width: 300px;
+    background-color: aqua;
+}
