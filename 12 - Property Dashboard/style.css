@@ -111,6 +111,195 @@ body{
     padding: 50px 80px;
 }
 
+.property-details{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.property-details-header{
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.property-details-header div:first-child{
+    margin-right: auto;
+    font-size: 13px;
+    color: #8d909c;
+}
+
+.property-details-btn{
+    font-size: 11px;
+    font-weight: 500;
+    height: 30px;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: 0.5px #8d909c55 solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+
+    transition: border 0.3s ease-out;
+    cursor: pointer;
+}
+
+.property-details-btn:hover{
+    border: 0.5px #8d909c solid;
+}
+
+.property-details-btn svg{
+    width: 10px;
+    margin-right: 8px;
+}
+
+.property-detail{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: #F3F4F5;
+    display: flex;
+    align-items: center;
+
+    transition: box-shadow 0.3s ease-out;
+
+    cursor: pointer;
+}
+
+.property-detail:hover{
+    box-shadow: 0 2px 5px #a0a2a89f;
+}
+
+.property-image{
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+
+    background-image: url(./assets/house.jpg);
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 20px;
+}
+
+.property-meta{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-general-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.property-general-details div:first-child{
+    font-size: 11px;
+    color: #8D909C;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.property-general-details div:last-child{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.property-meta div:last-child{
+    align-items: flex-end;
+}
+
+
+.property-detail svg{
+    width: 10px;
+    margin-left: 30px;
+}
+
+.property-associated-people-details{
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.associated-person{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    border: 0.5px #8d909c55 solid;
+    transition: border 0.3s ease-out;
+    cursor: pointer;
+
+    padding: 10px;
+}
+
+.associated-person:hover{
+    border: 0.5px #8d909c solid;
+}
+
+.associated-person-logo, .associated-person-message{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px black solid;
+}
+
+.associated-person-logo svg{
+    width: 13px;
+}
+
+.associated-person-message svg{
+    width: 16px;
+}
+
+.associated-person-message{
+    border-radius: 5px;
+    border-color: #e7e9eb;
+    width: 35px;
+    margin-left: auto;
+
+    transition: border-color 0.3s ease-out;
+}
+
+.associated-person-message:hover{
+    border-color: #9b9b9b;
+}
+
+
+.associated-person-details{
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.associated-person-details div:first-child{
+    font-size: 11px;
+    color: #8D909C;
+    font-weight: 400;
+}
+
+.associated-person-details div:last-child{
+    font-size: 13px;
+    font-weight: 400;
+}
+
 
 
 
