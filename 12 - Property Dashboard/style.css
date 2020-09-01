@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: none;
+  }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *{
@@ -8,7 +23,7 @@
 }
 
 svg{
-    width: 20px;
+    width: 12px;
     height: auto;
 }
 
@@ -32,6 +47,9 @@ body{
     flex: 1;
 
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header{
@@ -106,9 +124,13 @@ body{
 }
 
 .main-section{
+    flex: 1;
     overflow-y: auto;
 
-    padding: 50px 80px;
+    padding: 50px 80px 0px 80px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .property-details{
@@ -300,8 +322,279 @@ body{
     font-weight: 400;
 }
 
+.documents{
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0 ;
+
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+.documents-header{
+    display: flex;
+    padding: 10px;
+}
+
+.documents-btn{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border:1px #8d909c55 solid;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: border 0.3s ease-out;
+}
+
+.light-btn{
+    color: #8D909C;
+}
+
+.light-btn svg{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.bolder-btn{
+    font-weight: 500;
+    padding: 0 9px;
+}
+.bolder-btn svg:first-child{
+    margin-top: -2px;
+    margin-right: 5px;
+    fill: #9b9b9b;
+}
+
+.bolder-btn svg:last-child{
+    width: 20px;
+    margin-left: 10px;
+    fill: #9b9b9b;
+}
+
+.blue-btn{
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #4166FF;
+    border-color: #4166FF;
+    color: white;
+}
+
+.blue-btn svg{
+    margin-top: -2px;
+    fill: #FFFFFF;
+    margin-right: 10px;
+}
+
+.light-btn:hover, .bolder-btn:hover{
+    border-color: #8d909c;
+}
 
 
+.documents-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.documents-table-row, .documents-table-heading{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 15px 25px;
+    border-bottom: 0.5px #f8f8f8 solid;
+    font-size: 12px;
+}
+
+.documents-table-row-item{
+    display: flex;
+    align-items: center;
+}
+
+.documents-table-heading svg{
+    width: 7px;
+    fill: #8d909c;
+    margin-left: 6px;
+}
+
+.documents-table-heading{
+    background-color: #F3F4F5;
+    font-size: 10px;
+    color: #8d909c;
+    font-weight: 300;
+    padding: 10px 25px
+}
+
+
+.file-name-logo{
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px black solid;
+
+    margin-right: 6px;
+}
+
+.file-name-document-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-name-document-svg svg{
+    fill: #8d909c;
+    width: 20px;
+    margin-right: 6px;
+}
+
+.file-name{
+    display: flex;
+    flex: 1;
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.file-name div:first-child{
+    text-overflow: ellipsis;
+}
+
+.table-item-drop-down{
+    font-size: 11px;
+    font-weight: 400;
+    height: 30px;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: 0.5px #8d909c55 solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: border 0.3s ease-out;
+    cursor: pointer;
+}
+
+.table-item-drop-down:hover{
+    border: 0.5px #8d909c solid;
+}
+
+.table-item-drop-down svg{
+    width: 8px;
+    margin-left: 7px;
+}
+
+
+
+.documents-table-row-buttons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.documents-table-row-buttons > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.documents-table-row-buttons > div:nth-child(1){
+    position: relative;
+
+
+    height: 26px;
+    width: 30px;
+    border-radius: 5px;
+
+    border: 0.5px #8d909c55 solid;
+
+    margin-right: 15px;
+
+    transition: border-color 0.3s ease-out;
+}
+
+.documents-table-row-buttons > div:nth-child(1):hover{
+    border-color: #4166FF;
+}
+
+.documents-table-row-buttons > div:nth-child(1) > svg{
+    width: 14px;
+}
+
+.documents-table-row-buttons > div:nth-child(2) > svg{
+    width: 7px;
+}
+
+.btn-drop-down{
+    visibility: hidden;
+    position: absolute;
+    top: 26px;
+    margin-top: 4px;
+    right: 0;
+    min-width: 120px;
+    border-radius: 4px;
+
+    padding: 5px 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 2px 2px 20px #e7e9eb;
+}
+
+.drop-down-fix{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    
+    height: 30px;
+    width: 50px;
+}
+
+.documents-table-row-buttons > div:nth-child(1):hover .btn-drop-down{
+    visibility: visible;
+}
+
+.btn-drop-down > .drop-down-item{
+    display: flex;
+    align-items: center;
+
+    padding: 8px 10px;
+
+    font-size: 11px;
+    line-height: 11px;
+    color: #8d909c;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.drop-down-item:hover{
+    background-color: #F3F4F5;
+}
+
+.drop-down-item > svg{
+    width: 10px;
+    fill: #8d909c;
+
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+
+
+.documents-table-rows{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 .chat-contents{
     width: 300px;
