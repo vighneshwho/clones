@@ -7,6 +7,22 @@
     --dark: #20233E;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      width: 0px;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      width: 0px;
+    border-radius: 0px;
+    background-color: none;
+  }
+
+
 
 *{
     padding: 0;
@@ -26,6 +42,8 @@ svg{
 .wrapper{
     height: 100vh;
     display: flex;
+
+    overflow: hidden;
 }
 
 .side-nav{
@@ -208,6 +226,8 @@ svg{
     justify-content: center;
 
     margin: 50px 0;
+
+    overflow: auto;
 }
 
 .my-profile-avatar{
@@ -257,5 +277,79 @@ svg{
 
 .my-notifications{
     background-color: var(--dark);
-    min-height: 42vh;
+    height: 42vh;
+    overflow:hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications-header{
+    color: white;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+.notifications-header div:first-child{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.notifications-header div:last-child{
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--orange);
+
+    cursor: pointer;
+}
+
+.notifications-list{
+    flex: 1;
+    padding: 0 40px;
+    color: white;
+    overflow-y: auto;
+
+    padding-bottom: 20px;
+}
+
+.notification-item{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.notification-avatar{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    background-color: var(--light-grey);
+    background-image: url(./assets/my-profile.jpg);
+}
+
+.notification-meta{
+    margin-left: 10px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.notification-meta div:first-child{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.notification-meta div:last-child{
+    font-size: 10px;
+    font-weight: 300;
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
