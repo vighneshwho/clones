@@ -1,13 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
 
+:root{
+    --orange: #FF9F24;
+    --light-grey: #F7F6FF;
+    --text-color: #4A4D65;
+    --dark: #20233E;
+}
+
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+
+    background-position: center;
+    background-size: cover;
+}
+
+svg{
+    width: 15px;
+    height: auto;
 }
 
 .wrapper{
     height: 100vh;
     display: flex;
+}
+
+.side-nav{
+    width: 180px;
+    background-color: var(--orange);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 0;
+}
+
+.side-nav-branding{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+.side-menu{
+    align-self: stretch;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+
+    padding: 50px 0;
+}
+
+.side-menu-item{
+    display: flex;
+    align-items: center;
+
+    width: 146px;
+    border-radius: 20px 0 0 20px;
+
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 13px;
+
+    cursor: pointer;
+    position: relative;
+    font-weight: 300;
+}
+
+.side-menu-item svg{
+    width: 15px;
+    margin-top: -2px;
+    fill: white;
+    margin-right: 15px;
+}
+
+.toggle-on{
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.toggle-on svg{
+    fill: var(--text-color);
+}
+
+.toggle-on::before{
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    border-radius: 0 25px 0 0;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: -50px;
+    box-shadow: 9px -9px var(--light-grey);
+    right: 0;
+}
+
+.toggle-on::after{
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    border-radius: 0 0 25px 0;
+    background-color: transparent;
+
+    position: absolute;
+    top: -50px;
+    box-shadow: 9px 9px var(--light-grey);
+    right: 0;
+}
+
+.side-menu-users{
+    display: flex;
+}
+
+.side-menu-users .user, .side-menu-users .user-add{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.user-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-left: 10px;
+}
+
+.user-add svg{
+    width: 8px;
+}
+
+.user{
+    background-image: url(./assets/Profile-side.jpg);
+}
+
+.main-section{
+    flex: 1;
+    background-color: var(--light-grey);
 }
