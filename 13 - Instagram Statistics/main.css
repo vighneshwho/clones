@@ -135,7 +135,15 @@ svg{
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.603);
+
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+
     margin-left: 10px;
+}
+
+.user-add:hover{
+    background-color: rgba(255, 255, 255, 1);;
 }
 
 .user-add svg{
@@ -149,4 +157,105 @@ svg{
 .main-section{
     flex: 1;
     background-color: var(--light-grey);
+}
+
+
+.right-section{
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.right-section > div{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.my-profile{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 0px 30px;
+    min-height: 50vh;
+}
+
+.my-profile-search{
+    background-color: var(--light-grey);
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.my-profile-search input{
+    flex: 1;
+    font-size: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    margin-left: 10px;
+}
+
+.my-profile-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50px 0;
+}
+
+.my-profile-avatar{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 60px;
+    background-color: #F7F6FF;
+    background-image: url(./assets/my-profile.jpg);
+}
+
+.my-profile-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-profile-meta div:first-child{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.my-profile-meta div:last-child{
+    font-size: 11px;
+    font-weight: 300;
+    color: #c3c2ca;
+}
+
+.profile-statistics{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.profile-statistic div:first-child{
+    font-size: 11px;
+    font-weight: 300;
+    color: #c3c2ca;
+}
+
+.profile-statistic div:last-child{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.my-notifications{
+    background-color: var(--dark);
+    min-height: 42vh;
 }
