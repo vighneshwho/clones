@@ -31,6 +31,9 @@ body{
     padding: 10px;
     height: 100vh;
     background-color: #F3F4F5;
+
+    overflow-x: auto ;
+    min-width: 1300px;
 }
 
 .wrapper{
@@ -424,12 +427,18 @@ body{
     margin-left: 6px;
 }
 
+.documents-table-heading div{
+    cursor: pointer;
+}
+
 .documents-table-heading{
     background-color: #F3F4F5;
     font-size: 10px;
     color: #8d909c;
     font-weight: 300;
-    padding: 10px 25px
+    padding: 10px 25px;
+
+    border: 1px #e7e9eb solid;
 }
 
 
@@ -459,14 +468,23 @@ body{
 }
 
 .file-name{
-    display: flex;
     flex: 1;
-    flex: 0 1 auto;
+    width: 100%;
+    display: flex;
     min-width: 0;
+    align-items: center;
+
+    margin-right: 15px;
 }
 
 .file-name div:first-child{
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.file-name div:last-child{
+    flex-shrink: 0;
 }
 
 .table-item-drop-down{
@@ -768,7 +786,7 @@ body{
 .chats{
     flex:1;
     background-color: #fafafa;
-    padding: 0 20px;
+    padding: 5px 20px;
 
     overflow-y: scroll;
 }
@@ -790,9 +808,24 @@ body{
     flex-shrink: 0;
 
     margin-bottom: 21px;
+
+    cursor: pointer;
+}
+
+.chat-bubbles{
+    flex: 1;
+    align-self: stretch;
+    font-size: 12px;
+    color: #8D909C;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .chat-bubble{
+    font-size: 11px;
+    align-self: stretch;
     padding: 10px;
 
     border: 1px #e7e9eb solid;
@@ -800,20 +833,12 @@ body{
 }
 
 .chat-time{
-    font-size: 11px;
+    font-size: 8px;
     height: 11px;
 }
 
-.chat-bubbles{
-    font-size: 12px;
-    color: #8D909C;
-
-    display: flex;
-    flex-direction: column;
-}
-
 .chat-incoming .chat-bubbles {
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 
