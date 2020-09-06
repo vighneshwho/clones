@@ -66,6 +66,8 @@ svg{
 .side-nav-branding{
     font-size: 27px;
     font-weight: 700;
+
+    cursor: pointer;
 }
 
 
@@ -224,6 +226,8 @@ svg{
     margin: 50px 0;
 
     overflow: auto;
+
+    cursor: pointer;
 }
 
 .my-profile-avatar{
@@ -258,6 +262,10 @@ svg{
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
+}
+
+.profile-statistic{
+    cursor: pointer;
 }
 
 .profile-statistic div:first-child{
@@ -316,6 +324,8 @@ svg{
     align-items: center;
     font-size: 12px;
     margin-bottom: 20px;
+
+    cursor: pointer;
 }
 
 .notification-avatar{
@@ -552,6 +562,8 @@ svg{
     justify-content: space-between;
 
     box-shadow: 0px 0px 20px #ececec;
+
+    cursor: pointer;
 }
 
 .weekly-report-meta{
@@ -677,6 +689,8 @@ svg{
     padding: 30px;
 
     box-shadow: 0px 0px 20px #ececec;
+
+    cursor: pointer;
 }
 
 
