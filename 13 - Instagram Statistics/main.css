@@ -184,17 +184,15 @@ svg{
     overflow: hidden;
 }
 
-.right-section > div{
-    flex-grow: 1;
-    flex-shrink: 0;
-}
+
 
 .my-profile{
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
 
     justify-content: center;
-    padding: 0px 30px;
+    padding: 40px 30px;
     min-height: 50vh;
 }
 
@@ -229,6 +227,7 @@ svg{
 }
 
 .my-profile-avatar{
+    flex-shrink: 0;
     width: 80px;
     height: 80px;
 
@@ -274,8 +273,8 @@ svg{
 
 
 .my-notifications{
+    flex: 1;
     background-color: var(--dark);
-    height: 42vh;
     overflow:hidden;
 
     display: flex;
@@ -551,6 +550,8 @@ svg{
     flex-direction: column;
 
     justify-content: space-between;
+
+    box-shadow: 0px 0px 20px #ececec;
 }
 
 .weekly-report-meta{
@@ -630,5 +631,139 @@ svg{
 }
 
 
+.main-section-bottom-area{
+    display: flex;
+
+    min-height: 300px;
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+.in-action{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 30px;
+}
+
+.in-action-title{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.vector{
+    align-self: stretch;
+    margin-bottom: 20px;
+    background-image: url(./assets/vector.jpg);
+    width: 250px;
+    margin-right: -20px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: auto;
+}
 
 
+.in-action-box{
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0px 0px 20px #ececec;
+}
+
+
+.in-action-graphs{
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.in-action-graph-bars{
+    height: 5px;
+    border-radius: 10px;
+    
+    
+    position: relative;
+}
+
+.in-action-graph-day{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.in-action-graph-bars > div {
+    position: absolute;
+    left: 0;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.in-action-like{
+    background-color: #FF6638;
+    width: 20%;
+
+    z-index: 10;
+}
+
+.in-action-comment{
+    background-color: #FFC50D;
+    width: 30%;
+    z-index: 9;
+}
+
+.in-action-visit{
+    background-color: #53D7E4;
+    width: 50%;
+    z-index: 8;
+}
+
+.in-action-graph-scales{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.in-action-graph-scale{
+    font-size: 8px;
+    color: #c3c2ca;
+}
+
+.in-action-graph-tags{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    text-transform: lowercase;
+
+    font-size: 9px;
+    font-weight: 400;
+    color: #848695;
+}
+
+.in-action-graph-tag{
+    display: flex;
+    align-items: center;
+}
+
+.in-action-graph-tag div:first-child{
+    background-color: #FF6638;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+
+    margin-right: 10px;
+}

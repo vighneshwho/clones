@@ -9,21 +9,21 @@ Exercise to learn UI layouting using Dribbble shots.
 
 ## Progress
 
-| Date      | Reference                         | Attempt                                                              | Score |
-| --------- | --------------------------------- | -------------------------------------------------------------------- | ----- |
-| 02 Jul 20 | [Apple Music][1-d]                | [v1][1-i-v1], [v2][1-i-v2]                                           | 8     |
-| 03 Jul 20 | [Covid Dashboard][2-d]            | [v1][2-i-v1], [v2][2-i-v2]                                           | 7     |
-| 04 Jul 20 | [PayPal Dashboard][3-d]           | [v1][3-i-v1], [v2][3-i-v2], [v3][3-i-v3], [v4][3-i-v4], [v5][3-i-v5] |       |
-| 07 Jul 20 | [Inbox Property Management ][4-d] | [v1][4-i-v1], [v2][4-i-v2], [v3][4-i-v3], [v4][4-i-v4]               |       |
-| 10 Jul 20 | [E Commerce UI ][5-d]             | [v1][5-i-v1], [v2][5-i-v2], [v3][5-i-v3], [v4][5-i-v4], [v5][5-i-v5] |       |
-| 11 Jul 20 | [Banking app][6-d]                | [v1][6-i-v1], [v2][6-i-v2], [v3][6-i-v3], [v4][6-i-v4], [v5][6-i-v5] |       |
-| 17 Jul 20 | [Chat][7-d]                       | [v1][7-i-v1], [v2][7-i-v2], [v3][7-i-v3]                             |       |
-| 6 Aug 20  | [Music Player][8-d]               | [v1][8-i-v1], [v2][8-i-v2], [v3][8-i-v3]                             |       |
-| 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2], [v3][9-i-v3]                             |       |
-| 21 Aug 20 | [Twitter Redesign][10-d]          | [v1][10-i-v1], [v2][10-i-v2], [v3][10-i-v3]                          |       |
-| 27 Aug 20 | [Clinical Dashboard][11-d]        | [v1][11-i-v1], [v2][11-i-v2], [v3][11-i-v3]                          |       |
-| 28 Aug 20 | [Property Dashboard][12-d]        | [v1][12-i-v1], [v2][12-i-v2], [v3][12-i-v3], [v4][12-i-v4]           |       |
-| 02 Sep 20 | [Instagram Statistics][13-d]      | [v1][13-i-v1], [v2][13-i-v2], [v3][13-i-v3], [v4][13-i-v4]           |       |
+| Date      | Reference                         | Attempt                                                                   | Score |
+| --------- | --------------------------------- | ------------------------------------------------------------------------- | ----- |
+| 02 Jul 20 | [Apple Music][1-d]                | [v1][1-i-v1], [v2][1-i-v2]                                                | 8     |
+| 03 Jul 20 | [Covid Dashboard][2-d]            | [v1][2-i-v1], [v2][2-i-v2]                                                | 7     |
+| 04 Jul 20 | [PayPal Dashboard][3-d]           | [v1][3-i-v1], [v2][3-i-v2], [v3][3-i-v3], [v4][3-i-v4], [v5][3-i-v5]      |       |
+| 07 Jul 20 | [Inbox Property Management ][4-d] | [v1][4-i-v1], [v2][4-i-v2], [v3][4-i-v3], [v4][4-i-v4]                    |       |
+| 10 Jul 20 | [E Commerce UI ][5-d]             | [v1][5-i-v1], [v2][5-i-v2], [v3][5-i-v3], [v4][5-i-v4], [v5][5-i-v5]      |       |
+| 11 Jul 20 | [Banking app][6-d]                | [v1][6-i-v1], [v2][6-i-v2], [v3][6-i-v3], [v4][6-i-v4], [v5][6-i-v5]      |       |
+| 17 Jul 20 | [Chat][7-d]                       | [v1][7-i-v1], [v2][7-i-v2], [v3][7-i-v3]                                  |       |
+| 6 Aug 20  | [Music Player][8-d]               | [v1][8-i-v1], [v2][8-i-v2], [v3][8-i-v3]                                  |       |
+| 20 Aug 20 | [Web Player][9-d]                 | [v1][9-i-v1], [v2][9-i-v2], [v3][9-i-v3]                                  |       |
+| 21 Aug 20 | [Twitter Redesign][10-d]          | [v1][10-i-v1], [v2][10-i-v2], [v3][10-i-v3]                               |       |
+| 27 Aug 20 | [Clinical Dashboard][11-d]        | [v1][11-i-v1], [v2][11-i-v2], [v3][11-i-v3]                               |       |
+| 28 Aug 20 | [Property Dashboard][12-d]        | [v1][12-i-v1], [v2][12-i-v2], [v3][12-i-v3], [v4][12-i-v4]                |       |
+| 02 Sep 20 | [Instagram Statistics][13-d]      | [v1][13-i-v1], [v2][13-i-v2], [v3][13-i-v3], [v4][13-i-v4], [v5][13-i-v5] |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -84,3 +84,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [13-i-v2]: http://insta-statistics-v2.surge.sh/
 [13-i-v3]: http://insta-statistics-v3.surge.sh/
 [13-i-v4]: http://insta-statistics-v4.surge.sh/
+[13-i-v5]: http://insta-statistics-v5.surge.sh/
