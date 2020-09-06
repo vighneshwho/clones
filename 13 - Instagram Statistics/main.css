@@ -9,15 +9,18 @@
 
 ::-webkit-scrollbar {
     width: 0px;
+    height: 0px;
   }
   
   ::-webkit-scrollbar-track {
       width: 0px;
+      height: 0px;
     border-radius: 0px;
   }
   
   ::-webkit-scrollbar-thumb {
       width: 0px;
+      height: 0px;
     border-radius: 0px;
     background-color: none;
   }
@@ -42,12 +45,13 @@ svg{
 .wrapper{
     height: 100vh;
     display: flex;
-
+    min-width: 1000px;
     overflow: hidden;
 }
 
 .side-nav{
     width: 180px;
+    min-width: 180px;
     background-color: var(--orange);
     color: white;
 
@@ -172,15 +176,9 @@ svg{
     background-image: url(./assets/Profile-side.jpg);
 }
 
-.main-section{
-    flex: 1;
-    background-color: var(--light-grey);
-}
-
-
 .right-section{
     width: 350px;
-
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -353,3 +351,284 @@ svg{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+.main-section{
+    flex: 1;
+    background-color: var(--light-grey);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 60px;
+
+    overflow: auto;
+
+    min-width: 700px;
+}
+
+
+.main-section-heading{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.7em;
+    color: var(--text-color)
+}
+
+
+.main-section-date{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.date-header{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.date-picker{
+    background-color: white;
+    border-radius: 100px;
+    height: 80px;
+    align-self: stretch;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    padding: 0 60px;
+}
+
+.date-picker-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+
+    height: 95px;
+    padding: 15px;
+    padding-bottom: 10px;
+    width: 70px;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: stretch;
+
+    
+}
+
+.date-picker-item{
+    width: 100%;
+    background-color: white;
+    border-radius: 40px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.active-date{
+    background-color: white;
+    color: white;
+}
+
+.date-picker-day{
+    font-size: 11px;
+    font-weight: 300;
+    color: #b1b1b3;
+}
+
+.active-date .date-picker-day{
+    color: white;
+}
+
+.date-picker-date{
+    font-weight: 500;
+}
+
+.active-date > .date-picker-item {
+    background-color: var(--orange);
+}
+
+
+.date-picker-notifications{
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 5px;
+    width: 100%;
+}
+
+.date-picker-notifications .yellow-notification, .date-picker-notifications .red-notification{
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.yellow-notification{
+    background-color: yellow;
+}
+
+.red-notification{
+    background-color: red;
+}
+
+.weekly-reports{
+    display: flex;
+    flex-direction: column;
+}
+
+.weekly-reports-header{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.weekly-reports-title{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.weekly-reports-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weekly-reports-tabs div{
+    font-size: 10px;
+    text-transform: capitalize;
+    margin: 0 9px;
+    color: #a5a7b1;
+
+    cursor: pointer;
+}
+
+.weekly-reports-tabs .selected-report{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.weekly-reports-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: 130px;
+    gap: 20px;
+}
+
+.weekly-report{
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 6px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.weekly-report-meta{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.weekly-report-meta > div:first-child{
+    font-size: 12px;
+    color: #b1b1b3;
+}
+
+
+.weekly-report-logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 13px;
+
+    background-color: var(--orange);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: -14px;
+    font-weight: 600;
+}
+
+.weekly-report-logo svg{
+    fill: white;
+    width: 12px;
+}
+
+.weekly-report-statistics{
+    margin-bottom: 17px;
+}
+
+.weekly-report-number{
+    font-weight: 700;
+    font-size: 25px;
+    height: 25px;
+    color: var(--orange);
+
+    margin-bottom: 17px;
+}
+
+.percentage{
+    display: flex;
+    align-items: center;
+}
+
+.percentage-main{
+    flex: 1;
+    background-color: #f0f0f0;
+    height: 3px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.percentage-bar{
+    width: 78%;
+    background-color: var(--orange);
+}
+
+.percentage-text{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.dark-report{
+    background-color: var(--dark);
+    color: white;
+}
+
+
+
+
