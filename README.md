@@ -24,7 +24,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 27 Aug 20 | [Clinical Dashboard][11-d]        | [v1][11-i-v1], [v2][11-i-v2], [v3][11-i-v3]                                              |       |
 | 28 Aug 20 | [Property Dashboard][12-d]        | [v1][12-i-v1], [v2][12-i-v2], [v3][12-i-v3], [v4][12-i-v4]                               |       |
 | 02 Sep 20 | [Instagram Statistics][13-d]      | [v1][13-i-v1], [v2][13-i-v2], [v3][13-i-v3], [v4][13-i-v4], [v5][13-i-v5], [v6][13-i-v6] |       |
-| 07 Sep 20 | [Trello Clone][14-d]              | [v1][14-i-v1]                                                                            |       |
+| 07 Sep 20 | [Trello Clone][14-d]              | [v1][14-i-v1], [v2][14-i-v2]                                                             |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -89,3 +89,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [13-i-v6]: http://instag-statistics-v6.surge.sh/
 [14-d]: https://dribbble.com/shots/13072236/attachments/4673717?mode=media
 [14-i-v1]: http://trello-clone-v1.surge.sh/
+[14-i-v2]: http://trello-clone-v2.surge.sh/

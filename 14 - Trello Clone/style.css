@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    background-size: cover;
 }
 
 svg{
     width: 20px;
     height: auto;
-
-    background-position: center;
-    background-size: cover;
+    fill: #BEBDC2;
 }
 
 .wrapper{
@@ -122,4 +125,141 @@ svg{
 .main-section{
     flex: 1;
     background-color: #F5F6F8;;
+}
+
+
+.main-header{
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.back-btn{
+    cursor: pointer;
+}
+
+.back-btn svg{
+    fill: #8b8b8b;
+}
+
+.project-meta{
+    margin-left: 25px;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.project-name{
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.project-image{
+    width: 40px;
+    height: 40px;
+    background-image: url(./assets/pctopus.png);
+
+    background-size: contain;
+}
+
+.main-header-search{
+    background-color: #EAEBEF;
+    display: flex;
+    align-items: center;
+
+    height: 35px;
+    padding: 0px 9px;
+    border-radius: 9px;
+
+    margin-right: 25px;
+} 
+
+.main-header-search input{
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    margin-left: 5px;
+
+    width: 200px;
+}
+
+.main-header-search svg{
+    width: 18px;
+}
+
+.main-header-search input::placeholder{
+    color: #8b8b8b;
+}
+
+.main-header-profiles{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin: 0 20px;
+}
+
+.main-header-profiles .header-profile:nth-child(1){
+    background-image: url(./assets/header-profile-1.png);
+}
+
+.main-header-profiles .header-profile:nth-child(2){
+    background-image: url(./assets/header-profile-2.png);
+}
+
+.main-header-profiles .header-profile:nth-child(3){
+    background-image: url(./assets/header-profile-3.png);
+}
+
+.header-profile{
+
+    margin-left: -9px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #BEBDC2;
+
+    border: 2px #F5F6F8 solid;
+}
+
+.header-profile-more{
+    align-self: stretch;
+    color: white;
+    background-color: #F49424;
+
+    font-weight: 300;
+
+    width: 38px;
+    border-radius: 20px;
+    font-size: 12px;
+
+    margin-left: -9px;
+    border: 2px #F5F6F8 solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.header-more:hover{
+    background-color: #EAEBEF;
 }
