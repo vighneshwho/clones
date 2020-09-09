@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     background-position: center;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 svg{
@@ -16,12 +17,13 @@ svg{
 
 .wrapper{
     height: 100vh;
-
     display: flex;
+    overflow: hidden;
 }
 
 .side-nav{
-    width: 60px;
+    flex-shrink: 0;
+    width: 80px;
 
     display: flex;
     flex-direction: column;
@@ -76,8 +78,8 @@ svg{
 .logo{
 
     margin: 29px 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-image: url(./assets/Logo.png);
 
     background-size: contain;
@@ -124,7 +126,10 @@ svg{
 
 .main-section{
     flex: 1;
-    background-color: #F5F6F8;;
+    background-color: #F5F6F8;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -262,4 +267,143 @@ svg{
 
 .header-more:hover{
     background-color: #EAEBEF;
+}
+
+.boards-container{
+    align-self: stretch;
+    flex: 1;
+    padding: 60px 70px;
+    display: flex;
+
+    overflow: auto;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+
+    margin-right: 50px;
+}
+
+.board-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.board-header-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.board-header-title{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.board-header-notification{
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 300;
+    font-size: 14px;
+
+    height: 25px;
+    width: 25px;
+    border-radius: 30px;
+
+    background-color: #EAEBEF;
+    color: #8b8b8b;
+}
+    
+.board-header-more:hover{
+    background-color: #EAEBEF;
+}
+
+.cards-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    margin-bottom: 10px;
+   
+    border-radius: 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+.card > div {
+    display: flex;
+}
+
+.card-title{
+    font-size: 19px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.card-meta-tag{
+    align-self: stretch;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    background-color: #d4e2ff;
+    font-size: 14px;
+    color: #578efb;
+}
+
+.card-meta-assignees{
+    margin-left: auto;
+    display: flex;
+}
+
+.add-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FAFBFC;
+    border-radius: 10px;
+
+    border: 1px #DEDFE1 solid;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.add-card span{
+    font-weight: 300;
+    color: #BEBDC2;
+}
+
+.add-card svg{
+    fill: #BEBDC2;
+    width: 15px;
+    margin-right: 10px;
 }
