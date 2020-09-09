@@ -18,7 +18,7 @@ svg{
 .wrapper{
     height: 100vh;
     display: flex;
-    overflow: hidden;
+    
 }
 
 .side-nav{
@@ -126,6 +126,7 @@ svg{
 
 .main-section{
     flex: 1;
+    min-width: 0;
     background-color: #F5F6F8;
 
     display: flex;
@@ -274,11 +275,13 @@ svg{
     flex: 1;
     padding: 60px 70px;
     display: flex;
-
     overflow: auto;
+
+    box-sizing: content-box;
 }
 
 .board{
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
 
@@ -291,6 +294,8 @@ svg{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
+    flex-shrink: 0;
 }
 
 .board-header-more{
@@ -335,11 +340,13 @@ svg{
 }
 
 .cards-list{
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
 }
 
 .card{
+    flex-shrink: 0;
     margin-bottom: 10px;
    
     border-radius: 10px;
@@ -384,6 +391,7 @@ svg{
 }
 
 .add-card{
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
