@@ -291,6 +291,13 @@ svg{
     margin-right: 50px;
 }
 
+.board::after{
+    content: "";
+    flex-shrink: 0;
+
+    height: 40px;
+}
+
 .board-header{
     display: flex;
     align-items: center;
@@ -435,4 +442,12 @@ svg{
     fill: #BEBDC2;
     width: 15px;
     margin-right: 10px;
+}
+
+.spacing-boards-container{
+    align-self: stretch;
+    width: 20px;
+    height: 100px;
+    flex-shrink: 0;
+    align-self: stretch;
 }
