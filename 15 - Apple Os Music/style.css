@@ -406,4 +406,169 @@ svg{
 .side-nav{
     width: 200px;
     display: flex;
+    flex-direction: column;
+    padding: 18px;
+    background-color: #F7F7F8;
+
+    box-shadow: inset -10px 0 10px rgb(236, 236, 236);
+}
+
+.system-buttons{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin: 0 3px;
+
+    margin-bottom: 25px;
+}
+
+.system-buttons > div {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 10px;
+    background-color: #9dbdff;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.system-buttons > div:nth-child(1){
+    background-color: #EE6A5E;
+}
+
+.system-buttons > div:nth-child(1):hover{
+    box-shadow: 0px 0px 10px #EE6A5E;
+}
+
+.system-buttons > div:nth-child(2){
+    background-color: #F5BD4E;
+}
+
+.system-buttons > div:nth-child(2):hover{
+    box-shadow: 0px 0px 10px #F5BD4E;
+}
+
+.system-buttons > div:nth-child(3){
+    background-color: #62C355;
+}
+
+.system-buttons > div:nth-child(3):hover{
+    box-shadow: 0px 0px 10px #62C355;
+}
+
+
+.side-nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 12px;
+
+    margin-left: 18px;
+
+    margin-bottom: 20px;
+}
+
+.side-nav-menu-item svg{
+    fill: #BBC4CF;
+    width: 15px;
+    margin-right: 20px;
+
+}
+
+.side-nav-menu-title{
+    font-size: 10px;
+    text-transform: uppercase;
+    
+    font-weight: 600;
+    color: #B1B9C3;
+}
+
+.side-nav-menu-item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.side-nav-menu-item-text{
+    color: #89929e;
+}
+
+.active-side-menu-item .side-nav-menu-item-text{
+    color: red;
+}
+
+.active-side-menu-item svg{
+    fill: red;
+}
+
+.connected-device{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom:0px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px 10px;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.connected-device:hover{
+    box-shadow: 5px 5px 10px #ccd0da;
+}
+
+.device-image{
+    height: 35px;
+    width: 30px;
+    background-image: url(./assets/iphoneX.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.device-meta{
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.device-meta div:nth-child(1){
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.device-meta div:nth-child(2){
+    font-weight: 300;
+    font-size: 10px;
+    color: #8C92A6;
+}
+
+.eject{
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eject:hover svg{
+    fill: rgb(58, 58, 58);
+}
+
+.eject svg{
+    width: 10px;
+    height: auto;
+    fill: #8C92A6;
+    transition: fill 0.3s ease-out;
 }
