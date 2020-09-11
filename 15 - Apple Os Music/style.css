@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position-y: center;
+}
+
+.wrapper{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.player-wrapper{
+    
+    backdrop-filter: blur(30px);
+    background-image: url(./assets/musicplayer.jpg);
+
+    display: flex;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+}
+
+
+.player{
+    height: 60px;;
+    width: 100%;
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+backdrop-filter: saturate(180%) blur(20px);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+}
+
+.side-nav{
+    width: 200px;
+    display: flex;
+}
