@@ -25,7 +25,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 28 Aug 20 | [Property Dashboard][12-d]        | [v1][12-i-v1], [v2][12-i-v2], [v3][12-i-v3], [v4][12-i-v4]                               |       |
 | 02 Sep 20 | [Instagram Statistics][13-d]      | [v1][13-i-v1], [v2][13-i-v2], [v3][13-i-v3], [v4][13-i-v4], [v5][13-i-v5], [v6][13-i-v6] |       |
 | 07 Sep 20 | [Trello Clone][14-d]              | [v1][14-i-v1], [v2][14-i-v2], [v3][14-i-v3], [v4][14-i-v4], [v5][14-i-v5], [v6][14-i-v6] |       |
-| 11 Sep 20 | [Apple OS Music][15-d]            | [v1][15-i-v1], [v2][15-i-v2]                                                             |       |
+| 11 Sep 20 | [Apple OS Music][15-d]            | [v1][15-i-v1], [v2][15-i-v2], [v3][15-i-v3]                                              |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -98,3 +98,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [15-d]: https://dribbble.com/shots/5444800-Apple-OS-Music-Redesign-available/attachments
 [15-i-v1]: http://appleos-music-v1.surge.sh/
 [15-i-v2]: http://appleos-music-v2.surge.sh/
+[15-i-v3]: http://appleos-music-v3.surge.sh

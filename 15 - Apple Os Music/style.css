@@ -268,6 +268,25 @@
     src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
   }
 
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+    background-color: none;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -275,7 +294,7 @@
     box-sizing: border-box;
     font-family: "SF Display", sans-serif;
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
 }
 
 .wrapper{
@@ -497,11 +516,11 @@ svg{
 }
 
 .active-side-menu-item .side-nav-menu-item-text{
-    color: red;
+    color: #FD2D55;
 }
 
 .active-side-menu-item svg{
-    fill: red;
+    fill: #FD2D55;
 }
 
 .connected-device{
@@ -571,4 +590,159 @@ svg{
     height: auto;
     fill: #8C92A6;
     transition: fill 0.3s ease-out;
+}
+
+.main-area{
+    flex: 1;
+
+    overflow-y: scroll;
+}
+
+.main-area-header{
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.main-area-header > div:first-child{
+    font-size: 15px;
+    color: #FD2D55;
+    font-weight: 300;
+}
+
+.main-area-header > div:last-child{
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #3E3E42;
+}
+
+.main-area-new-releases{
+    overflow: auto;
+    padding: 40px 0;
+    padding-left: 120px;
+    display: flex;
+}
+
+.main-area-new-releases::after{
+    flex-shrink: 0;
+    content: "";
+    align-items: stretch;
+    width: 20px;
+}
+
+.new-release{
+    background-color: rgb(219, 223, 236);
+    box-shadow: 0px 5px 20px #e7e8e9;
+    height: 185px;
+    width: 350px;
+    border-radius: 10px;
+
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.albums-header{
+    margin-left: 120px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.albums-header-title{
+    margin-right: auto;
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.albums-header > .albums-header-btn:last-child{
+    margin-left: 10px;
+    background-color: #FD2D55;
+
+    box-shadow: 0px 2px 20px #f3a4b3;
+}
+
+.albums-header > .albums-header-btn:last-child svg{
+    width: 12px;
+    fill: white;
+    margin-right: -2px;
+}
+
+.albums-header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    background-color: #F7F7F8;
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease-out;
+}
+
+.albums-header-btn svg{
+    fill: #898f97;
+    width: 18px;
+}
+
+.albums-list{
+    margin-top: 50px;
+    padding-left: 120px;
+    display: flex;
+    overflow: auto;
+}
+
+.album-avatar{
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+
+    background-color: rgb(219, 223, 236);;
+
+    margin-bottom: 16px;
+    margin-right: 40px;
+
+    box-shadow: 0px 5px 20px #e7e8e9;
+
+    cursor: pointer;
+}
+
+.album-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.album-details > div:first-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.album-details > div:last-child{
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #8C92A6;
+}
+
+.offer-list{
+    padding: 80px 0;
+    padding-left: 120px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 13vh;
+
+    margin-right: 40px;
+    gap: 20px;
+}
+
+.offer{
+    background-color: rgb(219, 223, 236);;
+    border-radius: 10px;
 }
