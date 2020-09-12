@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+    background-color: none;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+}
+
+.wrapper{
+    background-color: #DCDDDE;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-screen{
+    width: 249px;
+    height: 538px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 30px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    overflow: auto;
+
+    box-shadow: 5px 5px 20px rgb(219, 215, 215);
+}
+
+.screen-1-header{
+    padding: 40px 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.screen-1-header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-greetings{
+    font-weight: 300;
+    font-size: 10px;
+    color: #8B8C8D;
+}
+
+.header-tasks{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-tasks > div:first-child{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.header-tasks > div:last-child{
+    font-weight: 500;
+    font-size: 17px;
+
+    color: #48B583;
+}
+
+.screen-1-header-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 0.5px orange solid;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.header-profile-avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    
+    background-color: red;
+    background-image: url(./assets/header-profile.png);
+}
+
+.header-profile-notification{
+    box-sizing: content-box;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #FD0241;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 6px;
+    color: white;
+    border: 2px white solid;
+}
+
+.screen-1-courses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.courses-header{
+    padding: 0 20px;
+}
+
+.courses-header > div:first-child{
+    font-size-adjust: 17px;
+    font-weight: 500;
+}
+
+.courses-header > div:last-child{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 10px;
+    color: #8B8C8D;
+}
+
+.courses-list{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.courses-list::after{
+    content: "";
+    flex-shrink: 0;
+    width: 10px;
+    align-self: stretch;
+}
+
+.course{
+    flex-shrink: 0;
+    background-color: #FD4271;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    box-shadow: 0px 2px 10px rgb(214, 214, 214);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    cursor: pointer;
+}
+
+.course svg{
+    width: 30px;
+    fill: rgba(255, 255, 255, 0.493);
+}
+
+.course-name{
+    margin-top: 7px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+.screen-1-shedule{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.screen-1-schedule-header > div:first-child{
+    font-size-adjust: 17px;
+    font-weight: 500;
+}
+
+.screen-1-schedule-header > div:last-child{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 10px;
+    color: #8B8C8D;
+}
+
+.screen-1-schedule-list{
+    flex-shrink: 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-1-schedule-item{
+    margin-top: 20px;
+    align-self: stretch;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #7C87FD;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 15px;
+
+    cursor: pointer;
+}
+
+.schedule-item-header{
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.schedule-item-header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.schedule-item-header-btn:hover {
+    background-color: #5a67f7;  
+}
+
+.schedule-item-header-btn svg{
+    fill: rgba(255, 255, 255, 0.589);
+    width: 10px;
+}
+
+.schedule-item-details{
+    width: 190px;
+    display: flex;
+}
+
+.schedule-item-meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 9px;
+}
+
+.schedule-item-meta .chapter{
+    font-weight: 400;
+}
+
+.schedule-meta-list{
+    font-size: 8px;
+}
+
+.schedule-meta-item{
+    display: flex;
+    align-items: center;
+}
+
+.schedule-meta-list svg{
+    width: 10px;
+}
+
+.schedule-meta-text{
+    flex-shrink: 0;
+    padding-left: 5px;
+    font-weight: 300;
+}
+
+.schedule-meta-profile{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+    background-color: #5a67f7;
+}
+
+.schedule-meta-list div:last-child{
+    margin: 2px 0px;
+}
+
+.schedule-item-logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-item-logo svg{
+    width: 70px;
+    fill: #6670F5;
+}
