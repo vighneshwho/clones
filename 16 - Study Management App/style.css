@@ -46,6 +46,7 @@ svg{
 }
 
 .mobile-screen{
+    position: relative;
     width: 249px;
     height: 538px;
     background-color: white;
@@ -60,6 +61,12 @@ svg{
     overflow: auto;
 
     box-shadow: 5px 5px 20px rgb(219, 215, 215);
+}
+
+.mobile-screen::after{
+    flex-shrink: 0;
+    content: "";
+    height: 60px;
 }
 
 .screen-1-header{
@@ -105,8 +112,8 @@ svg{
     width: 30px;
     height: 30px;
     border-radius: 5px;
-    padding: 2px;
-    border: 0.5px orange solid;
+    padding: 1px;
+    border: 0.5px rgb(255, 226, 172) solid;
     position: relative;
 
     cursor: pointer;
@@ -341,4 +348,52 @@ svg{
 .schedule-item-logo svg{
     width: 70px;
     fill: #6670F5;
+}
+
+.bottom-nav-bar{
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    font-weight: 300;
+
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+
+
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 23px;
+}
+
+.bottom-nav-bar svg{
+    fill: white;
+    width: 11px;
+    margin-bottom: 5px;
+}
+
+.bottom-nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.active-nav-item{
+    color: #47B482;
+}
+
+.active-nav-item svg{
+    fill: #47B482;
 }

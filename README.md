@@ -26,7 +26,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 02 Sep 20 | [Instagram Statistics][13-d]      | [v1][13-i-v1], [v2][13-i-v2], [v3][13-i-v3], [v4][13-i-v4], [v5][13-i-v5], [v6][13-i-v6] |       |
 | 07 Sep 20 | [Trello Clone][14-d]              | [v1][14-i-v1], [v2][14-i-v2], [v3][14-i-v3], [v4][14-i-v4], [v5][14-i-v5], [v6][14-i-v6] |       |
 | 11 Sep 20 | [Apple OS Music][15-d]            | [v1][15-i-v1], [v2][15-i-v2], [v3][15-i-v3], [v4][15-i-v4]                               |       |
-| 12 Sep 20 | [Study Management App][16-d]      | [v1][16-i-v1]                                                                            |       |
+| 12 Sep 20 | [Study Management App][16-d]      | [v1][16-i-v1], [v2][16-i-v2]                                                             |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -103,3 +103,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [15-i-v4]: http://appleos-music-v4-correction.surge.sh/
 [16-d]: https://dribbble.com/shots/14149970/attachments/5775592?mode=media/
 [16-i-v1]: http://study-management-app-v1.surge.sh/
+[16-i-v2]: http://study-management-app-v2.surge.sh/
