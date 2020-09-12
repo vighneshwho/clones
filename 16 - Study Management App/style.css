@@ -31,7 +31,7 @@
 }
 
 svg{
-    width: 20px;
+    width: 12px;
     height: auto;
 }
 
@@ -69,7 +69,7 @@ svg{
     height: 60px;
 }
 
-.screen-1-header{
+.screen-1-header, .screen-2-header{
     padding: 40px 20px;
     padding-bottom: 30px;
     display: flex;
@@ -96,14 +96,18 @@ svg{
     align-items: flex-start;
 }
 
-.header-tasks > div:first-child{
+.header-tasks > div:first-child, .header-today{
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
+}
+
+.header-today{
+    margin-top: 2px;
 }
 
 .header-tasks > div:last-child{
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
 
     color: #48B583;
 }
@@ -275,14 +279,10 @@ svg{
     justify-content: center;
     width: 20px;
     height: 20px;
+    margin-right: -5px;
     border-radius: 10px;
-    
     transition: background-color 0.3s ease-out;
     cursor: pointer;
-}
-
-.schedule-item-header-btn:hover {
-    background-color: #5a67f7;  
 }
 
 .schedule-item-header-btn svg{
@@ -291,11 +291,12 @@ svg{
 }
 
 .schedule-item-details{
-    width: 190px;
+    flex: 1;
     display: flex;
 }
 
 .schedule-item-meta{
+    width: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -343,6 +344,11 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-image: url(./assets/physics-violet.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .schedule-item-logo svg{
@@ -396,4 +402,171 @@ svg{
 
 .active-nav-item svg{
     fill: #47B482;
+}
+
+
+.screen-2-header-btn{
+     background-color: #47B482;
+     color: white;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+
+     width: 92px;
+     height: 32px;
+     border-radius: 12px;
+
+     font-size: 10px;
+     cursor: pointer;
+
+     box-shadow: 0px 2px 20px #DCDDDE;
+}
+
+.screen-2-header-btn svg {
+    fill: white;
+    width: 8px;
+
+    margin-right: 5px;
+}
+
+.screen-2-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.screen-2-day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3px;
+    padding-bottom: 3px;
+    border-bottom: 1.5px white solid;
+
+    cursor: pointer;
+}
+
+.screen-2-day > div:first-child{
+    font-size: 9px;
+    color: #8B8C8D;
+    font-weight: 300;
+}
+
+.screen-2-day > div:last-child{
+    margin-top: 4px;
+    
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.active-day{
+    color: #47B482;
+    border-color: #47B482;
+}
+
+.active-day > div:first-child{
+    color: #47B482;
+}
+
+.screen-2-timeline{
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-2-timeline-item{
+    margin-top: 2px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-time-container{
+    width: 33px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.timeline-item-time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.from{
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.to{
+    font-size: 9px;
+    color: #8B8C8D;
+    font-weight: 300;
+}
+
+.timeline-line{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.timeline-line-point{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+    background-color: #7C87FD;
+
+    display: flex;
+    align-items: stretch;
+    padding: 1px;
+}
+
+.timeline-line-point-inactive{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: stretch;
+    padding: 2px;
+}
+
+.timeline-line-point-inactive::after{
+    border-radius: 10px;
+    content: "";
+    flex: 1;
+    background-color: white;
+    border: 1px #6670F5 solid;
+}
+
+.timeline-line-point::after{
+    border-radius: 10px;
+    content: "";
+    flex: 1;
+    border: 1px white solid;
+}
+
+.timeline-line-line{
+    margin-top: 2px;
+    width: 1px;
+    background-color: #7C87FD;
+
+    flex: 1;
+
+}
+
+.screen-2-card{
+    flex: 1;
+    margin-top: 0;
+    height: 100px;
+
+    margin-bottom: 10px;
 }
