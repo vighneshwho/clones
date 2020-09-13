@@ -27,6 +27,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 07 Sep 20 | [Trello Clone][14-d]              | [v1][14-i-v1], [v2][14-i-v2], [v3][14-i-v3], [v4][14-i-v4], [v5][14-i-v5], [v6][14-i-v6] |       |
 | 11 Sep 20 | [Apple OS Music][15-d]            | [v1][15-i-v1], [v2][15-i-v2], [v3][15-i-v3], [v4][15-i-v4]                               |       |
 | 12 Sep 20 | [Study Management App][16-d]      | [v1][16-i-v1], [v2][16-i-v2], [v3][16-i-v3], [v4][16-i-v4]                               |       |
+| 13 Sep 20 | [Facebook Redesign][17-d]         | [v1][17-i-v1]                                                                            |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -106,3 +107,5 @@ Exercise to learn UI layouting using Dribbble shots.
 [16-i-v2]: http://study-management-app-v2.surge.sh/
 [16-i-v3]: http://study-management-app-v3.surge.sh/
 [16-i-v4]: http://study-management-app-v4.surge.sh/
+[17-d]: https://dribbble.com/shots/9383451-Facebook-Redesign/attachments/1411633?mode=media
+[17-i-v1]: http://facebook-redesign-v1.surge.sh/
