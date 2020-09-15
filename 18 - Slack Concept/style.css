@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+
+    overflow: hidden;
+
+    display: flex;
+}
+
+.side-nav{
+    background-color: #49154C;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.side-nav-item{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    cursor: pointer;
+}
+
+.active-channel{
+    background-color: #E21F5B;
+}
+
+.side-nav-item svg{
+    width: 17px;
+}
+
+.side-nav svg{
+    fill: rgba(255, 255, 255, 0.603);
+}
+
+.side-nav-menu{
+    display: grid;
+    gap: 20px;
+}
+
+.active-channel svg{
+    fill: white;
+}
+
+.side-nav-add{
+    border: 1px rgba(255, 255, 255, 0.603) dashed;
+}
+
+.side-nav-add svg{
+    width: 12px;
+}
+
+
+.channel-nav{
+    width: 300px;
+    background-color: white;
+    border: 1px rgb(230, 230, 230) solid;
+    border-radius: 30px;
+    margin-left: -30px;
+
+    display: flex;
+    flex-direction: column;
+}
+

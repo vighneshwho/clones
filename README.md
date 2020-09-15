@@ -111,3 +111,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [17-d]: https://dribbble.com/shots/9383451-Facebook-Redesign/attachments/1411633?mode=media
 [17-i-v1]: http://facebook-redesign-v1.surge.sh/
 [18-d]: https://dribbble.com/shots/9708594/attachments/1738047?mode=media
+[18-i-v1]: http://slack-concept-v1.surge.sh
