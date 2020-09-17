@@ -67,8 +67,8 @@ svg{
 }
 
 .messenger-logo{
-    width: 23px;
-    height: 23px;
+    width: 27px;
+    height: 27px;
 
     background-image: url(./assets/logo.png);
     cursor: pointer;
@@ -120,6 +120,7 @@ svg{
     justify-content: center;
 
     box-sizing: content-box;
+    cursor: pointer;
 }
 
 .main-header-right-circle{
@@ -298,8 +299,8 @@ svg{
 
 .new-message-btn{
     cursor: pointer;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 40px;
 
     display: flex;
@@ -311,6 +312,7 @@ svg{
 
 .new-message-btn > svg{
     fill: white;
+    width: 17px;
 }
 
 .color-mode{
@@ -333,7 +335,7 @@ svg{
 }
 
 .color-mode-btn > svg{
-    fill: white;
+    fill: rgb(255, 217, 0);
 }
 
 
@@ -373,7 +375,7 @@ svg{
     justify-content: center;
 
     box-sizing: content-box;
-    border: 1px #27292D solid;
+    border: 3px #27292D solid;
     background-color: #31343a;
     margin-left: -9px;
 
@@ -451,8 +453,8 @@ svg{
 
 .chat-profile{
     flex-shrink: 0;
-    width: 45px;
-    height: 45px;
+    width: 37px;
+    height: 37px;
     border-radius: 35px;
 
     display: flex;
@@ -465,6 +467,8 @@ svg{
 }
 
 .chat-controll-bar{
+
+    margin-left: 29px;
     display: flex;
     align-items: center;
 
@@ -490,7 +494,8 @@ svg{
 }
 
 .chat-controll-bar svg{
-    margin: 0 5px;
+    margin: 0 7px;
+    width: 15px;
     cursor: pointer;
 }
 
@@ -522,8 +527,8 @@ svg{
     width: 60px;
     height: 60px;
     border-radius: 80px;
-    border: 2px #27292D solid;
-    background-color: red;
+    border: 3px #27292D solid;
+    background-color: #3a3a3a;
 
     margin-left: -14px;
     position: relative;
@@ -608,6 +613,19 @@ svg{
     color: #adadad;
 
     height: 38px;
+
+    cursor: pointer;
+}
+
+.change-color{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+
+    background-color: #008cff;
+    border: 3px #67bbff solid;
+
+    cursor: pointer;
 }
 
 .chat-details-settings > .chat-details-setting:nth-child(2){
@@ -678,6 +696,8 @@ svg{
 
     font-size: 12px;
     color: #3a3a3a;
+
+    cursor: pointer;
 }
 
 .privacy-and-support > svg{
