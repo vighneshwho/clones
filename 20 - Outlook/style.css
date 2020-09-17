@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --background-blue: #0278D5;
+    --bright-blue: #02B5FF;
+    --svg-color: #C8D0DB;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -30,12 +38,12 @@
 svg{
     width: 20px;
     height: auto;
-    fill: #707075;
+    fill: var(--svg-color);
     transition: fill 0.3s ease-out;
 }
 
 .wrapper{
-    background-color: #27292D;
+    background-color: var(--background-blue);
     height: 100vh;
     width: 100vw;
     max-height: 100vh;
@@ -46,6 +54,122 @@ svg{
     position: relative;
 
     display: flex;
+}
+
+.side-nav{
+    width: 250px;
+
+    color: white;
+    padding-left: 20px;
+    overflow: hidden;
+
+    padding-top: 30px;
+}
+
+.side-nav-header{
+    display: flex;
+    align-items: center;
+
+    padding-left: 20px;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.side-nav-header > svg{
+    fill: white;
+    margin-right: 20px;
+
+    width: 17px;
+}
+
+.side-nav-menu-header{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.side-nav-menu-header > svg{
+    margin-left: 10px;
+    fill: white;
+
+    width: 10px;
+}
+
+.side-nav-menu-list{
+    display: flex;
     flex-direction: column;
-    color: #E6E6E7;
+}
+
+.side-nav-menu-item{
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+    height: 50px;
+
+    margin-bottom: 4px;
+
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.side-nav-menu-item > svg{
+    margin-right: 15px;
+    width: 16px;
+}
+
+.selected-menu-item{
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+}
+
+.selected-menu-item::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+
+    position: absolute;
+    top: -60px;
+    right: 0;
+
+    box-shadow: 30px 30px 0px white;
+}
+
+.selected-menu-item::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+
+    box-shadow: 30px -30px 0px white;
+}
+
+.selected-menu-item > svg{
+    fill: var(--background-blue);
+}
+
+.main-section{
+    flex: 1;
+    background-color: white;
+
+    margin: 15px;
+    margin-left: 0;
+    border-radius: 30px;
+
+    overflow-y: auto;
 }
