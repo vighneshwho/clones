@@ -116,3 +116,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [18-i-v2]: http://slack-concept-v2.surge.sh
 [19-d]: https://dribbble.com/shots/8275108/attachments/629292?mode=media
 [19-i-v1]: http://fb-messenger-v1.surge.sh
+[19-i-v2]: http://fb-messenger-v2.surge.sh
