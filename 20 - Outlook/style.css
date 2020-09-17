@@ -63,7 +63,7 @@ svg{
     padding-left: 20px;
     overflow: hidden;
 
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .side-nav-header{
@@ -172,4 +172,248 @@ svg{
     border-radius: 30px;
 
     overflow-y: auto;
+    padding: 30px;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section-header{
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.header-search{
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-search > svg{
+    margin-right: 10px;
+}
+
+.header-search > input{
+    padding: 10px;
+    border: none;
+    outline: none;
+
+    width: 400px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header-search > input::placeholder{
+    color: #93989e;
+}
+
+.main-section-header > svg{
+    margin-left: 10px;
+}
+
+.main-content{
+    flex: 1;
+    display: flex;
+}
+
+.mails{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 20px;
+}
+
+.mails-header{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mails-header-title{
+    display: flex;
+    align-items: center;
+}
+
+.mails-header-title > svg{
+    margin-left: 20px;
+}
+
+.mails-header-add-mail{
+    background-color: var(--background-blue);
+    width: 35px;
+    height: 35px;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mails-header-add-mail > svg{
+    fill: white;
+}
+
+.mails-list{
+    padding-top: 20px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.mail{
+    display: flex;
+    align-items: flex-start;
+
+    align-self: stretch;
+
+    padding: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected-mail{
+    background-color: #F4F9FE;
+}
+
+.mail-avatar{
+    width: 35px;
+    height: 35px;
+
+    border-radius: 5px;
+    background-color: var(--svg-color);
+
+    margin-right: 15px;
+}
+
+.mail > .mail-content{
+    flex: 1;
+    flex-basis: 0;
+}
+
+.mail-content-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 15px;
+}
+
+.mail-content-meta > div:first-child{
+    font-weight: 300;
+    font-size: 11px;
+    color: #93989e;
+    margin-bottom: 8px;
+}
+
+.mail-content-meta > div:last-child{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.mail-content-detail{
+    font-size: 12px;
+    line-height: 20px;
+    color: #93989e;
+}
+
+.mail-time{
+    font-size: 12px;
+    line-height: 20px;
+    color: #93989e;
+    margin-left: 5px;
+}
+
+.expanded-mail{
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.expanded-mail-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 40px;
+}
+
+.expanded-mail-header-title{
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.expanded-mail-header > svg{
+    margin-left: 20px;
+}
+
+.expanded-mail-content{
+    margin-top: 35px;
+}
+
+.expanded-mail-content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.expanded-mail-content-header > .logo{
+    width: 100px;
+    height: 30px;
+
+    background-image: url(./assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    cursor: pointer;
+}
+
+.vib{
+    color: var(--bright-blue);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.expanded-mail-content-image{
+    height: 400px;
+
+    background-image: url(./assets/vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.expanded-mail-content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.expanded-mail-content-text > div:first-child{
+    font-weight: 600;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.expanded-mail-content-text > div:last-child{
+    width: 64%;
+    color: #93989e;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
 }
