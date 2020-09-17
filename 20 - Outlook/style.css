@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root{
     --background-blue: #0278D5;
@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ svg{
 }
 
 .side-nav{
-    width: 250px;
+    width: 280px;
 
     color: white;
     padding-left: 20px;
@@ -118,7 +118,7 @@ svg{
     position: relative;
     cursor: pointer;
 
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .side-nav-menu-item > svg{
@@ -135,28 +135,35 @@ svg{
 
 .selected-menu-item::before{
     content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 80px;
+    width: 100px;
+    height: 80px;
+    border-radius: 0 80px 80px 0;
+
+    
 
     position: absolute;
-    top: -60px;
+    top: -80px;
     right: 0;
 
-    box-shadow: 30px 30px 0px white;
+    box-shadow: 30px 40px 0px white;
+    pointer-events: none;
 }
 
 .selected-menu-item::after{
     content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 80px;
+    width: 100px;
+    height: 80px;
+    border-radius: 0 80px 80px 0;
+
+    
 
     position: absolute;
-    bottom: -60px;
+    bottom: -80px;
     right: 0;
 
-    box-shadow: 30px -30px 0px white;
+    box-shadow: 30px -40px 0px white;
+
+    pointer-events: none;
 }
 
 .selected-menu-item > svg{
@@ -184,7 +191,7 @@ svg{
     align-items: center;
 
     justify-content: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .header-search{
@@ -196,6 +203,7 @@ svg{
 
 .header-search > svg{
     margin-right: 10px;
+    width: 15px;
 }
 
 .header-search > input{
@@ -213,7 +221,10 @@ svg{
 }
 
 .main-section-header > svg{
-    margin-left: 10px;
+    margin-left: 25px;
+    width: 16px;
+
+    cursor: pointer;
 }
 
 .main-content{
@@ -231,6 +242,7 @@ svg{
 
 .mails-header{
     padding: 0 20px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,10 +251,14 @@ svg{
 .mails-header-title{
     display: flex;
     align-items: center;
+
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .mails-header-title > svg{
     margin-left: 20px;
+    width: 10px;
 }
 
 .mails-header-add-mail{
@@ -259,15 +275,22 @@ svg{
 
 .mails-header-add-mail > svg{
     fill: white;
+    width: 12px;
 }
 
 .mails-list{
-    padding-top: 20px;
+    padding-top: 10px;
     flex: 1;
     
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+}
+
+.mails-list::after{
+    flex-shrink: 0;
+    content: "";
+    height: 30px;
 }
 
 .mail{
@@ -283,6 +306,10 @@ svg{
 
 .selected-mail{
     background-color: #F4F9FE;
+}
+
+.selected-mail .mail-content-meta > div:last-child{
+    color: var(--background-blue);
 }
 
 .mail-avatar{
@@ -305,23 +332,23 @@ svg{
     flex-direction: column;
     align-items: flex-start;
 
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .mail-content-meta > div:first-child{
     font-weight: 300;
     font-size: 11px;
     color: #93989e;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .mail-content-meta > div:last-child{
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 13px;
 }
 
 .mail-content-detail{
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
     color: #93989e;
 }
@@ -347,7 +374,7 @@ svg{
     align-items: center;
     justify-content: flex-end;
 
-    height: 40px;
+    height: 50px;
 }
 
 .expanded-mail-header-title{
@@ -356,7 +383,10 @@ svg{
 }
 
 .expanded-mail-header > svg{
-    margin-left: 20px;
+    margin-left: 25px;
+    width: 16px;
+
+    cursor: pointer;
 }
 
 .expanded-mail-content{
@@ -411,9 +441,9 @@ svg{
 }
 
 .expanded-mail-content-text > div:last-child{
-    width: 64%;
+    width: 74%;
     color: #93989e;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 25px;
 }
