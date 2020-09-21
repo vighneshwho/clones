@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+  --very-dark: #0E1F35;
+  --dark: #162942;
+  --dark-blue: #2742AA;
+  --blue: #3657FF;
+  --cream: #F7F7F9;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -48,4 +56,183 @@ svg{
     position: relative;
 
     display: flex;
+}
+
+.side-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav-header{
+  background-color: var(--very-dark);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.side-nav-header > svg{
+  margin-right: 10px;
+}
+
+.side-nav-menus{
+  flex: 1;
+  display: flex;
+}
+
+.nav-1{
+  background-color: var(--very-dark);
+  width: 70px;
+
+  padding-top: 110px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-1-item{
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.nav-1-item:hover{
+  background-color: var(--dark-blue);
+}
+
+.nav-1-item > svg{
+  fill: white;
+  width: 15px;
+}
+
+.nav-1-selected{
+  background-color: var(--blue);
+}
+
+.nav-1-selected:hover{
+  background-color: var(--blue);
+}
+
+.nav-1-settings{
+  margin-top: auto;
+  margin-bottom: 20px;
+  align-self: center;
+  background-color: var(--dark);
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.nav-1-settings > svg{
+  fill: white;
+  width: 15px;
+}
+
+.nav-2{
+  flex: 1;
+  background-color: var(--dark);
+  width: 185px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-2-menu{
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  font-size: 15px;
+
+  
+}
+
+.nav-2-menu::after{
+  margin-top: 5px;
+  content: "";
+  background-color: #79868d;
+  height: 0.5px;
+
+  margin-left: 10px;
+}
+
+.nav-2-menu > div{
+  padding: 0 25px;
+}
+
+.nav-2-menu-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 50px;
+  font-size: 14px;
+
+  margin-bottom: 5px;
+}
+
+.active-nav-2-header{
+  background-color: var(--dark-blue);
+}
+
+.nav-2-menu-notification{
+  background-color: var(--blue);
+
+  font-size: 10px;
+  font-weight: 300;
+
+  padding: 5px 8px;
+
+  border-radius: 40px;
+}
+
+.nav-2-menu-item{
+  display: flex;
+  align-items: center;
+
+  height: 35px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #cccfd8;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+
+  overflow: hidden;
+}
+
+.nav-2-menu-item > svg{
+  width: 8px;
+
+  margin-right: 10px;
+  stroke: red;
+}
+
+.nav-2-menu-item:hover{
+  background-color: var(--very-dark);
+}
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content{
+  flex: 1;
+  display: flex;
 }
