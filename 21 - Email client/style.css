@@ -44,7 +44,7 @@ body{
 svg{
     width: 20px;
     height: auto;
-    fill: var(--svg-color);
+    fill: #79868d;
     transition: fill 0.3s ease-out;
 }
 
@@ -81,6 +81,8 @@ svg{
 
 .side-nav-header > svg{
   margin-right: 10px;
+
+  fill: none;
 }
 
 .side-nav-menus{
@@ -225,6 +227,7 @@ svg{
 
   margin-right: 10px;
   stroke: red;
+  fill: none;
 }
 
 .nav-2-menu-item:hover{
@@ -255,8 +258,9 @@ svg{
 }
 
 .main-header-search > svg{
-  width: 12px;
+  width: 13px;
   margin-right: 10px;
+  fill: #4e5558;
 }
 
 .main-header-search > input{
@@ -280,6 +284,26 @@ svg{
   justify-content: center;
 
   margin-right: 20px;
+
+  position: relative;
+}
+
+.main-header-notification > svg{
+  width: 15px;
+}
+
+.bell-notification{
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+
+  background-color: red;
+
+  position: absolute;
+  top: 1px;
+  right: 0;
+
+
 }
 
 .main-header-profile{
@@ -287,10 +311,11 @@ svg{
   align-items: center;
 
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .main-header-profile > svg{
-  width: 12px;
+  width: 10px;
 }
 
 .main-header-avatar{
@@ -353,7 +378,7 @@ svg{
 }
 
 .mails-list-header-sort > svg{
-  width: 10px;
+  width: 8px;
   margin-left: 7px;
 }
 
@@ -448,6 +473,22 @@ svg{
   width: 10px;
 }
 
+.mails-list-item-meta >  svg  path:first-child{
+  fill: none
+}
+
+.mails-list-item-meta > svg  path:last-child{
+  fill: #79868d;
+}
+
+.mails-list-item-meta > .starred > path:first-child{
+  fill: rgb(255, 217, 0);
+}
+
+.mails-list-item-meta > .starred > path:last-child{
+  fill: none;
+}
+
 .active-mails-list-item{
   background-color: white;
 }
@@ -536,6 +577,7 @@ svg{
   display: flex;
   flex-direction: column;
   padding: 40px;
+  padding-top: 20px;
   padding-bottom: 0;
 
   position: relative;
@@ -555,6 +597,7 @@ svg{
 }
 
 .expanded-mail-header{
+  padding: 20px 0;
   display: flex;
   align-items: center;
 }
@@ -599,12 +642,13 @@ svg{
   font-weight: 300;
   color: #4e5558;
 
-  margin-right: 20px;
+  margin-right: 15px;
+  letter-spacing: 0.7px;
 }
 
 .expanded-mail-header-btn{
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 40px;
 
   background-color: #f0f0f0;
@@ -719,7 +763,7 @@ svg{
 }
 
 .expanded-mail-attachment-btn svg{
-  width: 9px;
+  width: 7px;
 }
 
 
@@ -739,7 +783,7 @@ svg{
 
   display: flex;
   flex-direction: column;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .expanded-mail-input-btn{
@@ -782,6 +826,8 @@ svg{
   margin-right: 10px;
   fill: #4e5558;
   cursor: pointer;
+
+  width: 17px;
 }
 
 .expanded-mail-input-send{
@@ -819,6 +865,11 @@ svg{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.avatars-list-header > svg{
+  fill: var(--blue);
+  width: 15px;
 }
 
 .avatars-list{
