@@ -31,6 +31,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 15 Sep 20 | [Slack Concept][18-d]             | [v1][18-i-v1], [v2][18-i-v2]                                                             |       |
 | 16 Sep 20 | [Facebook Messenger][19-d]        | [v1][19-i-v1], [v2][19-i-v2], [v3][19-i-v3]                                              |       |
 | 17 Sep 20 | [Outlook][20-d]                   | [v1][20-i-v1], [v2][20-i-v2], [v3][20-i-v3]                                              |       |
+| 21 Sep 20 | [Email client][21-d]              |                                                                                          |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -123,3 +124,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [20-i-v1]: http://outlook-v1.surge.sh/
 [20-i-v2]: http://outlook-v2.surge.sh/
 [20-i-v3]: http://outlook-v3.surge.sh/
+[21-d]: https://dribbble.com/shots/5771691-Email-Client-Ui-Exploration/attachments
