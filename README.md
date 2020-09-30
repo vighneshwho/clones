@@ -32,6 +32,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 16 Sep 20 | [Facebook Messenger][19-d]        | [v1][19-i-v1], [v2][19-i-v2], [v3][19-i-v3]                                              |       |
 | 17 Sep 20 | [Outlook][20-d]                   | [v1][20-i-v1], [v2][20-i-v2], [v3][20-i-v3]                                              |       |
 | 21 Sep 20 | [Email client][21-d]              | [v1][21-i-v1], [v2][21-i-v2], [v3][21-i-v3]                                              |       |
+| 30 Sep 20 | [Virtual Card][22-d]              | [v1][22-i-v1]                                                                            |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -128,3 +129,5 @@ Exercise to learn UI layouting using Dribbble shots.
 [21-i-v1]:  http://email.client-v1.surge.sh/
 [21-i-v2]:  http://email.client-v2.surge.sh/
 [21-i-v3]:  http://email-client-v3.surge.sh/
+[22-d]: https://dribbble.com/shots/11145940/attachments/2749176?mode=media
+[22-i-v1]: http://virtual-card-v1.surge.sh/
