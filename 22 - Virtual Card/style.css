@@ -95,7 +95,7 @@ svg{
 }
 
 .main-header > input{
-    width: 45%;
+    width: 49%;
     font-size: 25px;
 
     background-color: rgba(255, 255, 255, 0);
@@ -367,6 +367,8 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .content-right-table-item{

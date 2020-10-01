@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --wrapper: #F5F6FA;
+  --yellow: #FECE2F;
+  --tealish: #21D3B7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+    background-color: none;
+  }
+
+svg{
+    width: 20px;
+    height: auto;
+    fill: #79868d;
+    transition: fill 0.3s ease-out;
+}
+
+.wrapper{
+    background-color: var(--wrapper);
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+
+    min-width: 1400px;
+    min-height: 700px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.side-nav{
+  background-color: white;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.side-nav-logo{
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.side-nav-logo > img{
+  width: 94px;
+}
+
+.side-nav-search{
+  background-color: var(--wrapper);
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.side-nav-search > svg{
+  width: 12px;
+  margin-right: 10px;
+}
+
+.side-nav-search > input{
+  min-width: 0;
+  flex: 1;
+
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+.side-nav-search > input::placeholder{
+  font-weight: 400;
+  color: rgb(99, 89, 89);
+}
+
+.side-nav-menu{
+  margin-top: 40px;
+  display: flex;
+  align-items: stretch;
+}
+
+.side-nav-menu-item{
+  padding: 3px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.side-nav-menu-item > svg{
+  width: 27px;
+  fill: black;
+}
+
+.side-nav-menu-item > div{
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.side-nav-menu > .side-nav-menu-item:first-child{
+  border-right: 1px #ced7db solid;
+}
+
+.side-nav-cards-container{
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav-cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav-card{
+  padding: 0 33px;
+  background-color: var(--wrapper);
+
+  height: 120px;
+
+  margin-bottom: 18px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.side-nav-card > div:first-child{
+  font-size: 10px;
+  color: #79868d;
+}
+
+.side-nav-card > div:last-child{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.active-side-nav-card{
+  background-color: var(--yellow);
+}
+
+.side-nav-cards-pages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-nav-cards-page{
+  box-sizing: content-box;
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+  margin: 0 2px ;
+  background-color: #ebebeb;
+
+  cursor: pointer;
+}
+
+.active-side-nav-cards-page{
+  border: 1.5px var(--yellow) solid;
+
+  background-color: white;
+}
+
+.side-nav-profile{
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.side-nav-profile-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--yellow);
+
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.side-nav-profile-meta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.side-nav-profile-meta > div:first-child{
+  font-weight: 600;
+}
+.side-nav-profile-meta > div:last-child{
+  font-weight: 300;
+  color: var(--yellow);
+}
+
+.side-nav-profile-settings{
+  margin-left: auto;
+
+  border-radius: 30px;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.side-nav-profile-settings > svg{
+  width: 14px;
+}
