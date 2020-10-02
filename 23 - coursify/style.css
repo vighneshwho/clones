@@ -304,11 +304,6 @@ svg{
   width: 21px;
 }
 
-.right-section{
-  padding: 40px;
-  width: 290px;
-}
-
 .main-section-tabs{
   display: flex;
   align-items: center;
@@ -778,4 +773,178 @@ svg{
 .linked-file-more{
   fill: #ced7db;
   width: 13px;
+}
+
+.right-section{
+  padding: 40px;
+  width: 290px;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.right-section-students{
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section-students-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-section-students-header-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.right-section-students-header-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 8px;
+
+  text-transform: uppercase;
+  color: #79868d;
+  letter-spacing: 1.5px;
+
+  border: 1px #79868d solid;
+  border-radius: 20px;
+  height: 25px;
+  padding: 0 15px;
+
+  cursor: pointer;
+}
+
+.right-section-students-header-add > svg{
+  width: 5px;
+  margin-right: 5px;
+}
+
+.right-section-students-list{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section-student{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.right-section-student-avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+  background-color: var(--yellow);
+
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.online{
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+
+  background-color: var(--tealish);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: 2px var(--wrapper) solid;
+}
+
+.right-section-student-meta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.right-section-student-meta > div:first-child{
+  font-weight: 400;
+}
+.right-section-student-meta > div:last-child{
+  font-weight: 400;
+  color: #ced7db;
+  font-size: 10px;
+}
+
+.right-section-student-time{
+  align-self: flex-start;
+  margin-left: auto;
+
+  font-weight: 500;
+  color: #ced7db;
+  font-size: 10px;
+}
+
+.right-section-mentorship-program{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  margin-bottom: 20px;
+}
+
+.right-section-mentorship-program-image{
+  align-self: stretch;
+  height: 200px;
+  cursor: pointer;
+  
+  background-image: url(./assets/mentorship-program-2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right-section-mentorship-program-meta{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-section-mentorship-program-meta > div:first-child{
+  font-weight: 600;
+  color: #5f696e;
+  font-size: 14px;
+}
+
+.right-section-mentorship-program-meta > div:last-child{
+  font-weight: 300;
+  color: #79868d;
+  font-size: 11px;
+}
+
+.right-section-mentorship-program-button{
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--yellow);
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+
+  padding: 0 25px;
+  height: 35px;
+
+  cursor: pointer;
 }
