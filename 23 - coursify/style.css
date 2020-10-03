@@ -51,7 +51,7 @@ svg{
     max-width: 100vw;
 
     min-width: 1400px;
-    min-height: 700px;
+    /* min-height: 700px; */
     overflow: hidden;
     display: flex;
     position: relative;
@@ -63,6 +63,8 @@ svg{
   display: flex;
   flex-direction: column;
   padding: 40px;
+
+  overflow-y: auto;
 }
 
 .side-nav-logo{
@@ -147,6 +149,8 @@ svg{
 .side-nav-cards{
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 20px;
 }
 
 .side-nav-card{
@@ -259,12 +263,13 @@ svg{
 
 .main-section{
   padding: 40px;
+  padding-bottom: 0;
   flex: 1;
 
   display: flex;
   flex-direction: column;
 
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .main-section-header{
@@ -307,7 +312,6 @@ svg{
 .main-section-tabs{
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .main-section-tab{
@@ -336,8 +340,12 @@ svg{
 }
 
 .main-content{
+  padding-top: 20px;
+  flex: 1;
   display: flex;
   align-items: flex-start;
+
+  overflow-y: auto;
 }
 
 .main-content-left{
@@ -349,7 +357,7 @@ svg{
   border-radius: 15px;
 
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   padding: 30px 20px;
 
@@ -533,7 +541,7 @@ svg{
   display: flex;
   flex-direction: column;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .left-content-card-video-item{
