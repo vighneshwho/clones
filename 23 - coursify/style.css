@@ -374,18 +374,62 @@ svg{
   font-weight: 600;
 }
 
-.progress-circle{
-  width: 110px;
-  height: 110px;
-  border-radius: 100px;
+.progress-ring{
+  position: relative;
+}
 
-  border: 5px var(--yellow) solid;
+.progress-circle{
+  position: relative;
+}
+
+.progress-ring{
+  width: 120px; 
+  height: 120px;
+
+}
+
+.progress-ring-black{
+  stroke: #F5F6FA;
+  stroke-width: 5;
+  fill: transparent;
+
+  z-index: 1;
+}
+
+.progress-ring-circle {
+  z-index: 2;
+  stroke: #FECE2F;
+  stroke-width: 5;
+  fill: transparent;
+
+  stroke-dasharray: 326.5;
+  stroke-dashoffset: 185.605;  /*  326-(326.5 * (43/100)) */
+  stroke-linecap: round;
+
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
 }
 
 .progress-bars-container{
   flex: 1;
   display: flex;
   justify-content: space-between;
+}
+
+.progress-circle-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .progress-bar-container{
