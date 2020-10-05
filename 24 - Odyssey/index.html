@@ -3551,7 +3551,7 @@
                 </div>
             </div>
 
-            <div class="pro-container">
+            <div class="pro-container" id="pro">
                 <div class="pro">
                     <div class="pro-details">
                         <div>
@@ -3562,7 +3562,7 @@
                         </div>
                     </div>
 
-                    <div class="upgrade-button">
+                    <div class="upgrade-button" id="pro-btn">
 
                         <svg class="shine-top" width="179" height="166" viewBox="0 0 179 166" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M169.056 132.593L179 165.741H116.019L169.056 132.593Z" fill="#6B5BCC" />
@@ -3582,5 +3582,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('pro').addEventListener("click", erasePro);
+        setTimeout(() => {
+            document.getElementById('pro').style.visibility = 'visible';
+        }, 4000);
+
+        function erasePro(){
+            document.getElementById('pro').style.visibility = 'hidden';
+        }
+    </script>
 </body>
 </html>

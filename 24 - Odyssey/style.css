@@ -313,13 +313,13 @@ svg{
 }
 
 .main-section-controlls-month > svg{
-  width: 9px;
+  width: 8px;
   margin-left: 5px;
   fill: var(--text-grey);
 }
 
 .main-section-controlls-month-text{
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .main-section-controlls-sort{
@@ -555,6 +555,7 @@ svg{
 }
 
 .pro-container{
+  visibility: hidden;
   position: absolute;
   bottom: 0;
   right: 0;

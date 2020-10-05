@@ -34,7 +34,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 21 Sep 20 | [Email client][21-d]              | [v1][21-i-v1], [v2][21-i-v2], [v3][21-i-v3]                                              |       |
 | 30 Sep 20 | [Virtual Card][22-d]              | [v1][22-i-v1], [v2][22-i-v2]                                                             |       |
 | 1 Oct 20  | [coursify][23-d]                  | [v1][23-i-v1], [v2][23-i-v2], [v3][23-i-v3], [v4][23-i-v4], [v5][23-i-v5]                |       |
-| 5 Oct 20  | [Odyssey][24-d]                   | [v1][24-i-v1],                                                                           |       |
+| 5 Oct 20  | [Odyssey][24-d]                   | [v1][24-i-v1], [v2][24-i-v2],                                                            |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -142,3 +142,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [23-i-v5]: http://coursify-v5.surge.sh/
 [24-d]: https://dribbble.com/shots/12837387/attachments/4436681?mode=media
 [24-i-v1]: http://odyssey-v1.surge.sh/
+[24-i-v2]: http://odyssey-v2.surge.sh/
