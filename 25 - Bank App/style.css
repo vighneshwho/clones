@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --wrapper: #EBEDF0;
+  --misc-grey: #F4F4F6;
+  --light-blue: #F3F6FF;
+  --blue: #456EFE;
+  --green: #1CCD9D;
+  --orange: #FF6951;
+  --yellow: #FCAF2A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      width: 0px;
+      height: 0px;
+    border-radius: 0px;
+    background-color: none;
+  }
+
+svg{
+    width: 20px;
+    height: auto;
+    fill: var(--text-grey);
+    transition: fill 0.3s ease-out;
+}
+
+.wrapper{
+    background-color: var(--wrapper);
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    overflow: auto;
+
+    background-color: var(--wrapper);
+}
+
+.screen{
+    position: relative;
+    width: 249px;
+    height: 538px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgb(219, 215, 215);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.top-bar-time{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.top-bar-logos{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    margin-right: -7px;
+}
+
+.top-bar-logo{
+    width: 12px;
+    margin-left: 3px;
+}
+
+.screen-1, .screen-2{
+    flex: 1;
+    padding: 0 20px;
+
+    overflow: auto;
+}
+
+.bottom-bar{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+    padding-bottom: 15px;
+
+    box-shadow: 0px -50px 40px #ececec;
+
+    height: 57px;
+}
+
+.bottom-bar > svg{
+    fill: #d9dbdf;
+    width: 16px;
+
+    cursor: pointer;
+}
+
+.bottom-bar > .active-bottom-bar-icon{
+    fill: var(--blue);
+}
+
+.screen-header{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.screen-header-avatar{
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    border-radius: 7px;
+    background-color: var(--wrapper);
+
+    background-image: url(./assets/profile.jpg);
+}
+
+.screen-header-notification{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 7px;
+    background-color: var(--light-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-header-notification > .screen-header-notification-logo-container{
+    position: relative;
+}
+
+.screen-header-notification > .screen-header-notification-logo-container > svg{
+    width: 13px;
+    fill: var(--blue);
+}
+
+.screen-header-logo-notification{
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #45a5fe;
+
+    border: 1px white solid;
+
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.screen-1-header{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.screen-1-header-first-child{
+    font-size: 12px;
+    color: #939599;
+}
+
+.screen-1-header-first-child > svg{
+    width: 12px;
+    margin-left: 2px;
+
+    fill: #7a7c80;
+}
+
+.screen-1-header > div:last-child{
+    font-size: 17px;
+    margin-top: 9px;
+    font-weight: 500;
+}
+
+.screen-1-grid{
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    row-gap: 10px;
+    column-gap: 9px;
+}
+
+.screen-1-grid-item{
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 95px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    position: relative;
+    padding: 10px;
+
+    overflow: hidden;
+}
+
+.screen-1-grid-item-logo{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+}
+
+.screen-1-grid-item-logo > svg{
+    width: 11px;
+}
+
+.screen-1-grid-item-meta{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.screen-1-grid-item-meta > div:first-child{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+.screen-1-grid-item-meta > div:last-child{
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 11px;
+
+    margin-bottom: 2px;
+}
+
+.card-special-svg{
+    width: 80px;
+
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.screen-1-quick-actions{
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-actions-list::after{
+    content: "";
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.quick-actions-list > .quick-action:last-child{
+    margin-right: 0;
+}
+
+.screen-1-quick-actions-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.screen-1-quick-actions-header-title{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.screen-1-quick-actions-header-button{
+    background-color: var(--light-blue);
+    color: var(--blue);
+
+    font-size: 9px;
+    font-weight: 400;
+
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.quick-actions-list{
+    display: flex;
+
+    overflow-x: auto;
+
+    margin: 0 -20px;
+    padding: 20px 0;
+    padding-left: 20px;
+}
+
+.quick-action{
+    padding: 5px;
+    width: 100px;
+
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 9px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.quick-action-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+    border-radius: 8px;
+    background-color: var(--green);
+}
+
+.quick-action-logo > svg{
+    fill: white;
+    width: 12px;
+}
+
+.quick-action-text{
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 8px;
+    flex-shrink: 1;
+}
