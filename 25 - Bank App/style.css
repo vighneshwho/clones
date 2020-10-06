@@ -374,3 +374,213 @@ svg{
     font-size: 8px;
     flex-shrink: 1;
 }
+
+.screen-2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 53px;
+    column-gap: 9px;
+
+    margin-top: 20px;
+}
+
+.screen-2-grid-item{
+    background-color: #1CCD9D;
+    border-radius: 10px;
+
+    padding: 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.screen-2-grid-item > div:first-child{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+.screen-2-grid-item > div:nth-child(2){
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 11px;
+
+    margin-bottom: 2px;
+}
+
+.screen-2-grid-item > svg{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+
+    width: 42px;
+}
+
+.screen-2-graphs{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.screen-2-graph-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.screen-2-graph-date{
+    margin-top: 10px;
+    font-size: 8px;
+
+    color: #939599;
+}
+
+.screen-2-graph{
+    height: 102px;
+    background-color: #F3F6FF;
+    width: 5px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen-2-graph > svg{
+    height: 12px;
+    z-index: 2;
+    margin: -6px 0;
+
+    cursor: pointer;
+}
+
+.screen-2-graph-lower, .screen-2-graph-upper{
+    align-self: stretch;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-2-graph-upper{
+    justify-content: flex-end;
+}
+
+.screen-2-graph-upper-item{
+    align-self: stretch;
+    background-color: #456EFE;
+
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+}
+
+.screen-2-graph-lower-item{
+    align-self: stretch;
+    background-color: #1CCD9D;
+
+    height: 30%;
+    border-radius: 0 0 20px 20px;
+}
+
+.screen-2-history-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    margin-bottom: 20px;
+}
+
+.screen-2-history-header-title{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.screen-2-history-header-button{
+    background-color: var(--light-blue);
+    color: var(--blue);
+
+    font-size: 9px;
+    font-weight: 400;
+
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-2-history-header-button > svg{
+    width: 5px;
+    margin-left: 3px;
+    fill: var(--blue);
+}
+
+.screen-2-history-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-2-history-item{
+    display: flex;
+    align-items: center;
+
+    font-size: 9px;
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+
+.screen-2-history-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--blue);
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.screen-2-history-logo > svg{
+    fill: white;
+    width: 14px;
+}
+
+.screen-2-history-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.screen-2-history-meta > div:first-child{
+    font-size: 10px;
+    font-weight: 500;
+
+    margin-bottom: 3px;
+}
+
+.screen-2-history-meta > div:last-child{
+    color: #7a7c80;
+}
+
+.screen-2-history-amount{
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 9px;
+}
