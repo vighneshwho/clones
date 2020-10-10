@@ -36,6 +36,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 1 Oct 20  | [coursify][23-d]                  | [v1][23-i-v1], [v2][23-i-v2], [v3][23-i-v3], [v4][23-i-v4], [v5][23-i-v5]                |       |
 | 5 Oct 20  | [Odyssey][24-d]                   | [v1][24-i-v1], [v2][24-i-v2],                                                            |       |
 | 6 Oct 20  | [Bank App][25-d]                  | [v1][25-i-v1], [v2][25-i-v2]                                                             |       |
+| 10 Oct 20 | [CRM][26-d]                       | [v1][26-i-v1]                                                                            |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -147,3 +148,5 @@ Exercise to learn UI layouting using Dribbble shots.
 [25-d]: https://dribbble.com/shots/10004114-Bank-App-Design/attachments/2021793?mode=media
 [25-i-v1]: http://bank-app-v1.surge.sh/
 [25-i-v2]: http://bank-app-v2.surge.sh/
+[26-d]: https://dribbble.com/shots/11866139/attachments/3491189?mode=media
+[26-i-v1]: http://crm-v1.surge.sh/ 
