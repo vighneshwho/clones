@@ -354,7 +354,7 @@ svg{
     flex: 1;
     display: flex;
 
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .main-content{
@@ -363,6 +363,11 @@ svg{
     border-right: 1px rgb(223, 223, 223) solid;
 
     padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
 }
 
 .main-content-title{
@@ -454,9 +459,108 @@ svg{
 
 .main-content-grids-container{
     flex: 1;
-    background-color: yellow;
 }
 
+.grid-container-header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.grid-container-header-button{
+    background-color: white;
+    height: 37px;
+    width: 135px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 1px rgb(223, 223, 223) solid;
+
+    padding: 0 15px;
+    font-size: 12px;
+    color: #727272;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.grid-container-header-button > svg{
+    width: 10px;
+}
+
+.grid-container-header-button:hover{
+    box-shadow: 0px 2px 10px #c8ccda;
+}
+
+.active-grid-container-header-button{
+    color: var(--blue);
+    background-color: #e3e9ff;
+    font-weight: 600;
+}
+
+.active-grid-container-header-button > svg{
+    fill: var(--blue);
+}
+
+.grid-container-header-sort-by{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+
+    margin-right: 30px;
+}
+
+.grid-container-header-sort-by-option{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.grid-container-header-sort-by-option > svg{
+    width: 10px;
+    margin-left: 5px;
+
+    fill: #3d3d3d;
+}
+
+.grid-container-header-view-as{
+    display: flex;
+
+    background-color: #c2c5cf;
+    width: 97px;
+    height: 35px;
+
+    border-radius: 7px;
+
+    padding: 3px;
+}
+
+.grid-container-header-view-as-option{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.grid-container-header-view-as-option > svg{
+    width: 12px;
+    color: #727272;
+}
+
+.selected-view{
+    background-color: var(--wrapper);
+
+    box-shadow: 0px 3px 10px #c4c3c3;
+}
 
 
 
