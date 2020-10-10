@@ -246,7 +246,6 @@ svg{
     flex: 1;
 
     display: flex;
-    display: flex;
     flex-direction: column;
 }
 
@@ -351,37 +350,136 @@ svg{
     fill: #727272;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MAiN SECTION MAIN */
-
 .main-section-main{
     flex: 1;
     display: flex;
+
+    overflow-y: auto;
 }
 
 .main-content{
     flex: 1;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--wrapper);
     border-right: 1px rgb(223, 223, 223) solid;
+
+    padding: 40px;
 }
 
+.main-content-title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.main-content-header{
+    display: flex;
+    align-items: flex-end;
+
+    border-bottom: 1px rgb(223, 223, 223) solid;
+}
+
+.main-content-header-menu{
+    display: flex;
+
+    margin-bottom: -1px;
+}
+
+.main-content-header-menu-item{
+    padding-bottom: 13px;
+    margin-right: 35px;
+
+    font-size: 13px;
+    font-weight: 400;
+    color: #727272;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.active-main-content-header-menu-item{
+    font-weight: 600;
+    color: black;
+}
+
+.active-main-content-header-menu-item::after{
+    content: "";
+    height: 3px;
+    background-color: var(--blue);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-radius: 10px;
+}
+
+
+.main-content-header-search{
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.main-content-header-search{
+    display: flex;
+    align-items: center;
+
+    border: 1px rgb(223, 223, 223) solid;
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding: 0 10px;
+
+    background-color: var(--logo);
+}
+
+.main-content-header-search > input{
+    height: 33px;
+    width: 270px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    font-size: 12px;
+}
+
+.main-content-header-search > input::placeholder{
+    font-weight: 500;
+    color: #888888;
+}
+
+.main-content-header-search > svg{
+    width: 14px;
+    fill: rgb(139, 139, 139)
+}
+
+.main-content-grids-container{
+    flex: 1;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .right-section{
-    width: 160px;
+    width: 290px;
+    background-color: white;
 }
