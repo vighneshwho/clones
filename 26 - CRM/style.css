@@ -242,35 +242,6 @@ svg{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MAIN */
-
 .main-section{
     flex: 1;
 
@@ -279,10 +250,126 @@ svg{
     flex-direction: column;
 }
 
-.main-section-header{
-    height: 80px;
+.main-header{
+    height: 74px;
+    padding: 0 40px;
+    background-color: white;
     border-bottom: 1px rgb(223, 223, 223) solid;
+
+    display: flex;
+    align-items: center;
 }
+
+.main-header-search{
+    display: flex;
+    align-items: center;
+
+    border: 1px rgb(223, 223, 223) solid;
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.main-header-search > input{
+    height: 33px;
+    width: 450px;
+    border: none;
+    outline: none;
+}
+
+.main-header-search > svg{
+    width: 14px;
+    fill: rgb(202, 202, 202)
+}
+
+.main-header-date{
+    margin-left: auto;
+    font-size: 12px;
+    color: #727272;
+
+    cursor: pointer;
+}
+
+.main-header-bell{
+    position: relative;
+    margin: 0 40px;
+
+    cursor: pointer;
+}
+
+.main-header-bell > svg{
+    fill: #727272;
+}
+
+.bell-notification{
+    background-color: var(--blue);
+    color: white;
+    font-size: 7px;
+    font-weight: 500;
+
+    position: absolute;
+    top: -3px;
+    right: 0;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px white solid;
+}
+
+.main-header-profile{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.main-header-profile-name{
+    font-size: 12px;
+
+    color: black;
+    font-weight: 500;
+}
+
+.main-header-profile-avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: var(--logo);
+
+    margin: 0 17px;
+}
+
+.main-header-profile > svg{
+    width: 9px;
+    fill: #727272;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAiN SECTION MAIN */
 
 .main-section-main{
     flex: 1;
