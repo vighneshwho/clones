@@ -69,6 +69,7 @@ svg{
     align-items: center;
 
     padding-bottom: 30px;
+    overflow: auto;
 }
 
 .side-nav-header{
@@ -533,7 +534,7 @@ svg{
 .grid-container-header-view-as{
     display: flex;
 
-    background-color: #c2c5cf;
+    background-color: #cacedb;
     width: 97px;
     height: 35px;
 
@@ -548,7 +549,7 @@ svg{
     align-items: center;
     justify-content: center;
 
-    border-radius: 6px;
+    border-radius: 8px;
 
     cursor: pointer;
 }
@@ -750,6 +751,8 @@ svg{
 
     display: flex;
     flex-direction: column;
+
+    overflow: auto;
 }
 
 .right-section-header{
@@ -788,11 +791,10 @@ svg{
 .right-section-settings > svg{
     width: 15px;
     fill: #888888;
-
-    margin-right: -4px;
 }
 
 .right-section-progress-container{
+    z-index: 40;
     margin: 0 30px;
 
     display: flex;
@@ -813,7 +815,141 @@ svg{
     border-radius: 160px;
 
     background-color: #F6F6FA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    cursor: pointer;
 }
+
+.progress-ring{
+  width: 130px; 
+  height: 130px;
+  border-radius: 130px;
+}
+
+
+.progress-ring-black{
+  stroke: white;
+  stroke-width: 5;
+  fill: transparent;
+
+  z-index: 1;
+}
+
+.progress-ring-circle {
+  z-index: 2;
+  stroke: #2B51D6;
+  stroke-width: 5;
+  fill: transparent;
+
+  stroke-dasharray: 377; /* 2 pi r */
+  stroke-dashoffset: 98;  /*  377-(377 * (74/100)) */
+  stroke-linecap: round;
+
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-details-container{
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-details-ring{
+    width: 90px;
+    height: 90px;
+}
+
+.progress-details-ring > circle{
+    fill: transparent;
+    stroke-width: 1px;
+    stroke: #e2e2e2;
+    stroke-dasharray: 1px;
+}
+
+.progress-detail{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.progress-details-detail{
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-details-detail > div:first-child{
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: #aeb6d1;
+    margin-bottom: 3px;
+}
+
+.progress-details-detail-percentage{
+    display: flex;
+    align-items: flex-end;
+}
+
+.progress-details-detail-percentage > span:first-child{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.progress-details-detail-percentage > span:last-child{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .right-section-projects-container{
     margin: 0 30px;
