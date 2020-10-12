@@ -251,7 +251,7 @@ svg{
 
 .main-header{
     height: 74px;
-    padding: 0 40px;
+    padding: 0 30px;
     background-color: white;
     border-bottom: 1px rgb(223, 223, 223) solid;
 
@@ -293,6 +293,7 @@ svg{
 .main-header-bell{
     position: relative;
     margin: 0 40px;
+    margin-right: 63px;
 
     cursor: pointer;
 }
@@ -743,23 +744,219 @@ svg{
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .right-section{
-    width: 290px;
+    width: 288px;
     background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section-header{
+    border-bottom: 1px rgb(223, 223, 223) solid;
+    height: 128.4px;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right-section-header > div:first-child{
+    padding-top: 30px;
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 7px;
+}
+
+.right-section-header > div:last-child{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right-section-settings{
+    margin-right: 40px;
+    margin-top: 20px;
+    align-self: flex-end;
+
+    cursor: pointer;
+}
+
+.right-section-settings > svg{
+    width: 15px;
+    fill: #888888;
+
+    margin-right: -4px;
+}
+
+.right-section-progress-container{
+    margin: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-section-progress-container > svg{
+    width: 9px;
+    fill: #888888;
+
+    cursor: pointer;
+}
+
+.right-section-progress{
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+
+    background-color: #F6F6FA;
+}
+
+.right-section-projects-container{
+    margin: 0 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section-projects-header{
+    align-self: flex-start;
+
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.right-section-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    gap: 20px;
+}
+
+.right-section-project{
+    height: 100px;
+    border-radius: 10px;
+    background-color: #F6F6FA;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.right-section-project > div:first-child{
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: #aeb6d1;
+    margin-bottom: 3px;
+}
+
+.right-section-project > :last-child{
+    font-weight: 600;
+    font-size: 25px;
+
+    display: flex;
+}
+
+.colored-vl{
+    width: 3px;
+    border-radius: 20px;
+
+    background-color: #2B51D6;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.right-section-bottom-bar{
+    margin-top: auto;
+    border-top: 1px rgb(223, 223, 223) solid;
+    padding: 0 30px;
+
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message{
+    background-color: #f0f3ff;
+    border-radius: 10px;
+    height: 60px;
+
+    display: flex;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.message-logo{
+    background-color: var(--blue);
+    width: 40px;
+    border-radius: 8px;
+
+    margin-right: 10px;
+    position: relative;
+    background-image: url(./assets/message-logo.jpg);
+}
+
+.message-meta{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-meta > div:first-child{
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #aeb6d1;
+}
+
+.message-meta > :last-child {
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.message-meta > :last-child > svg{
+    width: 10px;
+    margin-left: 10px;
+
+    fill: #888888;
+}
+
+.message-online{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: white;
+    padding: 1.2px;
+
+    
+
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.message-online-ring{
+    border: 2.5px #6FC416 solid;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
 }
