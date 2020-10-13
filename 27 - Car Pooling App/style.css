@@ -84,7 +84,7 @@ svg{
     padding: 0 20px;
 }
 
-.screen-1-header, .screen-2-header{
+.screen-1-header, .screen-2-header, .screen-3-header{
     display: flex;
     align-items: center;
 
@@ -630,3 +630,150 @@ svg{
 .active-screen-2-bottom-nav-item > .screen-2-bottom-nav-item-bottom-bar{
     background-color: var(--bright-green);
 }
+
+.screen-3{
+    padding-bottom: 0px;
+}
+
+.screen-3-header{
+    justify-content: space-between;
+}
+
+
+.screen-3-back > svg{
+    width: 5px;
+    fill: none;
+    cursor: pointer;
+}
+
+.screen-3-more > svg{
+    width: 10px;
+    fill: var(--text);
+    cursor: pointer;
+}
+
+.screen-3-chat-header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header-location {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.chat-header-location svg{
+    width: 10px;
+}
+
+.chat-header-location{
+    background-color: #f5faf3;
+}
+
+.chat-header-location > svg{
+    fill: var(--bright-green);
+}
+
+.chat-header-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+
+    cursor: pointer;
+}
+
+.chat-header-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 10px;
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+.chat-header-meta > div:first-child{
+    margin-bottom: 5px;
+}
+
+.chat-header-meta > div:last-child{
+    font-size: 8px;
+    color: var(--light-text);
+}
+
+.screen-3-scrollable{
+    background-color: var(--screen-3-bg);
+    flex: 1;
+
+    overflow-y: auto;
+}
+
+.screen-3-input-container{
+    background-color: var(--screen-3-bg);
+}
+
+.screen-3-input-container{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.screen-3-input{
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.screen-3-input > input{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    height: 40px;
+    flex: 1;
+}
+
+.screen-3-input > input::placeholder{
+    color: #cecece;
+    font-weight: 300;
+}
+
+.screen-3-input > svg{
+    margin: 0 10px;
+    margin-right: 15px;
+    width: 10px;
+}
+
+.screen-3-input-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EAF2F5;
+    height: 40px;
+    width: 40px;
+
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.screen-3-input-button svg{
+    fill: #ADC8D0;
+    width: 12px;
+}
+
