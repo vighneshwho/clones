@@ -72,7 +72,6 @@ svg{
     margin: 30px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 5px 5px 20px rgb(219, 215, 215);
 
     display: flex;
     flex-direction: column;
@@ -178,6 +177,7 @@ svg{
     border-radius: 25px;
 
     background-color: #E3ECF0;
+    background-image: url(./assets/27-main-pink.jpg);
     margin-right: 5px;
 }
 
@@ -461,6 +461,7 @@ svg{
     border-radius: 20px;
 
     background-color: #f1f1f1;
+    background-image: url(./assets/27-main.jpg);
     margin-right: 9px;
 }
 
@@ -716,8 +717,7 @@ svg{
 }
 
 .screen-3 > .chat-container{
-    /* background-color: var(--screen-3-bg); */
-    background-color: #ADC8D0;
+    background-color: var(--screen-3-bg);
     flex: 1;
     overflow-y: auto;
 
@@ -810,7 +810,11 @@ svg{
     height: 25px;
     border-radius: 30px;
 
-    background-color: #cecece;
+    background-color: #ebebeb;
+    background-image: url(./assets/27-main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     position: absolute;
     top: 0;
@@ -884,7 +888,7 @@ svg{
     border: 1px var(--proposal-from) solid;
     bottom: 2px;
 
-    position: relative;
+    position: absolute;
 }
 
 .proposal-from .special-ring::after{
@@ -917,41 +921,59 @@ svg{
     color: var(--proposal-to);
 }
 
-
-
-
-
-
 .proposal-cost{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin: 0 -20px;
+    margin-bottom: -10px;
+    margin-top: 25px;
+
+    padding: 0 20px;
+    height: 33px;
+
+    background-color: #EAF2F5;
+
+    border-radius: 0px 0px 12px 12px;
+}
+
+.proposal-cost-title{
+    color: #88ADB5;
+    font-size: 9px;
+    font-weight: 400;
 }
 
 .proposal-cost-amount{
     display: flex;
+
+    align-items: flex-start;
+    color: #0D5D70;
+
+    font-weight: 500;
 }
 
+.proposal-cost-amount > div:first-child{
+    font-size: 10px;
+}
 
+.proposal-cost-amount > div:last-child{
+    font-size: 7px;
+    font-weight: 400;
+    margin-left: 2px;
 
-
-
-
-
-
-
-
-
-
+    margin-top: 1px;
+}
 
 .screen-3-input-container{
     background-color: var(--screen-3-bg);
 }
 
-.screen-3-input-container{
+.screen-3 > .screen-3-input-container{
     display: flex;
     align-items: center;
     height: 60px;
+    padding-bottom: 20px;
 }
 
 .screen-3-input{
