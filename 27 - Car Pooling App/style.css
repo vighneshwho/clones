@@ -7,6 +7,9 @@
     --bright-green: #78C963;
     --dull-green: #146274;
     --screen-3-bg: #F8FAFB;
+
+    --proposal-from: #52B4CC;
+    --proposal-to: #146274;
 }
 
 *{
@@ -712,12 +715,234 @@ svg{
     color: var(--light-text);
 }
 
-.screen-3-scrollable{
-    background-color: var(--screen-3-bg);
+.screen-3 > .chat-container{
+    /* background-color: var(--screen-3-bg); */
+    background-color: #ADC8D0;
     flex: 1;
-
     overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+
+    padding-top: 18px;
 }
+
+/* .chat-conatiner > div{
+    margin-bottom: 18px;
+}   THIS IS NOT WORKING AND IM NOT SURE WHY*/
+
+.chat-time{
+    margin-bottom: 18px;
+    align-self: center;
+
+    font-size: 7px;
+    color: var(--light-text);
+}
+
+.chat-outgoing-container{
+    margin-bottom: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.chat-incoming-container{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 35px;
+}
+
+.chat-incoming-container > div, .chat-outgoing-container > div{
+    margin-bottom: 15px;
+}
+
+.chat-incoming-container > div:last-child, .chat-outgoing-container > div:last-child{
+    margin-bottom: 0;
+}
+
+.chat-outgoing{
+    background-color: var(--dull-green);
+    color: white;
+
+    min-height: 40px;
+    margin-left: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 300;
+
+    padding: 10px 18px;
+    border-radius: 12px 12px 0 12px;
+
+    cursor: pointer;
+}
+
+
+.chat-incoming{
+    align-self: flex-start;
+    background-color: white;
+
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 300;
+
+    padding: 10px 18px;
+    border-radius: 0 12px 12px 12px;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.chat-incoming-container > div:last-child::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+
+    background-color: #cecece;
+
+    position: absolute;
+    top: 0;
+    left: -35px;
+
+}
+
+.pool-proposal{
+    align-self: stretch;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.pool-proposal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 9px;
+
+    margin-bottom: 10px;
+}
+
+.pool-proposal-header > svg{
+    width: 8px;
+    fill: #ebebeb;
+}
+
+.proposal-to, .proposal-from{
+    display: flex;
+    flex-direction: column;
+}
+
+.proposal-from{
+    margin-bottom: 10px;
+}
+
+.proposal-small-text{
+    color: var(--light-text);
+    font-size: 6px;
+    font-weight: 300;
+
+    margin-bottom: 3px;
+}
+
+.proposal-title-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: relative;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+.special-ring{
+    width: 4px;
+    height: 4px;
+    border-radius: 3px;
+
+    border: 1px var(--proposal-from) solid;
+    background-color: white;
+
+    position: absolute;
+    left: -20px;
+}
+
+.proposal-from .special-ring{
+    border: 1px var(--proposal-from) solid;
+    bottom: 2px;
+
+    position: relative;
+}
+
+.proposal-from .special-ring::after{
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: linear-gradient(180deg, #52B4CC 0%, #146274 100%);
+
+    position: absolute;
+    top: 2px;
+    left: 0.5px;
+}
+
+.proposal-to .special-ring{
+    border: 1px var(--proposal-to) solid;
+    top: 1.5px;
+}
+
+.proposal-sub-text{
+    font-size: 6px;
+    margin-top: 2px;
+}
+
+
+.proposal-from .proposal-title-container, .proposal-from .proposal-sub-text{
+    color: var(--proposal-from);
+}
+
+.proposal-to .proposal-title-container, .proposal-to .proposal-sub-text{
+    color: var(--proposal-to);
+}
+
+
+
+
+
+
+.proposal-cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proposal-cost-amount{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .screen-3-input-container{
     background-color: var(--screen-3-bg);
