@@ -148,7 +148,7 @@ svg{
 
 .main-content{
     flex: 1;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .container-main-content{
@@ -157,18 +157,34 @@ svg{
 
 .container-main-content > div{
     flex: 1;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .main-content-left{
     display: flex;
     flex-direction: column;
-
     padding-right: 20px;
+    overflow-y: auto;
+}
+
+.main-content-left::after{
+    content: "";
+    height: 30px;
+    flex-shrink: 0;
 }
 
 .main-content-right{
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.main-content-right::after{
+    content: "";
+    height: 30px;
+    flex-shrink: 0;
 }
 
 .content-left-selection-container, .content-left-input-container{
@@ -259,6 +275,15 @@ svg{
 
     margin-right: 13px;
     cursor: pointer;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 13px;
 }
 
 .content-left-participant-meta{
@@ -349,7 +374,7 @@ svg{
 
 .content-left-participant-invite-add svg{
     fill: var(--blue);
-    width: 13px;
+    width: 11px;
 }
 
 .content-left-participant-invite-title{
@@ -421,9 +446,198 @@ svg{
     cursor: pointer;
 }
 
+.content-right-topics-header{
+    color: var(--light-text);
+    font-size: 11px;
 
+    margin-bottom: 5px;
+}
 
+.content-right-topic{
+    border: 1px var(--border) solid;
+    border-radius: 5px;
 
+    font-size: 12px;
+
+    margin-bottom: 13px;
+
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    box-shadow: 0px 3px 5px var(--border);
+}
+
+.topic-header{
+    border-bottom: 1px var(--border) solid;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.topic-header-title{
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom: 3px;
+}
+
+.topic-header-meta{
+    display: flex;
+    align-items: center;
+
+    font-size: 11px;
+    color: var(--light-text);
+}
+
+.topic-header-meta-separation{
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--blue);
+
+    margin: 0 5px;
+}
+
+.topic-header-meta-attachments{
+    display: flex;
+    align-items: center;
+
+    color: var(--blue);
+}
+
+.topic-header-meta-attachments > svg{
+    width: 10px;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.topic-body{
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-talktime-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.topic-talktime-container:last-child{
+    margin-bottom: 0;
+}
+
+.topic-talktime-title{
+    font-size: 10px;
+    color: var(--light-text);
+    margin-bottom: 5px;
+}
+
+.topic-talktime{
+    align-self: flex-start;
+    width: 100%;
+    background-color: var(--teal);
+    height: 23px;
+    border-radius: 20px;
+
+    padding: 0 28px;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    position: relative;
+}
+
+.topic-talktime-avatar{
+    width: 21px;
+    height: 21px;
+    border-radius: 18px;
+    background-color: white;
+
+    position: absolute;
+    left: 1px;
+    top: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    font-size: 9px;
+}
+
+.add-your-talktime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    color: var(--blue);
+
+    cursor: pointer;
+
+    border-top: 1px var(--border) solid;
+    margin-top: -1px;
+}
+
+.who-are-talking-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.who-are-talking-title{
+    font-size: 11px;
+    color: var(--light-text);
+}
+
+.who-are-talking-avatars{
+    margin-top: 5px;
+    margin-left: -1px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.who-are-talking-avatar{
+    width: 21px;
+    height: 21px;
+    border-radius: 18px;
+    background-color: var(--tag-border);
+
+    border: 1px white solid;
+    margin-right: -5px;
+}
+
+.create-new-topics{
+    border: 1px var(--blue) solid;
+    height: 40px;
+    border-radius: 5px;
+
+    color: var(--blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+.create-new-topics > svg{
+    fill: var(--blue);
+    margin-right: 10px;
+    width: 10px;
+}
 
 
 
