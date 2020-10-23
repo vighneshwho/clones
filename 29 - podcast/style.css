@@ -406,9 +406,53 @@ svg{
 /* grid general */
 
 .grid-box{
-    padding: 20px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.grid-box, .grid-box-special{
+    cursor: pointer;
+}
+
+.grid-box-special{
+    display: flex;
+    padding: 15px;
+}
+
+.grid-box-special-meta{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-box-special-meta > div:first-child{
+    font-size: 12px;
+    color: var(--light-text);
+
+    margin-bottom: 12px;
+}
+
+.grid-box-special-meta > div:last-child{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.grid-box-special-button{
+    align-self: flex-end;
+
+    margin-bottom: -7px;
+}
+
+.grid-box-special-button > svg{
+    width: 16px;
+}
+
+
+.grid-box .light, .light{
+    font-weight: 300;
 }
 
 .text-top{
@@ -442,4 +486,188 @@ svg{
     width: 370px;
 
     padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
+
+.right-bar-profile{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    cursor: pointer;
+}
+
+.right-bar-profile-avatar{
+    width: 98px;
+    height: 98px;
+    border-radius: 80px;
+
+    background-color: var(--light-text);
+
+    margin-bottom: 20px;
+    background-image: url(./assets/fashion.jpg);
+}
+
+.right-bar-profile-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right-bar-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar-menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    height: 45px;
+
+    cursor: pointer;
+}
+
+.right-bar-menu-item > div{
+    padding-left: 40px;
+}
+
+.right-bar-menu-item-main{
+    position: relative;
+    font-size: 15px;
+}
+
+.right-bar-menu-item-main > svg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+}
+
+.right-bar-menu-item-sub{
+    color: var(--light-text);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.right-bar-fund{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar-fund-balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.right-bar-fund-balance > div:first-child{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.right-bar-fund-balance > div:last-child{
+    font-weight: 200;
+    font-size: 30px;
+}
+
+
+.right-bar-add-fund{
+    color: var(--red);
+    text-decoration: underline;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.right-bar-add-fund > svg{
+    margin-left: 5px;
+    fill: var(--red);
+    width: 10px;
+}
+
+.right-bar-card{
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+
+    background-color: var(--red);
+    background-image: url(./assets/card.png);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 200px;
+    cursor: pointer;
+}
+
+.right-bar-card-sub{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.right-bar-card-main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    font-size: 23px;
+}
+
+.right-bar-card-main > div:first-child{
+    font-weight: 200;
+}
+
+.right-bar-card-link{
+    text-decoration: underline;
+    align-self: flex-end;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.right-bar-card-link > svg{
+    margin-left: 5px;
+    fill: white;
+    width: 10px;
+}
+
+.right-bar-bottom-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.right-bar-bottom-buttons > svg{
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+
+
+
+
+
+
