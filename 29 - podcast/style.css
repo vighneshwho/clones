@@ -59,7 +59,7 @@ svg{
     min-width: 1000px;
     min-height: 700px;
 
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     position: relative;
 
@@ -94,6 +94,8 @@ svg{
     padding: 50px;
     width: 800px;
     margin: 0 auto;
+
+    overflow-y: auto;
 }
 
 .main-content-header{
@@ -488,6 +490,8 @@ svg{
     padding: 50px;
     display: flex;
     flex-direction: column;
+
+    overflow-y: auto;
 }
 
 .right-bar-profile{
