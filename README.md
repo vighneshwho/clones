@@ -39,7 +39,8 @@ Exercise to learn UI layouting using Dribbble shots.
 | 10 Oct 20 | [CRM][26-d]                       | [v1][26-i-v1], [v2][26-i-v2], [v3][26-i-v3], [v4][26-i-v4], [v5][26-i-v5], [v6][26-i-v6], [v7][26-i-v7] |       |
 | 13 Oct 20 | [Car Pool][27-d]                  | [v1][27-i-v1], [v2][27-i-v2], [v3][27-i-v3]                                                             |       |
 | 19 Oct 20 | [Agenda][28-d]                    | [v1][28-i-v1], [v2][28-i-v2], [v3][28-i-v3]                                                             |       |
-| 23 Oct 20 | [Podcast][29-d]                   | [v1][29-i-v1], [v2][29-i-v2]                                                                            |       |
+| 23 Oct 20 | [Podcast][29-d]                   | [v1][29-i-v1], [v2][29-i-v2], [v3][29-i-v3]                                                             |       |
+| 23 Oct 20 | [InTrust Banking][30-d]           | [v1][30-i-v1],                                                                                          |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -170,3 +171,6 @@ Exercise to learn UI layouting using Dribbble shots.
 [29-d]: https://dribbble.com/shots/7209133-Dashboard-Podkast-Light/attachments/201948?mode=media
 [29-i-v1]: http://podcast-v1.surge.sh
 [29-i-v2]: http://podcast-v2.surge.sh
+[29-i-v3]: http://podcast-v3.surge.sh
+[30-d]: https://dribbble.com/shots/14254822-InTrust-Banking/attachments/5902410?mode=media
+[30-i-v1]: http://intrust-v1.surge.sh/

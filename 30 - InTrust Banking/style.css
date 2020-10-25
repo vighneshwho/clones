@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --text: #191A35;
+  --svg: #1A1B35;
+  --light-text: #9A9AA7;
+  --wrapper: #FCFCFE;
+  --statistics: #F5F6FB;
+  --violet: #434AF9;
+  --violet-dark: #2E31BE;
+  --violet-light: #5E64F9;
+  --yellow: #FFA51D;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+  background-color: none;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+    fill: var(--svg);
+    transition: fill 0.3s ease-out;
+}
+
+.wrapper{
+    background-color: var(--wrapper);
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+
+    min-width: 1000px;
+    min-height: 700px;
+
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+    color: var(--text);
+}
+
+.side-nav{
+    background-color: var(--violet);
+    background-image: url(./assets/side-nav.png);
+    width: 180px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px 0;
+    padding-right: 40px;
+}
+
+.side-nav svg{
+    fill: white;
+}
+
+.side-nav-branding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.side-nav-branding > svg{
+    fill: none;
+
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.side-nav-brand-name{
+    font-weight: 600;
+}
+
+.side-nav-brand-name > span{
+    font-weight: 300;
+}
+
+.side-nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-nav-menu-item, .side-nav-log-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    height: 80px;
+    border-radius: 16px;
+
+    margin: 10px;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.side-nav-menu-item > svg{
+    margin-bottom: 5px;
+    width: 22px;
+}
+
+.active-side-nav-menu-item{
+    background-color: var(--violet-light);
+}
+
+.side-nav-log-out {
+    margin: 0;
+}
+
+.side-nav-log-out > svg{
+    margin: 0;
+}
+
+.main-section{
+    background-color: var(--wrapper);
+    flex: 1;
+    border-radius: 40px 0 0 40px;
+    margin-left: -40px;
+
+    display: flex;
+
+    overflow: hidden;
+    padding: 40px;
+}
+
+.main-content-container{
+    flex: 1;
+}
