@@ -10,8 +10,13 @@
   --violet-dark: #2E31BE;
   --violet-light: #5E64F9;
   --yellow: #FFA51D;
+  --yellow-dark: #33344B;
+  --right-bar-light: #353751;
   --light: #E5E5EA;
   --shadow: #efeff3;
+
+  --card-under: #272A78;
+  --card-arrow: #2E31BE;
 }
 
 *{
@@ -219,13 +224,6 @@ svg{
     fill: var(--light-text);
     width: 15px;
     margin-right: 10px;
-}
-
-.right-bar{
-    background-color: var(--statistics);
-    width: 350px;
-
-    margin-right: 40px;
 }
 
 .main-content-scrollable{
@@ -689,4 +687,79 @@ svg{
 .category-expense > div:last-child{
     font-weight: 500;
     font-size: 15px;
+}
+
+.right-bar{
+    width: 350px;
+    margin-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-bottom: 25px;
+}
+
+.right-bar-header-button {
+    position: relative;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.notification{
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    border: 1px var(--wrapper) solid;
+    background-color: red;
+
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.right-bar-component{
+    flex: 1;
+    background-color: var(--text);
+    color: white;
+
+    border-radius: 30px;
+}
+
+.right-bar-header-profile{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.right-bar-header-profile-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    margin-right: 15px;
+    background-color: var(--light);
+}
+
+.right-bar-header-profile-meta{
+    font-size: 12px;
+}
+
+.right-bar-header-profile-meta > div:first-child{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.right-bar-header-profile-meta > div:last-child{
+    font-weight: 300;
+    font-size: 11px;
+
+    color: var(--light-text);
 }
