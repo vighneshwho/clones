@@ -40,7 +40,7 @@ Exercise to learn UI layouting using Dribbble shots.
 | 13 Oct 20 | [Car Pool][27-d]                  | [v1][27-i-v1], [v2][27-i-v2], [v3][27-i-v3]                                                             |       |
 | 19 Oct 20 | [Agenda][28-d]                    | [v1][28-i-v1], [v2][28-i-v2], [v3][28-i-v3]                                                             |       |
 | 23 Oct 20 | [Podcast][29-d]                   | [v1][29-i-v1], [v2][29-i-v2], [v3][29-i-v3]                                                             |       |
-| 23 Oct 20 | [InTrust Banking][30-d]           | [v1][30-i-v1], [v2][30-i-v2], [v3][30-i-v3],                                                            |       |
+| 23 Oct 20 | [InTrust Banking][30-d]           | [v1][30-i-v1], [v2][30-i-v2], [v3][30-i-v3], [v4][30-i-v4],                                             |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -176,3 +176,4 @@ Exercise to learn UI layouting using Dribbble shots.
 [30-i-v1]: http://intrust-v1.surge.sh/
 [30-i-v2]: http://intrust-v2.surge.sh/
 [30-i-v3]: http://intrust-v3.surge.sh/
+[30-i-v4]: http://intrust-v4.surge.sh/

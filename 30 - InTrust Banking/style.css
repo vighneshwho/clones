@@ -229,6 +229,15 @@ svg{
 .main-content-scrollable{
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -40px;
+}
+
+.main-content-scrollable::after{
+    content: "";
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .main-content-income{
@@ -695,6 +704,8 @@ svg{
 
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 .right-bar-header{
@@ -721,14 +732,6 @@ svg{
     position: absolute;
     top: 1px;
     right: 1px;
-}
-
-.right-bar-component{
-    flex: 1;
-    background-color: var(--text);
-    color: white;
-
-    border-radius: 30px;
 }
 
 .right-bar-header-profile{
@@ -762,4 +765,336 @@ svg{
     font-size: 11px;
 
     color: var(--light-text);
+}
+
+.right-bar-component{
+    flex: 1;
+    background-color: var(--text);
+    color: white;
+
+    border-radius: 30px;
+    padding: 30px;
+    padding-bottom: 0;
+
+    overflow-y: auto;
+}
+
+.right-bar-component svg{
+    fill: var(--light-text);
+}
+
+.my-cards-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-cards-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-cards-header-title{
+    font-size: 20px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.my-cards-header-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px var(--right-bar-light) solid;
+
+    width: 27px;
+    height: 27px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.my-cards-header-button > svg{
+    width: 13px;
+}
+
+.my-cards{
+    position: relative;
+    padding-top: 50px;
+}
+
+.main-card{
+    background-color: var(--violet);
+    height: 175px;
+    border-radius: 20px;
+    
+    padding: 15px;
+    position: relative;
+
+    z-index: 1;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-card{
+    height: 100px;
+    background-color: var(--card-under);
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+
+    margin: 0 20px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.main-card-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-card-header-balance{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card-header-balance > div:first-child{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.main-card-header-balance > div:last-child{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.main-card-header-balance span{
+    margin-right: 3px;
+    font-size: 19px;
+}
+
+.main-card-header-logo > svg{
+    width: 25px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.main-card-bottom-bar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.card-number{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.card-number > svg{
+    width: 8px;
+    margin-right: 5px;
+}
+
+.main-card-bottom-bar-logo > svg{
+    height: 22px;
+    width: auto;
+}
+
+.my-cards-graph-container{
+    margin-top: 27px;
+    height: 7px;
+    border-radius: 20px;
+
+    background-color: var(--yellow-dark);
+    overflow: hidden;
+}
+
+.my-cards-graph{
+    background-color: var(--yellow);
+    height: 100%;
+    width: 80%;
+
+    border-radius: 20px;
+}
+
+.my-cards-graph-meta{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 12px;
+    color: var(--light-text);
+}
+
+.my-cards-graph-meta-amount{
+    display: flex;
+    font-weight: 500;
+}
+
+.my-cards-graph-meta-amount > div:first-child{
+    color: white;
+    margin-right: 3px;
+}
+
+.my-cards-graph-meta-amount span{
+    font-weight: 300;
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+.send-money{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.send-money-title{
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom:20px;
+}
+
+.send-money-avatars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.send-money-avatars > div{
+    cursor: pointer;
+}
+
+.send-money-avatar{
+    height: 43px;
+    width: 43px;
+    border-radius: 30px;
+    background-color: var(--right-bar-light);
+}
+
+.add-send-money-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--right-bar-light);
+    height: 43px;
+    width: 43px;
+    border-radius: 30px;
+}
+
+.add-send-money-avatar > svg{
+    width: 14px;
+}
+
+.spendings-container{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spendings-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spendings-header-title{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.spendings-header-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px var(--right-bar-light) solid;
+
+    width: 27px;
+    height: 27px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.spendings-header-button > svg{
+    width: 13px;
+}
+
+.spendings{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spending{
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.spending:last-child{
+    margin-bottom: 30px;
+}
+
+.spending-avatar{
+    height: 43px;
+    width: 43px;
+    border-radius: 30px;
+
+    background-color: white;
+    margin-right: 15px;
+}
+
+.spending-meta{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: auto;
+}
+
+.spending-meta > div:first-child{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.spending-meta > div:last-child{
+    font-weight: 300;
+    font-size: 11px;
+
+    color: var(--light-text);
+}
+
+.spent-amount{
+    font-weight: 500;
+    font-size: 13px;
+
+    margin-right: 10px;
+}
+
+.spending-svg {
+    display: flex;
+    align-items: center;
+}
+
+.spending-svg > svg{
+    width: 11px;
 }
