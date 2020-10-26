@@ -510,3 +510,183 @@ svg{
 .yellow{
     background-color: var(--yellow);
 }
+
+.category-expenses{
+    margin-top: 40px;
+}
+
+.category-expenses-header{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.category-expenses-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.category-expenses-drop{
+    border: 1px var(--light) solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 11px;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.category-expenses-drop > svg{
+    fill: var(--light-text);
+    margin-left: 5px;
+    width: 8px;
+}
+
+.category-expense-items{
+    display: flex;
+}
+
+.category-expenses-visual-items{
+    width: 240px;
+    border-right: 1px var(--light) solid;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    padding-right: 30px;
+    box-sizing: content-box;
+
+    position: relative;
+}
+
+.category-expenses-visual-items > .more{
+    color: var(--text);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+
+    font-size: 11px;
+
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
+.category-expenses-visual-items > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.category-expenses-visual-items > div > div:first-child{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.category-expenses-visual-items > div > div:first-child > span{
+    font-weight: 300;
+    font-size: 11px;
+
+    margin-right: 2px;
+}
+
+.category-expenses-visual-items > div > div:last-child{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.category-expenses-visual-items > .large{
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    background-color: var(--violet);
+}
+
+.category-expenses-visual-items > .medium{
+    width: 110px;
+    height: 110px;
+    border-radius: 120px;
+    background-color: var(--text);
+
+    margin-left: -30px;
+}
+
+.category-expenses-visual-items > .small{
+    width: 80px;
+    height: 80px;
+    border-radius: 120px;
+
+    margin-top: -40px;
+    background-color: var(--yellow);
+}
+
+.category-expenses-list{
+    flex: 1;
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 14px 0;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.category-expense{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.category-expense > div:first-child{
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+}
+
+.category-expense > div:first-child::before{
+    content:"";
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+
+    background-color: var(--text);
+    margin-right: 5px;
+}
+
+.category-expense > div:last-child{
+    font-weight: 500;
+    font-size: 15px;
+}
