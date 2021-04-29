@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --grey-search: #EEEEEE;
+    --grey-search-dark: #767676;
+    --light-green: #34B472;
+}
+
+svg{
+    width: 15px;
+}
+
+header{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header-main{
+    display: flex;
+}
+
+.header-branding{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-branding > img{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header-branding > .unsplash-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.unsplash-text > div:first-child{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.unsplash-text > div:last-child{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    background-color: var(--grey-search);
+    margin-right: 30px;
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.header-search > input{
+    flex: 1;
+    align-self: stretch;
+    background-color: var(--grey-search);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    
+
+    font-size: 13px;
+}
+
+.header-search > input::placeholder{
+    color: var(--grey-search-dark);
+}
+
+.header-search > div > svg{
+    fill: var(--grey-search-dark);
+    padding: 0 10px;
+}
+
+.header-nav{
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.header-nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--grey-search-dark);
+    cursor: pointer;
+}
+
+.header-nav-item{
+    fill: var(--grey-search-dark);
+}
+
+
+.header-nav-item:hover{
+    color: black;
+    fill: black;
+}
+
+.header-submit-photo{
+    display: flex;
+}
+
+.header-auth{
+    display: flex;
+}
+
+.header-submit-photo{
+    border-radius: 5px;
+    border: 0.5px var(--grey-search-dark) solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 2px 0;
+
+    color: var(--grey-search-dark);
+    
+    font-size: 14px;
+    cursor: pointer;
+
+    margin-right: 30px;
+}
+
+.header-submit-photo:hover{
+    color: black;
+    border-color: black;
+}
+
+.header-auth{
+    padding-left: 30px;
+    border-left: 0.5px var(--grey-search-dark) solid;
+
+    display: flex;
+    align-items: stretch;
+    font-size: 14px;
+    color: var(--grey-search-dark);
+}
+
+.header-auth > div{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 2px 0;
+
+    cursor: pointer;
+}
+
+.header-auth > .join{
+    margin-left: 10px;
+    background-color: var(--light-green);
+    color: white;
+}
+
+.header-auth > .join:hover{
+    background-color: #289e61;
+}
+
+.header-auth > .login:hover{
+    color: black
+    ;
+}

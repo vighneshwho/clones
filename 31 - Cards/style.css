@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+  --text: #212224;
+  --text-grey: #8B8A8F;
+  --text-grey-box: #6C6D71;
+  --grey-box: #F6F7F9;
+  --checkbox: #CCCCCC;
+  --red: #FE2D6A;
+  --text-green: #87DA72;
+  --blue--progress : #0064BC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+  background-color: none;
+}
+
+svg{
+    width: 17px;
+    height: auto;
+    transition: fill 0.3s ease-out;
+}
+
+.card-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    padding: 40px;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px rgb(226, 226, 226);
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header-title{
+    display: flex;
+    align-items: baseline;
+}
+
+.card-header-title-logo > svg{
+    width: 20px;
+    margin-bottom: -1px;
+}
+
+.card-tomorrow .card-header-title-logo > svg{
+    fill: var(--red);
+}
+
+.card-header-title-logo{
+    margin-right: 7px;
+}
+
+.card-header-title > h1{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.card-header-details{
+    margin-top: 17px;
+    background-color: var(--grey-box);
+    border-radius: 10px;
+    padding: 10px;
+
+    font-size: 13px;
+    color: var(--text-grey-box);
+}
+
+.card-header-detail{
+    margin: 1px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-day{
+    align-self: stretch;
+    background-color: var(--text-grey);
+    width: 3px;
+    margin: 2px 0;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.time{
+    color: var(--text-green);
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.card-header-tabs{
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.card-header-tab{
+    color: var(--text-grey);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 19px;
+    padding: 0 9px;
+    border-radius: 10px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.card-header-tab > svg{
+    fill: var(--text-grey);
+    width: 10px;
+}
+
+.card-header-tab.active{
+    background-color: #B7B8BD;
+    color: white;
+}
+
+.card-detail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-todos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-todo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-todo-checkbox{
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    border: 1px rgb(201, 201, 201) solid;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.card-todo-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-todo-details > div:first-child{
+    font-size: 15px;
+}
+
+.card-todo-details > div:last-child{
+    color: var(--text-grey);
+    font-size: 12px;
+}
+
+.projects-container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.project-progress-container{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 1px var(--blue--progress) solid;
+
+    margin-right: 10px;
+}
+
+.project-details{
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+}
