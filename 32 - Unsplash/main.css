@@ -4,6 +4,25 @@
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 0px;
+  border-radius: 0px;
+  background-color: none;
 }
 
 :root{
@@ -20,6 +39,15 @@ header{
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 0px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    box-shadow: 0px 2px 20px rgb(230, 230, 230);
 }
 
 .header-main{
@@ -176,6 +204,80 @@ header{
 }
 
 .header-auth > .login:hover{
-    color: black
-    ;
+    color: black;
+}
+
+header > nav{
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+}
+
+
+nav > section{
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--grey-search-dark);
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: black;
+}
+
+nav > .editorial > .nav-item{
+    margin-right: 20px;
+}
+
+nav > .editorial::after {
+    align-self: center;
+    content: "";
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 30px;
+}
+
+
+
+nav > .nav-scrollable{
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+    overflow-x: scroll;
+}
+
+nav > .nav-scrollable > .nav-item{
+    flex-shrink: 0;
+    margin-right: 20px;
+    color: var(--grey-search-dark);
+
+    font-weight: 400;
+
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > .nav-scrollable > .nav-item:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.active-nav-item{
+    color: black;
+    border-bottom: 2px black solid;
+    font-weight: 500;
+}
+
+.unsplash-test{
+    
+    height: 100vh;
 }
