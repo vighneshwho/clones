@@ -47,7 +47,7 @@ header{
 
     background-color: white;
 
-    box-shadow: 0px 2px 20px rgb(230, 230, 230);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.164);
 }
 
 .header-main{
@@ -277,7 +277,178 @@ nav > .nav-scrollable > .nav-item:hover{
     font-weight: 500;
 }
 
-.unsplash-test{
-    
-    height: 100vh;
+.unsplash-landing{
+    height: 71vh;
+    background-color: black;
+    background-image: url(./assets/photo-of-the-day.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    position: relative;
+}
+
+.unsplash-landing-filter{
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.unsplash-landing-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-bottom: 100px;
+}
+
+.unsplash-landing-main > .main-text{
+    font-size: 45px;
+    font-weight: 600;    
+
+    margin-bottom: 20px;
+}
+
+.unsplash-landing-main > .sub-text{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+    font-weight: 400;
+}
+
+.unsplash-landing-main > .sub-text > a{
+    text-decoration: underline;
+    color: rgb(218, 218, 218);
+    font-size: 18px;
+}
+
+.unsplash-landing-main > .sub-text > a:hover{
+    color: white;
+}
+
+.unsplash-landing-main > .unsplash-landing-search{
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    width: 60vw;
+    height: 50px;
+
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.unsplash-landing-main > .unsplash-landing-search > input{
+    flex: 1;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.unsplash-landing-main > input::placeholder{
+    color: var(--grey-search-dark);
+}
+
+.unsplash-landing-main > .unsplash-landing-search > .unsplash-landing-search-logo{
+    padding: 0 16px;
+    fill: var(--grey-search-dark);
+    cursor: pointer;
+}
+
+.unsplash-landing-main > .unsplash-landing-search > .unsplash-landing-search-logo:hover{
+    fill: black;
+}
+
+.unsplash-landing-main > .unsplash-landing-search > .unsplash-landing-search-logo > svg{
+    width: 17px;
+}
+
+.unsplash-landing-main > .search-trending{
+    display: flex;
+    cursor: default;
+}
+
+
+
+.unsplash-landing-main > .search-trending > .trending-items a{
+    color: rgb(204, 204, 204);
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+.unsplash-landing-main > .search-trending > .trending-items a:hover{
+    color: white;
+}
+
+
+
+.unsplash-landing-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+
+    font-size: 10px;
+}
+
+.unsplash-landing-footer > div{
+    flex: 1;
+    display: flex;
+}
+
+.unsplash-landing-footer > .photo-of-the-day{
+    justify-content: flex-start;
+}
+
+.unsplash-landing-footer > .unsplash-license{
+    justify-content: center;
+}
+
+.unsplash-landing-footer > .ad{
+    justify-content: flex-end;
+}
+
+
+.unsplash-landing-footer {
+    color:rgb(149, 149, 149)
+}
+
+.unsplash-landing-footer a{
+    color:rgb(211, 211, 211);
+    text-decoration: none;
+}
+
+.unsplash-landing-footer > .ad a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.unsplash-landing-footer .ad svg{
+    height: 20px;
+    width: auto;
+    fill: rgb(211, 211, 211);
+    margin-bottom: 10px;
+}
+
+.unsplash-landing-footer a:hover{
+    color: white;
+}
+
+.ad > a:hover svg{
+    fill: white;
 }
