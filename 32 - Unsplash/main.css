@@ -100,6 +100,8 @@ header{
     
     height: 35px;
     border: 1px rgba(204, 204, 204, 0) solid;
+
+    overflow: hidden;
 }
 
 .header-search:hover{
@@ -296,10 +298,6 @@ nav > .editorial > .nav-item{
     margin-right: 20px;
 }
 
-.scrollable-small{
-    display: none;
-}
-
 nav > .editorial::after {
     align-self: center;
     content: "";
@@ -309,8 +307,8 @@ nav > .editorial::after {
 }
 
 
-
 nav > .nav-scrollable{
+    position: relative;
     margin-left: 20px;
     margin-right: 20px;
     flex: 1;
@@ -330,15 +328,23 @@ nav > .nav-scrollable > .nav-item{
     justify-content: center;
 }
 
+nav .nav-item{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+}
+
 nav > .nav-scrollable > .nav-item:hover{
     color: black;
     cursor: pointer;
 }
 
-.active-nav-item{
+.active-nav-item, nav > .nav-scrollable > .active-nav-item{
     color: black;
     border-bottom: 2px black solid;
     font-weight: 500;
+}
+
+nav > .nav-scrollable > .scrollable-small{
+    display: none;
 }
 
 .unsplash-landing{
@@ -362,6 +368,7 @@ nav > .nav-scrollable > .nav-item:hover{
     align-items: center;
 
     position: relative;
+    padding: 0 20px;
 }
 
 .unsplash-landing-main{
@@ -536,10 +543,17 @@ nav > .nav-scrollable > .nav-item:hover{
 }
 
 .image-list-item{
-    cursor: zoom-in;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     height: auto;
     position: relative;
+}
+
+.image-list-item-image{
+    cursor: zoom-in;
+}
+
+.image-list-item-image{
+    position: relative
 }
 
 .image-overlay{
@@ -605,7 +619,7 @@ nav > .nav-scrollable > .nav-item:hover{
     visibility: visible;
 }
 
-.image-list-item > img{
+.image-list-item img{
     width: 100%;
 }
 
@@ -668,6 +682,84 @@ nav > .nav-scrollable > .nav-item:hover{
     margin-left: 3px;
     margin-bottom: -1px;
 }
+
+.image-small-creator{
+    padding: 12px;
+}
+
+.image-small-creator .creator-name{
+    font-size: 15px;
+}
+
+.image-small-creator .creator-name:hover{
+    color: black;
+}
+
+.image-small-buttons{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-small-buttons, .image-small-creator{
+    display: none;
+}
+
+.buttons-left, .buttons-right{
+    display: flex;
+}
+
+.buttons-left > .image-small-button{
+    margin-right: 10px;
+}
+
+.image-small-button{
+    background-color: white;
+    border: 1px #cecece solid;
+    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    min-width: 37px;
+    border-radius: 3px;
+
+    
+    cursor: pointer;
+
+    fill: var(--grey-search-dark);
+    color: var(--grey-search-dark);
+}
+
+.image-small-button:hover{
+    cursor: pointer;
+    fill: black;
+    color: black;
+    border-color: black;
+}
+
+.image-small-download-more{
+    border-radius: 0px 3px 3px 0px;
+    margin-left: -1px;
+    min-width: 30px;
+}
+
+.image-small-download-more > svg{
+    width: 12px;
+}
+.image-small-download{
+    border-radius: 3px 0px 0px 3px;
+    padding: 0 9px;
+    font-size: 14px;
+}
+
+.image-small-download:hover, .image-small-download-more:hover{
+    z-index: 10;
+}
+
 
 @media (max-width: 1200px){
     .header-branding > .unsplash-text{
@@ -744,6 +836,52 @@ nav > .nav-scrollable > .nav-item:hover{
 
     .unsplash-landing-footer > .unsplash-license{
         display: none;
+    }
+
+    .image-list{
+        column-count: 1;
+        padding: 40px 0px;
+    }
+
+    .image-overlay{
+        display: none;
+    }
+
+    .unsplash-landing-main > .main-text{
+        font-size: 25px;   
+        margin-bottom: 10px;
+    }
+
+    .unsplash-landing-main > .sub-text{
+        font-size: 14px;
+        margin-bottom: 0px;
+        line-height: 20px;
+    }
+
+    .unsplash-landing-main > .sub-text > a{
+        
+        font-size: 14px;
+    }
+
+    .unsplash-landing-filter{
+        align-items: flex-start;
+    }
+
+    .image-small-buttons, .image-small-creator{
+    display: flex;
+    }
+
+    .visual-search{
+        display: none;
+    }
+
+    nav > .nav-scrollable > .scrollable-small{
+    display: flex;
+    }
+
+
+    nav > .nav-scrollable{
+        margin-left: 0px;
     }
     
 }
