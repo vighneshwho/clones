@@ -311,11 +311,55 @@ nav > .nav-scrollable{
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+
+    display: flex;
     flex: 1;
-    overflow-x: scroll;
+    justify-content: center;
+    overflow: hidden;
 }
 
-nav > .nav-scrollable > .nav-item{
+#scroll-blur-left, #scroll-blur-right{
+    /* display: none; */
+    position: absolute;
+    height: 100%;
+    width: 90px;
+}
+
+#scroll-blur-left{
+    left: 0;
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#scroll-blur-right{
+    right: 0;
+    background: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.nav-scrollable > .invisible{
+    display: none;
+    background-color: red;
+}
+#scroll-blur-left-trigger{
+    flex-shrink: 0;
+    width: 1px;
+    height: 100%;
+}
+
+#scroll-blur-right-trigger{
+    flex-shrink: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.nav-scrollable-content{
+    flex: 1;
+    display: flex;
+
+    overflow: scroll;
+}
+
+nav > .nav-scrollable > .nav-scrollable-content > .nav-item{
     flex-shrink: 0;
     margin-right: 20px;
     color: var(--grey-search-dark);
@@ -332,18 +376,18 @@ nav .nav-item{
     border-bottom: 2px rgba(0, 0, 0, 0) solid;
 }
 
-nav > .nav-scrollable > .nav-item:hover{
+nav > .nav-scrollable > .nav-scrollable-content >  .nav-item:hover{
     color: black;
     cursor: pointer;
 }
 
-.active-nav-item, nav > .nav-scrollable > .active-nav-item{
+.editorial > .active-nav-item, nav > .nav-scrollable > .nav-scrollable-content > .active-nav-item{
     color: black;
     border-bottom: 2px black solid;
     font-weight: 500;
 }
 
-nav > .nav-scrollable > .scrollable-small{
+nav > .nav-scrollable > .nav-scrollable-content >  .scrollable-small{
     display: none;
 }
 
@@ -782,6 +826,9 @@ nav > .nav-scrollable > .scrollable-small{
     .header-search{
         margin-right: 20px;
     }
+    .image-list{
+        column-count: 2;
+    }
 }
 
 @media (max-width: 750px){
@@ -875,7 +922,7 @@ nav > .nav-scrollable > .scrollable-small{
         display: none;
     }
 
-    nav > .nav-scrollable > .scrollable-small{
+    nav > .nav-scrollable > .nav-scrollable-content >  .scrollable-small{
     display: flex;
     }
 
