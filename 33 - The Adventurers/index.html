@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventurers</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="responsive-warning"
+    style="
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 1999;"
+    >
+        <div class="warning-image"
+        style="width: 40vh;
+    height: 40vh;
+    background-image: url(./assets/responsive.png);
+    background-position:center;
+    background-size:cover">
+            
+        </div>
+        <div class="warning-header" style="font-size: 17vw;
+    font-weight: 700;
+    margin-bottom: 30px;">
+            Oops!
+        </div>
+        <div class="warning-sub" style="max-width: 80vw;
+    text-align: center;
+    color: #858585;">
+            This page is not optimized for viewing in a smaller screen. <br>
+            Open this page in a wider screen to see the contents properly.
+        </div>
+    </div>
+    <div class="line-1">
+
+    </div>
+    <div class="drawer" id="drawer">
+        <div class="drawer-left">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="232px" height="177px"
+                viewBox="0 0 232 177">
+                <title>A</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Pop-up--Menu" transform="translate(-295.000000, -372.000000)" fill-rule="nonzero">
+                        <g id="logo" transform="translate(295.000000, 372.000000)">
+                            <g id="A." transform="translate(0.000000, 0.500000)">
+                                <path
+                                    d="M45,175.5 L56,143.25 L122.25,143.25 L133.25,175.5 L178.75,175.5 L114,0 L64.75,0 L0,175.5 L45,175.5 Z M111.25,110.75 L67,110.75 L89.25,45.75 L111.25,110.75 Z"
+                                    id="A" fill="#141313"></path>
+                                <polygon id="." fill="#E86B18" points="232 175.5 232 132.75 187.75 132.75 187.75 175.5"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="drawer-right">
+            <div class="drawer-menu">
+                <div class="drawer-menu-item active-menu-item">
+                    Home
+                </div>
+                <div class="drawer-menu-item">
+                    Road Stories
+                </div>
+                <div class="drawer-menu-item">
+                    Travel Tips
+                </div>
+                <div class="drawer-menu-item">
+                    About Us
+                </div>
+                <div class="drawer-menu-item">
+                    Contact
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer-close" id="drawer-exit">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 496.096 496.096" style="enable-background:new 0 0 496.096 496.096;" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M259.41,247.998L493.754,13.654c3.123-3.124,3.123-8.188,0-11.312c-3.124-3.123-8.188-3.123-11.312,0L248.098,236.686
+            			L13.754,2.342C10.576-0.727,5.512-0.639,2.442,2.539c-2.994,3.1-2.994,8.015,0,11.115l234.344,234.344L2.442,482.342
+            			c-3.178,3.07-3.266,8.134-0.196,11.312s8.134,3.266,11.312,0.196c0.067-0.064,0.132-0.13,0.196-0.196L248.098,259.31
+            			l234.344,234.344c3.178,3.07,8.242,2.982,11.312-0.196c2.995-3.1,2.995-8.016,0-11.116L259.41,247.998z" />
+                    </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="container">
+        <section class="landing">
+            <header>
+                <div class="header-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="232px" height="177px"
+                        viewBox="0 0 232 177">
+                        <title>A</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Pop-up--Menu" transform="translate(-295.000000, -372.000000)" fill-rule="nonzero">
+                                <g id="logo" transform="translate(295.000000, 372.000000)">
+                                    <g id="A." transform="translate(0.000000, 0.500000)">
+                                        <path
+                                            d="M45,175.5 L56,143.25 L122.25,143.25 L133.25,175.5 L178.75,175.5 L114,0 L64.75,0 L0,175.5 L45,175.5 Z M111.25,110.75 L67,110.75 L89.25,45.75 L111.25,110.75 Z"
+                                            id="A" fill="#141313"></path>
+                                        <polygon id="." fill="#E86B18" points="232 175.5 232 132.75 187.75 132.75 187.75 175.5"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="header-menu" id="drawer-enter">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667
+                    			S507.221,96,501.333,96z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M501.333,245.333H10.667C4.779,245.333,0,250.112,0,256s4.779,10.667,10.667,10.667h490.667
+                    			c5.888,0,10.667-4.779,10.667-10.667S507.221,245.333,501.333,245.333z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M501.333,394.667H10.667C4.779,394.667,0,399.445,0,405.333C0,411.221,4.779,416,10.667,416h490.667
+                    			c5.888,0,10.667-4.779,10.667-10.667C512,399.445,507.221,394.667,501.333,394.667z" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </div>
+            </header>
+            <div class="landing-left">
+                <div class="landing-img">
+                    <img src="./assets/landing.jpg" alt="The Adventurers">
+                </div>
+                <div class="landing-left-icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path style="fill:#FFC107;" d="M440.437,301.781L266.656,475.584V10.667C266.656,4.776,261.88,0,255.989,0
+                    	c-5.891,0-10.667,4.776-10.667,10.667v464.917L71.541,301.781c-4.237-4.093-10.99-3.975-15.083,0.262
+                    	c-3.992,4.134-3.992,10.687,0,14.82l192,192c4.16,4.171,10.914,4.179,15.085,0.019c0.006-0.006,0.013-0.013,0.019-0.019l192-192
+                    	c4.093-4.237,3.975-10.99-0.262-15.083c-4.134-3.993-10.687-3.993-14.821,0L440.437,301.781z" />
+                        <path d="M255.989,512c-2.831,0.005-5.548-1.115-7.552-3.115l-192-192c-4.093-4.237-3.975-10.99,0.262-15.083
+                    	c4.134-3.992,10.687-3.992,14.82,0l184.469,184.448l184.448-184.448c4.237-4.093,10.99-3.975,15.083,0.262
+                    	c3.993,4.134,3.993,10.687,0,14.821l-192,192C261.521,510.879,258.813,511.999,255.989,512z" />
+                        <path d="M255.989,512c-5.891,0-10.667-4.776-10.667-10.667V10.667C245.323,4.776,250.098,0,255.989,0
+                    	c5.891,0,10.667,4.776,10.667,10.667v490.667C266.656,507.224,261.88,512,255.989,512z" />
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="landing-text">
+                <h1>The Adventurers</h1>
+                <span>
+                    A couple on their quest to explore <br> the world's greatest treasures
+                </span>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-left">
+                <img src="./assets/about.jpg" alt="">
+            </div>
+            <div class="about-middle">
+                <div class="about-middle-text">
+                    <h2>Hi, we are Amanda and Shawn</h2>
+                </div>
+
+                <div class="about-middle-image">
+                    <div class="about-middle-image-box">
+
+                    </div>
+                    <img src="./assets/about-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-right-rectangle">
+
+                </div>
+                <div class="about-right-text">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, possimus dolorum! Temporibus dignissimos perferendis libero at eos quisquam, inventore porro aut, ipsam vero quos esse. Modi itaque aspernatur ducimus, nobis enim blanditiis sint eveniet amet, dignissimos minus atque. Hic, eos fugiat est eveniet voluptatibus error dolorem saepe quis aperiam perspiciatis?
+                    </span>
+                </div>
+
+                <div class="button">
+                    More About Us
+                </div>
+            </div>
+        </section>
+
+        <section class="adventures">
+            <div class="adventures-header">
+                <h2>Our Latest Adventures</h2>
+            </div>
+
+            <div class="adventures-list">
+                <div class="adventures-list-item">
+                    <div class="adventure-number">
+                        <span>01</span>
+                    </div>
+                    <div class="adventure-content">
+                        <div class="adventure-image">
+                            <div class="adventure-location">Thailand</div>
+                        </div>
+                        <div class="adventure-title">
+                            One month of absolute tranquility in thailand
+                        </div>
+                        <div class="adventure-sub">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores rem in tempore obcaecati? Quae autem culpa placeat vero cupiditate.
+                        </div>
+
+                        <div class="adventure-footer">
+                            <div class="date">October 19, 2020</div> <div class="separator">/</div> <div class="comments">No Comments</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventures-list-item">
+                    <div class="adventure-number">
+                        <span>02</span>
+                    </div>
+                    <div class="adventure-content">
+                        <div class="adventure-image">
+                            <div class="adventure-location">Taiwan</div>
+                        </div>
+                        <div class="adventure-title">
+                            Our 2 week journey travelling around Taiwan
+                        </div>
+                        <div class="adventure-sub">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores rem in tempore obcaecati?
+                            Quae autem culpa placeat vero cupiditate.
+                        </div>
+                
+                        <div class="adventure-footer">
+                            <div class="date">October 19, 2020</div>
+                            <div class="separator">/</div>
+                            <div class="comments">No Comments</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventures-list-item">
+                    <div class="adventure-number">
+                        <span>03</span>
+                    </div>
+                    <div class="adventure-content">
+                        <div class="adventure-image">
+                            <div class="adventure-location">Faroe Islands</div>
+                        </div>
+                        <div class="adventure-title">
+                            Our 2 week journey to Faroe Islands
+                        </div>
+                        <div class="adventure-sub">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores rem in tempore obcaecati?
+                            Quae autem culpa placeat vero cupiditate.
+                        </div>
+                
+                        <div class="adventure-footer">
+                            <div class="date">October 20, 2020</div>
+                            <div class="separator">/</div>
+                            <div class="comments">No Comments</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventures-list-item">
+                    <div class="adventure-number">
+                        <span>04</span>
+                    </div>
+                    <div class="adventure-content">
+                        <div class="adventure-image">
+                            <div class="adventure-location">Peru</div>
+                        </div>
+                        <div class="adventure-title">
+                            One month of backpacking in the most offbeat places in peru
+                        </div>
+                        <div class="adventure-sub">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores rem in tempore obcaecati?
+                            Quae autem culpa placeat vero cupiditate.
+                        </div>
+                
+                        <div class="adventure-footer">
+                            <div class="date">October 19, 2020</div>
+                            <div class="separator">/</div>
+                            <div class="comments">No Comments</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="adventures-footer">
+                <div class="button">
+                    View All Stories
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <div class="tips-header">
+                <div class="tips-header-grey">
+
+                </div>
+                <h2>Latest Travel Tips</h2>
+            </div>
+
+            <div class="tips-list">
+                <div class="tip">
+                    <div class="tip-number">
+                        01
+                    </div>
+                    <div class="tip-contents">
+                        <div class="tip-tag">
+                            Saving Tips
+                        </div>
+                        <div class="tip-title">
+                            Must-have travel apps for a smoother trip
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <div class="tip-number">
+                        02
+                    </div>
+                    <div class="tip-contents">
+                        <div class="tip-tag">
+                            Travel Grear
+                        </div>
+                        <div class="tip-title">
+                            Tips to manage your travel budget
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <div class="tip-number">
+                        03
+                    </div>
+                    <div class="tip-contents">
+                        <div class="tip-tag">
+                            Travel Planning
+                        </div>
+                        <div class="tip-title">
+                            The best luggage for long term travel
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <div class="tip-number">
+                        04
+                    </div>
+                    <div class="tip-contents">
+                        <div class="tip-tag">
+                            Travel Gear
+                        </div>
+                        <div class="tip-title">
+                            Airbnbs or hotels? Tips and Tricks
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-footer">
+                <div class="button">
+                    View All Tips
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-left">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <h2>
+                            Join The Ride
+                        </h2>
+                    </div>
+                    <span class="contact-sub">
+                        Subscribe to our bi-weekly newsletter with stories from our latest adventures and the travel tips
+                    </span>
+
+                    <div class="contact-input">
+                        <input type="text" placeholder="Email">
+                        <div class="button">
+                            Subscribe
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                    <div class="contact-image-box">
+                
+                    </div>
+                    <div class="contact-image">
+                        
+                    </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-copyright">
+                &copy; The Adventurers 2021
+            </div>
+            <div class="footer-links">
+                <span>
+                    <a href="#" class="footer-link">
+                        Instagram
+                    </a>
+                </span>
+                <span>
+                    <a href="#" class="footer-link">
+                        Twitter
+                    </a>
+                </span>
+                <span>
+                    <a href="#" class="footer-link">
+                        Youtube
+                    </a>
+                </span>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://vighnesh.dev" target="_blank" id="developer-banner" style="
+         background-color: white;
+        box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.342);
+        border-radius: 20px 0px 0px 0px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 40px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #949494;
+        word-spacing: 1px;
+        z-index: 2000;
+        ">
+        <span>Made with <span id="developer-banner-bold" style="color: rgb(131, 131, 131);
+        font-weight: bold;">HTML & CSS</span> by <span id="developer-banner-blue" style="color: #2295FF;
+        text-decoration: underline;
+        font-size: 14px;">vighnesh.dev</span></span>
+    </a>
+
+    <script>
+        var drawer = document.getElementById("drawer");
+        var drawerEnter = document.getElementById("drawer-enter");
+        var drawerExit = document.getElementById("drawer-exit");
+
+        drawerEnter.addEventListener("click",openDrawer)
+        drawerExit.addEventListener("click", closeDrawer)
+
+        function openDrawer(){
+            drawer.classList.add("drawer-open");
+        }
+
+        function closeDrawer() {
+                drawer.classList.remove("drawer-open");
+            }
+
+    </script>
+</body>
+</html>
