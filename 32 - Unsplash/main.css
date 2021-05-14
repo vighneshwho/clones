@@ -932,3 +932,17 @@ nav > .nav-scrollable > .nav-scrollable-content >  .scrollable-small{
     }
     
 }
+
+
+
+/* DEVELOPER BANNER */
+
+#developer-banner{
+ opacity: 0.8;
+ transition: opacity 0.2s ease-out;
+}
+
+#developer-banner:hover{
+    opacity: 1;
+}
+
