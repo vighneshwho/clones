@@ -43,6 +43,8 @@ Exercise to learn UI layouting using Dribbble shots.
 | 23 Oct 20 | [InTrust Banking][30-d]           | [v1][30-i-v1], [v2][30-i-v2], [v3][30-i-v3], [v4][30-i-v4],                                             |       |
 | 8 Dec 20  | [Cards][31-d]                     | [v1][31-i-v1]                                                                                           |       |
 | 29 Apr 21 | [Unsplash][32-d]                  | [v1][32-i-v1], [v2][32-i-v2], [v3][32-i-v3], [v4][32-i-v4]                                              |       |
+| 29 Apr 21 | [Unsplash][32-d]                  | [v1][32-i-v1], [v2][32-i-v2], [v3][32-i-v3], [v4][32-i-v4]                                              |       |
+| 14 May 21 | [The Adventurers][33-d]           | [v1][33-i]                                                                                              |       |
 
 [1-d]: https://dribbble.com/shots/12389560-Apple-Music-Light-Theme
 [1-i-v1]: http://applemusicclone.surge.sh/
@@ -186,3 +188,5 @@ Exercise to learn UI layouting using Dribbble shots.
 [32-i-v2]: http://unsplash-clone-v2.surge.sh
 [32-i-v3]: http://unsplash-clone-v3.surge.sh
 [32-i-v4]: http://unsplash-clone-v4.surge.sh
+[33-d]: https://library.elementor.com/travelers-blog/
+[33-i]: http://the-adventurers.surge.sh/
