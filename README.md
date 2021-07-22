@@ -187,6 +187,6 @@ Exercise to learn UI layouting using Dribbble shots.
 [32-i-v1]: http://unsplash-clone-v1.surge.sh
 [32-i-v2]: http://unsplash-clone-v2.surge.sh
 [32-i-v3]: http://unsplash-clone-v3.surge.sh
-[32-i-v4]: http://unsplash-clone-v4.surge.sh
+[32-i-v4]: http://unsplash-clone.surge.sh
 [33-d]: https://library.elementor.com/travelers-blog/
 [33-i]: http://the-adventurers.surge.sh/
