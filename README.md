@@ -1,13 +1,10 @@
 # Clones
 
-Exercise to learn UI layouting using Dribbble shots.
+UI clones of designs from Dribbble made in pure HTML & CSS
 
-## Goal
+![works](https://user-images.githubusercontent.com/37739153/188282008-ca6c8582-1a95-4630-a74f-5708de5a881c.png)
 
-- Implement two UIs from Dribbble everyday
-- Refine based on feedback
-
-## Progress
+## Attributes & Demo Links
 
 | Date      | Reference                         | Attempt                                                                                                 | Score |
 | --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------- | ----- |
