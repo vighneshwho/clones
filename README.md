@@ -8,11 +8,14 @@ UI clones of designs from Dribbble made in pure HTML & CSS
 
 # Why & How it helped me
 
-I always felt like I was able to understand the concepts of CSS properly and wanted to try and clone the designs from dribble which I wasn't really sure I'll be able to pull off using CSS. I wanted this whole exercise to be made completely using Vanilla CSS without the help of any CSS frameworks so that I could understand the core concepts of CSS more clearly. This whole exercise helped me create UIs which I believed was impossible to build when I started and the skills I acquired during this process still comes handy in my career as a Front End Developer to this day.<br/> <br/> <br/> And special thanks to [@jikkujose](https://github.com/jikkujose)  for mentoring me throughout these exercises
+I always felt like I was able to understand the concepts of CSS properly and wanted to try and clone the designs from dribble which I wasn't really sure I'll be able to pull off using CSS. I wanted this whole exercise to be made completely using Vanilla CSS without the help of any CSS frameworks so that I could understand the core concepts of CSS more clearly. This whole exercise helped me create UIs which I believed was impossible to build when I started and the skills I acquired during this process still comes handy in my career as a Front End Developer to this day.<br/> <br/> <br/> And special thanks to [@jikkujose](https://github.com/jikkujose) for mentoring me throughout these exercises
+<br/> <br/>
 
 
 # References & Demo
 <br />
+Arranged in ascending order of Date of creation. <br/> Will look best in Chrome
+<br/><br/>
 
 | Date      | Design Reference                  | Demo             |
 | --------- | --------------------------------- | ---------------- |
