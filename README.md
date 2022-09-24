@@ -2,7 +2,7 @@
 
 UI clones of designs from Dribbble made in pure HTML & CSS
 
-![works](https://user-images.githubusercontent.com/37739153/188282008-ca6c8582-1a95-4630-a74f-5708de5a881c.png)
+<img width="1920" alt="Cover" src="https://user-images.githubusercontent.com/37739153/192105246-914c4944-d2fa-4537-ac8b-a68c40d79637.png">
 
 <br />
 
